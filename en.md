@@ -254,7 +254,7 @@ When the conversion starts, a progress bar and a **"Converting…  N/total"** in
 *▲ `images/15-stt-converting.PNG` — Converting — the progress bar and Cancel button visible*
 
 - Because it processes **in 45-second chunks**, longer audio takes more time (about a few minutes for an hour of audio).
-- You can **cancel** mid-conversion with the ❌ button. The part completed so far is saved as is.
+- You can **cancel** mid-conversion with the ❌ button. Cancelling discards this run's results and **keeps your existing transcript** unchanged.
 - The conversion keeps running in the background. It does not stop even if you close the player.
 
 ### 7-3. Viewing the Converted Text
@@ -264,6 +264,7 @@ Each card contains:
 - Start time (e.g., `0:32`)
 - A source indicator (no mark for auto-generated, ✅ for an official transcript, 🖊 for user-edited, 📝 for manual entry)
 - An ⚠️ orange warning if recognition confidence is low
+- A 🕒 orange **Approx. position** badge when the position is approximate — the text was recognized but its exact timing couldn't be determined. Tapping seeks nearby, and you can edit it with ✏️
 - The **body text**
 - Small buttons on the right: 🌐 translate / ➕ wordbook / ✏️ edit / 🗑 delete
 
@@ -400,7 +401,7 @@ Open it with the ⚙️ gear icon at the top left of the home screen.
 *▲ `images/24-settings.jpg` — The Settings screen*
 
 ### 11-1. Podcast Downloads
-- **Download over Wi-Fi only** — when on, downloads happen only over Wi-Fi (default: on).
+- **Download over Wi-Fi only** — when on, downloads happen only over Wi-Fi (default: on). This setting also applies to STT (speech-to-text) timestamp-recovery server recognition — on means Wi-Fi only, off allows it over cellular too.
 - **Ask before cellular download** — shown when Wi-Fi-only is off; decides whether to ask each time before downloading over cellular.
 
 ---
@@ -438,7 +439,7 @@ A. Check two things: ① whether the audio's actual language matches the one you
 A. A confirmation reading *"Switch to ...? Conversion will be interrupted. Partial results will be saved."* appears. The part completed so far is preserved.
 
 **Q. Is my data sent over the internet?**
-A. No. Phrabbit does not use any external servers. Speech recognition uses Apple's on-device feature, and your wordbook, bookmarks, and transcripts are all stored on your device.
+A. Speech recognition runs **on-device** by default. However, when on-device recognition can't determine exact timing for some parts, Phrabbit sends just those audio segments to **Apple's speech recognition servers — only while on Wi-Fi (or any connection, if you've allowed cellular in Settings)** — to recover their position. No third-party servers are used, and your wordbook, bookmarks, and transcripts are all stored on your device. When you're offline, all recognition stays fully on-device.
 
 **Q. What happens to my data if I change devices?**
 A. The current version (v1.0) stores data only on the device. Installing the app on a new device and doing **Restore Purchases** with the same Apple ID unlocks Premium, but your wordbook, bookmarks, and transcripts do not transfer.
