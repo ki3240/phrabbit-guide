@@ -274,7 +274,7 @@ Each card contains:
 ### 7-4. Card Actions
 
 - **Tap a card** → sets that section as the A-B range and immediately starts looping it.
-- **🌐 Translate**: On iOS 17.4+ devices the system translation popup appears.
+- **🌐 Translate**: The system translation popup appears.
 - **➕ Wordbook**: Pick a word from the card and save it to your wordbook (see [9. Wordbook](#9-wordbook)).
 - **✏️ Edit**: Edit the text.
 - **🗑 Delete**: Delete the card.
