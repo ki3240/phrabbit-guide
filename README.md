@@ -16,4 +16,8 @@ A/B 구간 반복으로 외국어를 연습하는 iOS 앱입니다. 오디오를
 
 ---
 
+📄 **[Privacy Policy · 개인정보처리방침](privacy-policy.html)**
+
+---
+
 *Phrabbit — A/B loop audio practice for language learning.*
