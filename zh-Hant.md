@@ -1,6 +1,10 @@
-# Phrabbit 使用指南
+---
+layout: default
+title: Phrabbit 使用指南
+lang: zh-Hant
+---
 
-🌐 [한국어](ko.md) · [English](en.md) · [日本語](ja.md) · [简体中文](zh-Hans.md) · **繁體中文**
+# Phrabbit 使用指南
 
 Phrabbit 是一款用於外語聽力練習的 A/B 區間循環 App。你可以將音訊檔案、音樂資料庫曲目、Podcast 和 YouTube 連結加入為學習材料，然後反覆聽指定片段，或跟讀並錄下自己的聲音。App 也支援語音轉文字字幕、單字本、跟讀錄音和學習記錄。
 

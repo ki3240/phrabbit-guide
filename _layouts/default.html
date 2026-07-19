@@ -1,5 +1,120 @@
+{%- assign guide_lang = page.lang | default: 'ko' -%}
+{%- assign guide_locale = 'ko-KR' -%}
+{%- assign current_language = '한국어' -%}
+{%- assign guide_label = '사용 설명서' -%}
+{%- assign brand_home_label = 'Phrabbit 사용 설명서 홈' -%}
+{%- assign language_label = '언어 선택' -%}
+{%- assign toc_button_label = '목차' -%}
+{%- assign toc_panel_label = '이 페이지에서' -%}
+{%- assign search_button_label = '검색' -%}
+{%- assign search_panel_label = '본문 검색' -%}
+{%- assign close_label = '닫기' -%}
+{%- assign search_field_label = '검색어' -%}
+{%- assign search_placeholder = '예: 북마크, 자막, YouTube' -%}
+{%- assign search_empty = '찾고 싶은 단어를 입력하세요.' -%}
+{%- assign search_none = '일치하는 내용을 찾지 못했습니다.' -%}
+{%- assign search_count_prefix = '' -%}
+{%- assign search_count_suffix_one = '개 섹션에서 찾았습니다.' -%}
+{%- assign search_count_suffix_many = '개 섹션에서 찾았습니다.' -%}
+{%- assign hero_eyebrow = 'Phrabbit · 사용 설명서' -%}
+{%- assign hero_subtitle = '듣고, 반복하고, 기록하며 외국어를 연습하세요.' -%}
+{%- assign toc_heading = '목차' -%}
+{%- assign privacy_label = '개인정보 처리방침' -%}
+{%- assign top_label = '맨 위로' -%}
+{%- case guide_lang -%}
+  {%- when 'en' -%}
+    {%- assign guide_locale = 'en-US' -%}
+    {%- assign current_language = 'English' -%}
+    {%- assign guide_label = 'User Guide' -%}
+    {%- assign brand_home_label = 'Phrabbit User Guide home' -%}
+    {%- assign language_label = 'Choose language' -%}
+    {%- assign toc_button_label = 'Contents' -%}
+    {%- assign toc_panel_label = 'On this page' -%}
+    {%- assign search_button_label = 'Search' -%}
+    {%- assign search_panel_label = 'Search the guide' -%}
+    {%- assign close_label = 'Close' -%}
+    {%- assign search_field_label = 'Search terms' -%}
+    {%- assign search_placeholder = 'e.g. bookmarks, subtitles, YouTube' -%}
+    {%- assign search_empty = 'Enter a word to search for.' -%}
+    {%- assign search_none = 'No matching sections found.' -%}
+    {%- assign search_count_suffix_one = ' section found.' -%}
+    {%- assign search_count_suffix_many = ' sections found.' -%}
+    {%- assign hero_eyebrow = 'Phrabbit · User Guide' -%}
+    {%- assign hero_subtitle = 'Listen, repeat, and track your language practice.' -%}
+    {%- assign toc_heading = 'Contents' -%}
+    {%- assign privacy_label = 'Privacy Policy' -%}
+    {%- assign top_label = 'Back to top' -%}
+  {%- when 'ja' -%}
+    {%- assign guide_locale = 'ja-JP' -%}
+    {%- assign current_language = '日本語' -%}
+    {%- assign guide_label = 'ユーザーガイド' -%}
+    {%- assign brand_home_label = 'Phrabbit ユーザーガイド ホーム' -%}
+    {%- assign language_label = '言語を選択' -%}
+    {%- assign toc_button_label = '目次' -%}
+    {%- assign toc_panel_label = 'このページ' -%}
+    {%- assign search_button_label = '検索' -%}
+    {%- assign search_panel_label = '本文検索' -%}
+    {%- assign close_label = '閉じる' -%}
+    {%- assign search_field_label = '検索語' -%}
+    {%- assign search_placeholder = '例: ブックマーク、字幕、YouTube' -%}
+    {%- assign search_empty = '検索したい語句を入力してください。' -%}
+    {%- assign search_none = '一致する内容が見つかりませんでした。' -%}
+    {%- assign search_count_suffix_one = '個のセクションで見つかりました。' -%}
+    {%- assign search_count_suffix_many = '個のセクションで見つかりました。' -%}
+    {%- assign hero_eyebrow = 'Phrabbit · ユーザーガイド' -%}
+    {%- assign hero_subtitle = '聞いて、繰り返して、記録しながら外国語を練習しましょう。' -%}
+    {%- assign toc_heading = '目次' -%}
+    {%- assign privacy_label = 'プライバシーポリシー' -%}
+    {%- assign top_label = '上へ' -%}
+  {%- when 'zh-Hans' -%}
+    {%- assign guide_locale = 'zh-CN' -%}
+    {%- assign current_language = '简体中文' -%}
+    {%- assign guide_label = '用户指南' -%}
+    {%- assign brand_home_label = 'Phrabbit 用户指南首页' -%}
+    {%- assign language_label = '选择语言' -%}
+    {%- assign toc_button_label = '目录' -%}
+    {%- assign toc_panel_label = '本页内容' -%}
+    {%- assign search_button_label = '搜索' -%}
+    {%- assign search_panel_label = '搜索指南' -%}
+    {%- assign close_label = '关闭' -%}
+    {%- assign search_field_label = '搜索词' -%}
+    {%- assign search_placeholder = '例如：书签、字幕、YouTube' -%}
+    {%- assign search_empty = '请输入要搜索的词。' -%}
+    {%- assign search_none = '未找到匹配内容。' -%}
+    {%- assign search_count_prefix = '在 ' -%}
+    {%- assign search_count_suffix_one = ' 个章节中找到。' -%}
+    {%- assign search_count_suffix_many = ' 个章节中找到。' -%}
+    {%- assign hero_eyebrow = 'Phrabbit · 用户指南' -%}
+    {%- assign hero_subtitle = '一边听、一边循环、一边记录，练习外语。' -%}
+    {%- assign toc_heading = '目录' -%}
+    {%- assign privacy_label = '隐私政策' -%}
+    {%- assign top_label = '返回顶部' -%}
+  {%- when 'zh-Hant' -%}
+    {%- assign guide_locale = 'zh-TW' -%}
+    {%- assign current_language = '繁體中文' -%}
+    {%- assign guide_label = '使用指南' -%}
+    {%- assign brand_home_label = 'Phrabbit 使用指南首頁' -%}
+    {%- assign language_label = '選擇語言' -%}
+    {%- assign toc_button_label = '目錄' -%}
+    {%- assign toc_panel_label = '本頁內容' -%}
+    {%- assign search_button_label = '搜尋' -%}
+    {%- assign search_panel_label = '搜尋指南' -%}
+    {%- assign close_label = '關閉' -%}
+    {%- assign search_field_label = '搜尋詞' -%}
+    {%- assign search_placeholder = '例如：書籤、字幕、YouTube' -%}
+    {%- assign search_empty = '請輸入要搜尋的詞。' -%}
+    {%- assign search_none = '找不到符合的內容。' -%}
+    {%- assign search_count_prefix = '在 ' -%}
+    {%- assign search_count_suffix_one = ' 個章節中找到。' -%}
+    {%- assign search_count_suffix_many = ' 個章節中找到。' -%}
+    {%- assign hero_eyebrow = 'Phrabbit · 使用指南' -%}
+    {%- assign hero_subtitle = '一邊聽、一邊循環、一邊記錄，練習外語。' -%}
+    {%- assign toc_heading = '目錄' -%}
+    {%- assign privacy_label = '隱私權政策' -%}
+    {%- assign top_label = '回到頂部' -%}
+{%- endcase -%}
 <!doctype html>
-<html lang="ko">
+<html lang="{{ guide_lang | escape }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,69 +127,69 @@
   <body class="guide-page">
     <div class="site-frame">
       <header class="site-header">
-        <a class="brand" href="{{ '/' | relative_url }}" aria-label="Phrabbit 사용 설명서 홈">
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ brand_home_label | escape }}">
           <picture class="brand-icon">
             <source srcset="{{ '/assets/images/app-icon-dark.png' | relative_url }}" media="(prefers-color-scheme: dark)">
             <img src="{{ '/assets/images/app-icon-light.png' | relative_url }}" alt="">
           </picture>
           <span class="brand-copy">
             <strong>Phrabbit</strong>
-            <span>User Guide</span>
+            <span>{{ guide_label }}</span>
           </span>
         </a>
 
         <div class="header-actions">
           <details class="language-switcher">
-            <summary aria-label="언어 선택">
-              <span>한국어</span>
+            <summary aria-label="{{ language_label | escape }}">
+              <span>{{ current_language }}</span>
               <span class="icon-chevron" aria-hidden="true"></span>
             </summary>
             <div class="language-menu">
-              <a class="language-link is-active" href="{{ '/ko/' | relative_url }}">한국어</a>
-              <a class="language-link" href="{{ '/en/' | relative_url }}">English</a>
-              <a class="language-link" href="{{ '/ja/' | relative_url }}">日本語</a>
-              <a class="language-link" href="{{ '/zh-Hans/' | relative_url }}">简体中文</a>
-              <a class="language-link" href="{{ '/zh-Hant/' | relative_url }}">繁體中文</a>
+              <a class="language-link{% if guide_lang == 'ko' %} is-active{% endif %}" href="{{ '/ko.html' | relative_url }}">한국어</a>
+              <a class="language-link{% if guide_lang == 'en' %} is-active{% endif %}" href="{{ '/en.html' | relative_url }}">English</a>
+              <a class="language-link{% if guide_lang == 'ja' %} is-active{% endif %}" href="{{ '/ja.html' | relative_url }}">日本語</a>
+              <a class="language-link{% if guide_lang == 'zh-Hans' %} is-active{% endif %}" href="{{ '/zh-Hans.html' | relative_url }}">简体中文</a>
+              <a class="language-link{% if guide_lang == 'zh-Hant' %} is-active{% endif %}" href="{{ '/zh-Hant.html' | relative_url }}">繁體中文</a>
             </div>
           </details>
-          <button class="header-tool mobile-header-toc" id="mobile-toc-trigger" type="button" aria-controls="mobile-toc-drawer" aria-expanded="false" title="목차">
+          <button class="header-tool mobile-header-toc" id="mobile-toc-trigger" type="button" aria-controls="mobile-toc-drawer" aria-expanded="false" title="{{ toc_button_label | escape }}">
             <span class="icon-list" aria-hidden="true"></span>
-            <span class="sr-only">목차</span>
+            <span class="sr-only">{{ toc_button_label }}</span>
           </button>
-          <button class="search-trigger header-search" id="header-search-trigger" type="button" aria-controls="search-panel" aria-expanded="false" title="본문 검색">
+          <button class="search-trigger header-search" id="header-search-trigger" type="button" aria-controls="search-panel" aria-expanded="false" title="{{ search_panel_label | escape }}">
             <span class="icon-search" aria-hidden="true"></span>
-            <span class="search-button-text">검색</span>
+            <span class="search-button-text">{{ search_button_label }}</span>
           </button>
         </div>
       </header>
 
-      <section class="search-panel" id="search-panel" hidden aria-label="본문 검색">
+      <section class="search-panel" id="search-panel" hidden aria-label="{{ search_panel_label | escape }}">
         <div class="search-panel-inner">
           <div class="search-panel-heading">
             <div>
-              <p class="search-eyebrow">Phrabbit 사용 설명서</p>
-              <h2>본문 검색</h2>
+              <p class="search-eyebrow">{{ hero_eyebrow }}</p>
+              <h2>{{ search_panel_label }}</h2>
             </div>
-            <button class="panel-close" id="search-close" type="button">닫기</button>
+            <button class="panel-close" id="search-close" type="button">{{ close_label }}</button>
           </div>
           <label class="search-field">
             <span class="icon-search" aria-hidden="true"></span>
-            <span class="sr-only">검색어</span>
-            <input id="guide-search" type="search" placeholder="예: 북마크, 자막, YouTube" autocomplete="off" spellcheck="false">
+            <span class="sr-only">{{ search_field_label }}</span>
+            <input id="guide-search" type="search" placeholder="{{ search_placeholder | escape }}" autocomplete="off" spellcheck="false">
           </label>
-          <p class="search-status" id="search-status" role="status">찾고 싶은 단어를 입력하세요.</p>
+          <p class="search-status" id="search-status" role="status">{{ search_empty }}</p>
           <ol class="search-results" id="search-results"></ol>
         </div>
       </section>
 
       <div class="mobile-toc-backdrop" id="mobile-toc-backdrop" hidden></div>
-      <aside class="mobile-toc-drawer" id="mobile-toc-drawer" aria-label="이 페이지에서" aria-hidden="true">
+      <aside class="mobile-toc-drawer" id="mobile-toc-drawer" aria-label="{{ toc_panel_label | escape }}" aria-hidden="true">
         <div class="drawer-heading">
           <div>
-            <p class="search-eyebrow">Phrabbit 사용 설명서</p>
-            <h2>이 페이지에서</h2>
+            <p class="search-eyebrow">{{ hero_eyebrow }}</p>
+            <h2>{{ toc_panel_label }}</h2>
           </div>
-          <button class="panel-close" id="mobile-toc-close" type="button">닫기</button>
+          <button class="panel-close" id="mobile-toc-close" type="button">{{ close_label }}</button>
         </div>
         <ol id="mobile-toc-list"></ol>
       </aside>
@@ -88,19 +203,19 @@
           <span class="hero-wave"><i></i><i></i><i></i><i></i><i></i></span>
         </div>
         <div class="hero-copy">
-          <p class="eyebrow">Phrabbit · 사용 설명서</p>
+          <p class="eyebrow">{{ hero_eyebrow }}</p>
           <h1 id="page-title">{{ page.title }}</h1>
-          <p>듣고, 반복하고, 기록하며 외국어를 연습하세요.</p>
+          <p>{{ hero_subtitle }}</p>
         </div>
       </section>
 
       <div class="guide-layout">
-        <aside class="sidebar" aria-label="이 페이지에서">
+        <aside class="sidebar" aria-label="{{ toc_panel_label | escape }}">
           <nav class="sidebar-toc">
-            <p class="toc-label">이 페이지에서</p>
+            <p class="toc-label">{{ toc_panel_label }}</p>
             <ol id="sidebar-toc-list"></ol>
           </nav>
-          <a class="privacy-link" href="{{ '/privacy-policy.html' | relative_url }}">개인정보 처리방침 <span aria-hidden="true">↗</span></a>
+          <a class="privacy-link" href="{{ '/privacy-policy.html' | relative_url }}">{{ privacy_label }} <span aria-hidden="true">↗</span></a>
         </aside>
 
         <main class="content-column">
@@ -110,7 +225,7 @@
 
           <footer class="page-footer">
             <span>Phrabbit · A/B loop audio practice</span>
-            <a href="#page-title">맨 위로 ↑</a>
+            <a href="#page-title">{{ top_label }} ↑</a>
           </footer>
         </main>
       </div>
@@ -118,8 +233,9 @@
 
     <script>
       (() => {
+        const contentTocHeading = {{ toc_heading | jsonify }};
         const sourceHeadings = [...document.querySelectorAll('.page-content h2')]
-          .filter((heading) => heading.textContent.trim() !== '목차');
+          .filter((heading) => heading.textContent.trim() !== contentTocHeading);
         const lists = [document.querySelector('#sidebar-toc-list'), document.querySelector('#mobile-toc-list')];
 
         lists.forEach((list) => {
@@ -163,7 +279,19 @@
         drawerBackdrop.addEventListener('click', () => setDrawerOpen(false));
         document.querySelectorAll('#mobile-toc-list a').forEach((link) => link.addEventListener('click', () => setDrawerOpen(false)));
 
-        const normalize = (text) => text.replace(/\s+/g, ' ').trim().toLocaleLowerCase('ko-KR');
+        const searchLocale = {{ guide_locale | jsonify }};
+        const searchLabels = {
+          empty: {{ search_empty | jsonify }},
+          none: {{ search_none | jsonify }},
+          countPrefix: {{ search_count_prefix | jsonify }},
+          countSuffixOne: {{ search_count_suffix_one | jsonify }},
+          countSuffixMany: {{ search_count_suffix_many | jsonify }},
+        };
+        const normalize = (text) => text.replace(/\s+/g, ' ').trim().toLocaleLowerCase(searchLocale);
+        const formatMatchCount = (count) => {
+          const suffix = count === 1 ? searchLabels.countSuffixOne : searchLabels.countSuffixMany;
+          return `${searchLabels.countPrefix}${count}${suffix}`;
+        };
         const sections = sourceHeadings.map((heading) => {
           const parts = [heading.textContent.trim()];
           let node = heading.nextElementSibling;
@@ -184,12 +312,12 @@
           const query = normalize(searchInput.value);
           searchResults.replaceChildren();
           if (!query) {
-            searchStatus.textContent = '찾고 싶은 단어를 입력하세요.';
+            searchStatus.textContent = searchLabels.empty;
             return;
           }
 
           const matches = sections.filter((section) => section.text.includes(query));
-          searchStatus.textContent = matches.length ? `${matches.length}개 섹션에서 찾았습니다.` : '일치하는 내용을 찾지 못했습니다.';
+          searchStatus.textContent = matches.length ? formatMatchCount(matches.length) : searchLabels.none;
           matches.forEach((section) => {
             const item = document.createElement('li');
             const link = document.createElement('a');

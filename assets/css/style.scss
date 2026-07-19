@@ -24,7 +24,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Noto Sans KR", "Segoe UI", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Noto Sans KR", "Noto Sans JP", "Noto Sans SC", "Noto Sans TC", "Segoe UI", sans-serif;
   font-size: 16px;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
@@ -130,7 +130,7 @@ button { cursor: pointer; }
 .hero-wave i:nth-child(3) { height: 28px; }
 .hero-copy { min-width: 0; }
 .eyebrow { margin: 0 0 7px; color: var(--brand-deep); font-size: .76rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
-.hero-copy h1 { margin: 0; font-size: clamp(2rem, 4vw, 3.35rem); line-height: 1.12; letter-spacing: -.035em; overflow-wrap: anywhere; }
+.hero-copy h1 { margin: 0; font-size: clamp(2rem, 4vw, 3.35rem); line-height: 1.12; letter-spacing: 0; overflow-wrap: anywhere; }
 .hero-copy p:last-child { max-width: 650px; margin: 13px 0 0; color: var(--muted); font-size: 1.02rem; }
 
 .guide-layout { display: grid; grid-template-columns: 220px minmax(0, 760px); gap: 62px; align-items: start; justify-content: center; }
@@ -157,7 +157,7 @@ button { cursor: pointer; }
 .page-content > h1:first-child { display: none; }
 .page-content > h2:first-of-type, .page-content > h2:first-of-type + ol { display: none; }
 .page-content > p:first-of-type { margin-top: 0; color: var(--muted); font-size: 1.1rem; line-height: 1.75; }
-.page-content h2 { margin: 76px 0 20px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--ink); font-size: 1.65rem; line-height: 1.25; letter-spacing: -.025em; scroll-margin-top: 108px; }
+.page-content h2 { margin: 76px 0 20px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--ink); font-size: 1.65rem; line-height: 1.25; letter-spacing: 0; scroll-margin-top: 108px; }
 .page-content h3 { margin: 38px 0 12px; color: var(--brand-deep); font-size: 1.1rem; line-height: 1.35; scroll-margin-top: 108px; }
 .page-content p { margin: 0 0 17px; }
 .page-content ul, .page-content ol { padding-left: 1.35rem; }

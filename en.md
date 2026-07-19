@@ -1,6 +1,10 @@
-# Phrabbit User Guide
+---
+layout: default
+title: Phrabbit User Guide
+lang: en
+---
 
-🌐 [한국어](ko.md) · **English** · [日本語](ja.md) · [简体中文](zh-Hans.md) · [繁體中文](zh-Hant.md)
+# Phrabbit User Guide
 
 Phrabbit is an A/B loop app for foreign-language listening practice. Add audio files, Music library tracks, podcasts, or YouTube links as study material, then repeat the exact section you want to hear or practice shadowing with your own voice. You can also use speech-to-text subtitles, Wordbook review, shadowing recordings, and learning stats.
 

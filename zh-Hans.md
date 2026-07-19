@@ -1,6 +1,10 @@
-# Phrabbit 用户指南
+---
+layout: default
+title: Phrabbit 用户指南
+lang: zh-Hans
+---
 
-🌐 [한국어](ko.md) · [English](en.md) · [日本語](ja.md) · **简体中文** · [繁體中文](zh-Hant.md)
+# Phrabbit 用户指南
 
 Phrabbit 是一款用于外语听力练习的 A/B 区间循环应用。你可以把音频文件、音乐库曲目、播客和 YouTube 链接作为学习材料添加进来，然后反复听指定片段，或跟读并录下自己的声音。应用还支持语音转文字字幕、单词本、跟读录音和学习记录。
 
