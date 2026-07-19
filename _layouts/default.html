@@ -23,17 +23,29 @@
           </span>
         </a>
 
-        <nav class="language-nav" aria-label="언어 선택">
-          <a class="language-link is-active" href="{{ '/ko/' | relative_url }}">한국어</a>
-          <a class="language-link" href="{{ '/en/' | relative_url }}">English</a>
-          <a class="language-link" href="{{ '/ja/' | relative_url }}">日本語</a>
-          <a class="language-link" href="{{ '/zh-Hans/' | relative_url }}">简体中文</a>
-          <a class="language-link" href="{{ '/zh-Hant/' | relative_url }}">繁體中文</a>
-        </nav>
-        <button class="search-trigger header-search" id="header-search-trigger" type="button" aria-controls="search-panel" aria-expanded="false" title="본문 검색">
-          <span class="icon-search" aria-hidden="true"></span>
-          <span class="search-button-text">검색</span>
-        </button>
+        <div class="header-actions">
+          <details class="language-switcher">
+            <summary aria-label="언어 선택">
+              <span>한국어</span>
+              <span class="icon-chevron" aria-hidden="true"></span>
+            </summary>
+            <div class="language-menu">
+              <a class="language-link is-active" href="{{ '/ko/' | relative_url }}">한국어</a>
+              <a class="language-link" href="{{ '/en/' | relative_url }}">English</a>
+              <a class="language-link" href="{{ '/ja/' | relative_url }}">日本語</a>
+              <a class="language-link" href="{{ '/zh-Hans/' | relative_url }}">简体中文</a>
+              <a class="language-link" href="{{ '/zh-Hant/' | relative_url }}">繁體中文</a>
+            </div>
+          </details>
+          <button class="header-tool mobile-header-toc" id="mobile-toc-trigger" type="button" aria-controls="mobile-toc-drawer" aria-expanded="false" title="목차">
+            <span class="icon-list" aria-hidden="true"></span>
+            <span class="sr-only">목차</span>
+          </button>
+          <button class="search-trigger header-search" id="header-search-trigger" type="button" aria-controls="search-panel" aria-expanded="false" title="본문 검색">
+            <span class="icon-search" aria-hidden="true"></span>
+            <span class="search-button-text">검색</span>
+          </button>
+        </div>
       </header>
 
       <section class="search-panel" id="search-panel" hidden aria-label="본문 검색">
@@ -54,17 +66,6 @@
           <ol class="search-results" id="search-results"></ol>
         </div>
       </section>
-
-      <div class="mobile-tools">
-        <button class="mobile-tool" id="mobile-toc-trigger" type="button" aria-controls="mobile-toc-drawer" aria-expanded="false">
-          <span class="icon-list" aria-hidden="true"></span>
-          <span>목차</span>
-        </button>
-        <button class="mobile-tool" id="mobile-search-trigger" type="button" aria-controls="search-panel" aria-expanded="false">
-          <span class="icon-search" aria-hidden="true"></span>
-          <span>검색</span>
-        </button>
-      </div>
 
       <div class="mobile-toc-backdrop" id="mobile-toc-backdrop" hidden></div>
       <aside class="mobile-toc-drawer" id="mobile-toc-drawer" aria-label="이 페이지에서" aria-hidden="true">
@@ -142,7 +143,7 @@
         const searchInput = document.querySelector('#guide-search');
         const searchResults = document.querySelector('#search-results');
         const searchStatus = document.querySelector('#search-status');
-        const searchTriggers = [document.querySelector('#header-search-trigger'), document.querySelector('#mobile-search-trigger')];
+        const searchTriggers = [document.querySelector('#header-search-trigger')];
         const searchClose = document.querySelector('#search-close');
 
         const setDrawerOpen = (isOpen) => {
