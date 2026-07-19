@@ -30,7 +30,53 @@
           <a class="language-link" href="{{ '/zh-Hans/' | relative_url }}">简体中文</a>
           <a class="language-link" href="{{ '/zh-Hant/' | relative_url }}">繁體中文</a>
         </nav>
+        <button class="search-trigger header-search" id="header-search-trigger" type="button" aria-controls="search-panel" aria-expanded="false" title="본문 검색">
+          <span class="icon-search" aria-hidden="true"></span>
+          <span class="search-button-text">검색</span>
+        </button>
       </header>
+
+      <section class="search-panel" id="search-panel" hidden aria-label="본문 검색">
+        <div class="search-panel-inner">
+          <div class="search-panel-heading">
+            <div>
+              <p class="search-eyebrow">Phrabbit 사용 설명서</p>
+              <h2>본문 검색</h2>
+            </div>
+            <button class="panel-close" id="search-close" type="button">닫기</button>
+          </div>
+          <label class="search-field">
+            <span class="icon-search" aria-hidden="true"></span>
+            <span class="sr-only">검색어</span>
+            <input id="guide-search" type="search" placeholder="예: 북마크, 자막, YouTube" autocomplete="off" spellcheck="false">
+          </label>
+          <p class="search-status" id="search-status" role="status">찾고 싶은 단어를 입력하세요.</p>
+          <ol class="search-results" id="search-results"></ol>
+        </div>
+      </section>
+
+      <div class="mobile-tools">
+        <button class="mobile-tool" id="mobile-toc-trigger" type="button" aria-controls="mobile-toc-drawer" aria-expanded="false">
+          <span class="icon-list" aria-hidden="true"></span>
+          <span>목차</span>
+        </button>
+        <button class="mobile-tool" id="mobile-search-trigger" type="button" aria-controls="search-panel" aria-expanded="false">
+          <span class="icon-search" aria-hidden="true"></span>
+          <span>검색</span>
+        </button>
+      </div>
+
+      <div class="mobile-toc-backdrop" id="mobile-toc-backdrop" hidden></div>
+      <aside class="mobile-toc-drawer" id="mobile-toc-drawer" aria-label="이 페이지에서" aria-hidden="true">
+        <div class="drawer-heading">
+          <div>
+            <p class="search-eyebrow">Phrabbit 사용 설명서</p>
+            <h2>이 페이지에서</h2>
+          </div>
+          <button class="panel-close" id="mobile-toc-close" type="button">닫기</button>
+        </div>
+        <ol id="mobile-toc-list"></ol>
+      </aside>
 
       <section class="guide-hero" aria-labelledby="page-title">
         <div class="hero-mark" aria-hidden="true">
@@ -46,13 +92,6 @@
           <p>듣고, 반복하고, 기록하며 외국어를 연습하세요.</p>
         </div>
       </section>
-
-      <div class="mobile-toc-wrap">
-        <details class="mobile-toc">
-          <summary>이 페이지에서</summary>
-          <ol id="mobile-toc-list"></ol>
-        </details>
-      </div>
 
       <div class="guide-layout">
         <aside class="sidebar" aria-label="이 페이지에서">
@@ -93,6 +132,107 @@
             item.append(link);
             list.append(item);
           });
+        });
+
+        const drawer = document.querySelector('#mobile-toc-drawer');
+        const drawerBackdrop = document.querySelector('#mobile-toc-backdrop');
+        const drawerTrigger = document.querySelector('#mobile-toc-trigger');
+        const drawerClose = document.querySelector('#mobile-toc-close');
+        const searchPanel = document.querySelector('#search-panel');
+        const searchInput = document.querySelector('#guide-search');
+        const searchResults = document.querySelector('#search-results');
+        const searchStatus = document.querySelector('#search-status');
+        const searchTriggers = [document.querySelector('#header-search-trigger'), document.querySelector('#mobile-search-trigger')];
+        const searchClose = document.querySelector('#search-close');
+
+        const setDrawerOpen = (isOpen) => {
+          drawer.classList.toggle('is-open', isOpen);
+          drawer.setAttribute('aria-hidden', String(!isOpen));
+          drawerTrigger.setAttribute('aria-expanded', String(isOpen));
+          drawerBackdrop.hidden = !isOpen;
+          document.body.classList.toggle('drawer-open', isOpen);
+          if (isOpen) {
+            searchPanel.hidden = true;
+            searchTriggers.forEach((trigger) => trigger.setAttribute('aria-expanded', 'false'));
+          }
+        };
+
+        drawerTrigger.addEventListener('click', () => setDrawerOpen(true));
+        drawerClose.addEventListener('click', () => setDrawerOpen(false));
+        drawerBackdrop.addEventListener('click', () => setDrawerOpen(false));
+        document.querySelectorAll('#mobile-toc-list a').forEach((link) => link.addEventListener('click', () => setDrawerOpen(false)));
+
+        const normalize = (text) => text.replace(/\s+/g, ' ').trim().toLocaleLowerCase('ko-KR');
+        const sections = sourceHeadings.map((heading) => {
+          const parts = [heading.textContent.trim()];
+          let node = heading.nextElementSibling;
+          while (node && node.tagName !== 'H2') {
+            parts.push(node.textContent);
+            node = node.nextElementSibling;
+          }
+          const plainText = parts.join(' ').replace(/\s+/g, ' ').trim();
+          return {
+            id: heading.id,
+            title: heading.textContent.replace(/^\d+\.\s*/, '').trim(),
+            text: normalize(plainText),
+            plainText,
+          };
+        });
+
+        const renderSearchResults = () => {
+          const query = normalize(searchInput.value);
+          searchResults.replaceChildren();
+          if (!query) {
+            searchStatus.textContent = '찾고 싶은 단어를 입력하세요.';
+            return;
+          }
+
+          const matches = sections.filter((section) => section.text.includes(query));
+          searchStatus.textContent = matches.length ? `${matches.length}개 섹션에서 찾았습니다.` : '일치하는 내용을 찾지 못했습니다.';
+          matches.forEach((section) => {
+            const item = document.createElement('li');
+            const link = document.createElement('a');
+            const position = section.text.indexOf(query);
+            const start = Math.max(0, position - 42);
+            const end = Math.min(section.text.length, position + query.length + 78);
+            const snippet = `${start > 0 ? '…' : ''}${section.plainText.slice(start, end)}${end < section.plainText.length ? '…' : ''}`;
+            link.href = `#${section.id}`;
+            link.textContent = section.title;
+            const detail = document.createElement('span');
+            detail.textContent = snippet;
+            item.append(link, detail);
+            searchResults.append(item);
+          });
+        };
+
+        const setSearchOpen = (isOpen) => {
+          searchPanel.hidden = !isOpen;
+          searchTriggers.forEach((trigger) => trigger.setAttribute('aria-expanded', String(isOpen)));
+          if (isOpen) {
+            setDrawerOpen(false);
+            searchInput.focus();
+          } else {
+            searchInput.value = '';
+            renderSearchResults();
+          }
+        };
+
+        searchTriggers.forEach((trigger) => trigger.addEventListener('click', () => setSearchOpen(searchPanel.hidden)));
+        searchClose.addEventListener('click', () => setSearchOpen(false));
+        searchInput.addEventListener('input', renderSearchResults);
+        searchResults.addEventListener('click', (event) => {
+          const link = event.target.closest('a');
+          if (!link) return;
+          event.preventDefault();
+          const target = document.getElementById(link.hash.slice(1));
+          setSearchOpen(false);
+          history.replaceState(null, '', link.hash);
+          target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+        document.addEventListener('keydown', (event) => {
+          if (event.key !== 'Escape') return;
+          setDrawerOpen(false);
+          setSearchOpen(false);
         });
       })();
     </script>
