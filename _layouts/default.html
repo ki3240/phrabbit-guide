@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f7f8">
+    <meta name="description" content="{{ site.description | escape }}">
+    <title>{{ page.title | default: site.title | escape }}</title>
+    <link rel="icon" href="{{ '/assets/images/app-icon-light.png' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body class="guide-page">
+    <div class="site-frame">
+      <header class="site-header">
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="Phrabbit 사용 설명서 홈">
+          <picture class="brand-icon">
+            <source srcset="{{ '/assets/images/app-icon-dark.png' | relative_url }}" media="(prefers-color-scheme: dark)">
+            <img src="{{ '/assets/images/app-icon-light.png' | relative_url }}" alt="">
+          </picture>
+          <span class="brand-copy">
+            <strong>Phrabbit</strong>
+            <span>User Guide</span>
+          </span>
+        </a>
+
+        <nav class="language-nav" aria-label="언어 선택">
+          <a class="language-link is-active" href="{{ '/ko/' | relative_url }}">한국어</a>
+          <a class="language-link" href="{{ '/en/' | relative_url }}">English</a>
+          <a class="language-link" href="{{ '/ja/' | relative_url }}">日本語</a>
+          <a class="language-link" href="{{ '/zh-Hans/' | relative_url }}">简体中文</a>
+          <a class="language-link" href="{{ '/zh-Hant/' | relative_url }}">繁體中文</a>
+        </nav>
+      </header>
+
+      <section class="guide-hero" aria-labelledby="page-title">
+        <div class="hero-mark" aria-hidden="true">
+          <picture>
+            <source srcset="{{ '/assets/images/app-icon-dark.png' | relative_url }}" media="(prefers-color-scheme: dark)">
+            <img src="{{ '/assets/images/app-icon-light.png' | relative_url }}" alt="">
+          </picture>
+          <span class="hero-wave"><i></i><i></i><i></i><i></i><i></i></span>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Phrabbit · 사용 설명서</p>
+          <h1 id="page-title">{{ page.title }}</h1>
+          <p>듣고, 반복하고, 기록하며 외국어를 연습하세요.</p>
+        </div>
+      </section>
+
+      <div class="mobile-toc-wrap">
+        <details class="mobile-toc">
+          <summary>이 페이지에서</summary>
+          <ol id="mobile-toc-list"></ol>
+        </details>
+      </div>
+
+      <div class="guide-layout">
+        <aside class="sidebar" aria-label="이 페이지에서">
+          <nav class="sidebar-toc">
+            <p class="toc-label">이 페이지에서</p>
+            <ol id="sidebar-toc-list"></ol>
+          </nav>
+          <a class="privacy-link" href="{{ '/privacy-policy.html' | relative_url }}">개인정보 처리방침 <span aria-hidden="true">↗</span></a>
+        </aside>
+
+        <main class="content-column">
+          <article class="page-content">
+            {{ content }}
+          </article>
+
+          <footer class="page-footer">
+            <span>Phrabbit · A/B loop audio practice</span>
+            <a href="#page-title">맨 위로 ↑</a>
+          </footer>
+        </main>
+      </div>
+    </div>
+
+    <script>
+      (() => {
+        const sourceHeadings = [...document.querySelectorAll('.page-content h2')]
+          .filter((heading) => heading.textContent.trim() !== '목차');
+        const lists = [document.querySelector('#sidebar-toc-list'), document.querySelector('#mobile-toc-list')];
+
+        lists.forEach((list) => {
+          if (!list) return;
+          sourceHeadings.forEach((heading) => {
+            if (!heading.id) return;
+            const item = document.createElement('li');
+            const link = document.createElement('a');
+            link.href = `#${heading.id}`;
+            link.textContent = heading.textContent.replace(/^\d+\.\s*/, '');
+            item.append(link);
+            list.append(item);
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
