@@ -10,7 +10,6 @@ Phrabbit is an A/B loop app for foreign-language listening practice. Add audio f
 
 > Note: Button names in this guide follow the English UI used in the app. Some labels may appear localized depending on your device language.
 
----
 
 ## Contents
 
@@ -30,7 +29,6 @@ Phrabbit is an A/B loop app for foreign-language listening practice. Add audio f
 14. [Free vs Premium](#14-free-vs-premium)
 15. [FAQ](#15-faq)
 
----
 
 ## 1. Getting Started
 
@@ -50,7 +48,6 @@ On the last screen you can choose one of two actions.
 ### 1-2. Free Trial
 After onboarding, a **3-day free trial** begins. During the trial, you can try Premium features freely. While the trial is active, a **Trial** banner appears near the top of the player, and tapping it opens the Premium purchase screen.
 
----
 
 ## 2. Home and Library
 
@@ -85,7 +82,6 @@ Tap an item to open its player. Audio items open the audio player, and YouTube l
 ### 2-3. Delete
 Swipe an item left to reveal **Delete**. Deleting an item also removes its waveform cache, bookmarks, subtitles, and saved shadowing recordings. If the item has saved recordings, a confirmation appears first.
 
----
 
 ## 3. Adding Study Material
 
@@ -121,7 +117,6 @@ The video file is not stored inside the app. Phrabbit stores only the link, play
 
 See [12. Podcasts](#12-podcasts) for details.
 
----
 
 ## 4. Audio Player
 
@@ -165,7 +160,6 @@ The waveform shows the audio over time. The black vertical line is the current p
 
 When the sleep timer is on, the remaining time appears on the button. Free users can use it while the app is open; playback while locked depends on Premium background playback.
 
----
 
 ## 5. A/B Loop
 
@@ -207,7 +201,6 @@ When an A/B range is set, a **person.wave.2** button appears. Turn it on to add 
 
 During the silent gap, a **Speak** countdown is shown.
 
----
 
 ## 6. Bookmarks and Loop Lists
 
@@ -230,7 +223,6 @@ When there are at least two bookmarks, a **Play All** menu may appear. It can pl
 
 Free users can create up to 1 new bookmark per audio file. During Premium or the free trial, you can create unlimited bookmarks. Bookmarks saved during Premium or the free trial remain available after returning to free status, but you cannot add new bookmarks beyond the free limit. Saving bookmarks for YouTube streams is a Premium feature.
 
----
 
 ## 7. Speech-to-Text (STT) Subtitles
 
@@ -291,7 +283,6 @@ Silent or hard-to-recognize sections may appear as **Could not recognize** cards
 ### 7-5. Subtitle Information
 If the subtitle info button is visible, you can check the conversion date, recognition engine, and quality guidance. Automatic subtitles can be wrong with any model, so important expressions should be checked and corrected manually.
 
----
 
 ## 8. Editing, Translating, and Adding Subtitles
 
@@ -312,7 +303,6 @@ Tap the translate button on a subtitle card to open the iOS system translation s
 ### 8-4. Add to Wordbook
 Tap the plus button on a subtitle card to choose a word or expression from that sentence and save it to the Wordbook. The Wordbook itself is a Premium feature, so if the free trial has ended, this opens the Premium screen.
 
----
 
 ## 9. Wordbook
 
@@ -372,7 +362,6 @@ The Wordbook tab has two modes.
 
 In the word detail screen, you can listen to pronunciation, edit meaning or memo, open the original audio, search a dictionary, and regenerate the Apple Intelligence explanation. Words you know can be marked **Memorized**, and the list can hide memorized words.
 
----
 
 ## 10. YouTube Stream Practice
 
@@ -421,7 +410,6 @@ The YouTube embedded player does not provide raw audio samples to the app, so Ph
 ### 10-5. YouTube Background Behavior
 YouTube streams do not continue playing on the lock screen or in the background. When the app enters the background, Phrabbit pauses the video and remembers the position, then restores it when you return. This is a limitation of the YouTube embedded player and iOS WebKit.
 
----
 
 ## 11. Shadowing Recording and Comparison
 
@@ -464,7 +452,6 @@ Use the save button to keep a take you like. Saved recordings appear in the book
 
 Tap a saved recording to return to the A/B range where it was made and reopen the shadowing screen. Multiple takes for the same range are grouped as one practice point.
 
----
 
 ## 12. Podcasts
 
@@ -499,7 +486,6 @@ The default setting is **Download over Wi-Fi only**. If you allow cellular downl
 
 Some podcast files may take a moment to prepare in a playable format the first time you open them.
 
----
 
 ## 13. Learning Stats and Settings
 
@@ -535,7 +521,6 @@ You can manage:
 
 Resetting learning stats cannot be undone.
 
----
 
 ## 14. Free vs Premium
 
@@ -567,7 +552,6 @@ Resetting learning stats cannot be undone.
 ### Payment
 Phrabbit Premium is a **one-time purchase**. It is not a subscription. After purchase, you can keep using Premium with the same Apple ID. If you change devices, use **Restore Purchase** on the Premium screen.
 
----
 
 ## 15. FAQ
 
@@ -615,6 +599,5 @@ A. Saved recordings for audio files appear under **My Recordings** in the bookma
 
 A. Study data is currently stored on the device by default. **Restore Purchase** with the same Apple ID restores Premium, but Wordbook entries, bookmarks, subtitles, and recordings do not automatically move to another device.
 
----
 
 If you need support, use the developer contact information on the App Store page, or check the App Store review/contact path in **Settings > Support**.
