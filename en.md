@@ -2,448 +2,615 @@
 
 🌐 [한국어](ko.md) · **English** · [日本語](ja.md) · [简体中文](zh-Hans.md) · [繁體中文](zh-Hant.md)
 
-An iOS app for practicing a foreign language with A/B loop audio. Load an audio file, loop any section freely on the waveform, and automatically turn the speech into text so you can read along while you listen.
+Phrabbit is an A/B loop app for foreign-language listening practice. Add audio files, Music library tracks, podcasts, or YouTube links as study material, then repeat the exact section you want to hear or practice shadowing with your own voice. You can also use speech-to-text subtitles, Wordbook review, shadowing recordings, and learning stats.
+
+> Note: Button names in this guide follow the English UI used in the app. Some labels may appear localized depending on your device language.
 
 ---
 
 ## Contents
 
 1. [Getting Started](#1-getting-started)
-2. [Home Screen](#2-home-screen)
-3. [Importing Files](#3-importing-files)
-4. [Player: Basic Playback](#4-player-basic-playback)
-5. [A-B Loop](#5-a-b-loop)
-6. [Bookmarks](#6-bookmarks)
-7. [Speech-to-Text (STT)](#7-speech-to-text-stt)
-8. [Editing and Adding Segments](#8-editing-and-adding-segments)
+2. [Home and Library](#2-home-and-library)
+3. [Adding Study Material](#3-adding-study-material)
+4. [Audio Player](#4-audio-player)
+5. [A/B Loop](#5-ab-loop)
+6. [Bookmarks and Loop Lists](#6-bookmarks-and-loop-lists)
+7. [Speech-to-Text (STT) Subtitles](#7-speech-to-text-stt-subtitles)
+8. [Editing, Translating, and Adding Subtitles](#8-editing-translating-and-adding-subtitles)
 9. [Wordbook](#9-wordbook)
-10. [Podcasts](#10-podcasts)
-11. [Settings](#11-settings)
-12. [Free vs Premium](#12-free-vs-premium)
-13. [FAQ](#13-faq)
+10. [YouTube Stream Practice](#10-youtube-stream-practice)
+11. [Shadowing Recording and Comparison](#11-shadowing-recording-and-comparison)
+12. [Podcasts](#12-podcasts)
+13. [Learning Stats and Settings](#13-learning-stats-and-settings)
+14. [Free vs Premium](#14-free-vs-premium)
+15. [FAQ](#15-faq)
 
 ---
 
 ## 1. Getting Started
 
-### 1-1. First Launch — Onboarding
-The first time you open the app, three intro slides appear.
+### 1-1. First Launch - Onboarding
+When you open Phrabbit for the first time, onboarding introduces the basic flow.
 
-1. **Pick sections precisely with the waveform** — see the audio as a graph and point to exactly the part you want.
-2. **Loop endlessly between A and B points** — set a start point (A) and an end point (B), and only that section repeats automatically.
-3. **Real-time speech-to-text** — the audio you're listening to is automatically turned into text so you can read along.
+1. **Waveform and A/B looping** - See the audio visually, set point A and point B, and repeat just that section.
+2. **Subtitles, Wordbook, and review** - Read subtitles, save words you want to remember, and build a learning history.
 
-Use the **"Skip"** button at the top right to skip, or the **"Get Started"** button on the last slide to begin.
+On the last screen you can choose one of two actions.
 
-![Onboarding slide](images/01-onboarding.PNG)
-*▲ `images/01-onboarding.PNG` — The first onboarding slide (with waveform animation)*
+| Button | Description |
+|---|---|
+| **Try with a sample** | Opens a sample audio file and walks through the player tutorial |
+| **Skip** | Goes directly to the Home screen |
 
 ### 1-2. Free Trial
-A **3-day free trial** starts automatically on first launch. For three days you can freely try every feature. While the trial is active, an orange banner reading **"🎁 Trial — D-N"** appears at the top of the player.
+After onboarding, a **3-day free trial** begins. During the trial, you can try Premium features freely. While the trial is active, a **Trial** banner appears near the top of the player, and tapping it opens the Premium purchase screen.
 
 ---
 
-## 2. Home Screen
+## 2. Home and Library
 
-This is the app's main screen. Every audio file you add is collected here.
+The Home screen collects all study material you have added. Local audio, Music library tracks, podcast episodes, and YouTube links appear together in the same library list.
 
-![Home screen](images/02-home.PNG)
-*▲ `images/02-home.PNG` — The full home screen (top search bar + horizontally scrolling "Recently Played" + the full file list)*
+![Home screen](images/iphone/05-home.png)
+*▲ Home screen showing files, podcasts, and YouTube items together*
 
 ### 2-1. Screen Layout
 
 | Location | Element | Description |
 |---|---|---|
-| Top left | ⚙️ gear | Open Settings |
-| Top right | ➕ purple circle | File-add menu |
-| Top | 🔍 search bar | Search by file name |
-| Upper middle | "Recently Played" | The last 5 files you played (horizontal scroll) |
-| Middle | "All Files (count)" | The full file list |
+| Top left | Gear | Opens Settings |
+| Top right | Plus button | Opens the add menu |
+| Top | Search library | Searches the library by title |
+| Upper middle | Recent | Appears when you have at least two recently practiced items |
+| Middle | Library | Shows all study material |
+| Bottom | Home / Wordbook / Progress | Switches between Home, Wordbook, and Progress tabs |
 
-### 2-2. Reading a File Row
-The color of the icon on the left of each file tells you where it came from.
+If the library is empty, you can use the centered **Add** button to add material right away. After you add at least one item, a small hint may point to the plus button once.
 
-- 🟦 **Teal waveform icon** — a local file imported from the Files app
-- 🟪 **Purple music-note icon** — a track imported from your Music library
-- 🟧 **Orange antenna icon** — a podcast download
+### 2-2. Item Types
+Icons and thumbnails help you identify each item type.
 
-To the right of the icon you'll see the title, total duration, last playback position (if any), and the date added.
+- **Waveform icon** - Audio imported from the Files app
+- **Music note icon** - Track imported from the Music library
+- **Antenna icon** - Podcast episode
+- **YouTube thumbnail or play icon** - YouTube stream
 
-### 2-3. Actions
+Tap an item to open its player. Audio items open the audio player, and YouTube links open the Stream player.
 
-- **Tap a file once** → opens the player
-- **Swipe a file left** → a red 🗑 **Delete** button appears; tapping it removes the file, its waveform cache, and its segment data all together.
-
-![Swipe to delete a file](images/03-home-swipe-delete.PNG)
-*▲ `images/03-home-swipe-delete.PNG` — A file row swiped left to reveal the red Delete button*
-
----
-
-## 3. Importing Files
-
-Tap the **➕ button** at the top right of the home screen to open the menu.
-
-![Add menu](images/04-add-menu.PNG)
-*▲ `images/04-add-menu.PNG` — The menu after tapping ➕ (Add from Files / Add from Music / Subscribe to Podcast)*
-
-### 3-1. Add from the Files App
-**Add from Files** → the system file picker opens. You can pick audio files such as mp3, m4a, wav, and aac. You may select several at once.
-
-### 3-2. Add from the Music Library
-**Add from Music** → the list of music stored on your iPhone opens.
-
-- 🟢 **Green check mark** — a track already added to Phrabbit
-- 🔒 **Gray lock + "DRM" label** — a track downloaded via an Apple Music subscription (blocked by copyright protection, so it cannot be imported). Only tracks you purchased outright or ripped from a CD can be used.
-
-![Music library picker](images/05-music-picker.PNG)
-*▲ `images/05-music-picker.PNG` — The music library picker (showing both a green check and a DRM lock)*
-
-When you tap a track, it is automatically converted to m4a, added to Phrabbit, and the player opens right away.
-
-### 3-3. Subscribe to a Podcast (Premium)
-While Premium is active, tapping **Subscribe to Podcast** shows your Apple Podcasts subscriptions.
-In the free version a 🔒 lock appears at the top right of the antenna icon, and tapping it takes you to the purchase screen.
-
-See [10. Podcasts](#10-podcasts) for full details.
+### 2-3. Delete
+Swipe an item left to reveal **Delete**. Deleting an item also removes its waveform cache, bookmarks, subtitles, and saved shadowing recordings. If the item has saved recordings, a confirmation appears first.
 
 ---
 
-## 4. Player: Basic Playback
+## 3. Adding Study Material
 
-Tap a file on the home screen and the player opens full-screen.
+Tap the plus button at the top right of Home to open the add menu.
 
-![Player full screen](images/06-player-main.PNG)
-*▲ `images/06-player-main.PNG` — The full-screen player (top ⌄ button + waveform + A-B info bar + bottom controls + the STT text area, all visible at once)*
+![Add menu](images/iphone/11-add-menu.png)
+*▲ Menu for adding files, music, YouTube links, and podcasts*
 
-### 4-1. Two Ways to Close the Screen
+### 3-1. Add from Files
+Tap **Add from Files** to open the system file picker. You can import audio files such as mp3, m4a, wav, and aac, and you can select multiple files at once. Imported files are copied into Phrabbit's Documents area and added to the library.
+
+### 3-2. Add from Music
+Tap **Add from Music** to open the music stored on your device.
+
+- Tracks already added to Phrabbit are shown with a check mark.
+- Tracks downloaded through an Apple Music subscription cannot be imported because of DRM.
+- DRM-free tracks you purchased or ripped from a CD can be used.
+
+When you tap a track, Phrabbit prepares it in a playable format, adds it to the library, and opens the player.
+
+### 3-3. Add a YouTube Link
+Tap **Add YouTube Link** to open the YouTube link entry screen.
+
+1. In the YouTube app or a browser, tap **Share** on the video.
+2. Tap **Copy Link**.
+3. Return to Phrabbit and tap **Paste**.
+4. Confirm the thumbnail and tap **Add**.
+
+The video file is not stored inside the app. Phrabbit stores only the link, playback position, A/B bookmarks, and shadowing recording metadata. Playback happens through the YouTube embedded player.
+
+### 3-4. Add from Podcast
+**Add from Podcast** is a Premium feature. During Premium or the free trial, you can import episodes from your Apple Podcasts subscriptions or by RSS URL. After the free trial ends, the menu shows a lock and opens the Premium screen when tapped.
+
+See [12. Podcasts](#12-podcasts) for details.
+
+---
+
+## 4. Audio Player
+
+Tap an audio item on Home to open the full-screen player.
+
+![Audio player and subtitles](images/iphone/04-subtitles.png)
+*▲ Audio player showing waveform and sentence cards on one screen*
+
+### 4-1. Closing and Mini Player
 
 | Method | Description |
 |---|---|
-| Top-left ⌄ button | Tap once to lower the player and return home |
-| Swipe down from the top | Grab the header and drag down to close it |
+| Down arrow at top left | Closes the player and returns Home |
+| Swipe down from the top | Pulls the player down by hand |
 
-Playback continues even after you close the player. A **mini player** stays at the bottom of the screen; tap it to reopen the player.
+If audio is loaded when you close the player, the mini player appears at the bottom of Home. Tap the mini player to return to the full-screen player.
 
-![Mini player](images/07-mini-player.PNG)
-*▲ `images/07-mini-player.PNG` — The mini player floating at the bottom of the home screen*
+If a Premium user turns on **Settings > Playback > Background playback**, audio may continue while the screen is locked or the app is in the background. For free users, or when this setting is off, audio pauses when the app goes into the background.
 
-### 4-2. The Waveform Area
-Next to the time display (e.g., `0:00`), the waveform spreads out horizontally in 5-second units, and during playback a black vertical line (the playhead) moves along with it. The screen also scrolls automatically to follow the playback position.
+### 4-2. Waveform Area
+The waveform shows the audio over time. The black vertical line is the current playhead, and the screen follows the playhead during playback.
 
-- **Tap the waveform once** → jump to that position
-- **Long-press the waveform (0.5s)** → set point A or B (see [5. A-B Loop](#5-a-b-loop))
+- **Tap the waveform** - Jump to that position
+- **Long-press the waveform** - Set point A or B
+- **Drag A/B handles** - Fine-tune the selected range
 
-### 4-3. Bottom Controls — Top Row
+### 4-3. Bottom Controls
 
-![Bottom controls, top row](images/08-controls-top-row.jpg)
-*▲ `images/08-controls-top-row.jpg` — Just the top row of the bottom controls (left to right: A-B / undo / eraser / divider / loop count / playback speed)*
-
-| Button | Function |
+| Control | Function |
 |---|---|
-| **A-B** capsule | Tap to set the A then B points in order |
-| ↶ **Undo** | Jump to the current A point |
-| 🧹 **Eraser** | Clear the A-B range |
-| 🔁 **Loop count** | Each tap cycles ∞ → 1 → 2 → 3 → 5 → 10 → ∞ |
-| **1x / 0.75x …** | Change playback speed. Cycles 0.5 → 0.75 → 1 → 1.25 → 1.5 → 2 → 0.5 |
+| **A-B** | Sets the current position as A, then B on the next tap |
+| Loop count | Infinite loop, or 1, 2, 3, 5, or 10 repeats |
+| Playback speed | Changes speed from 0.5x to 2x |
+| Shadowing gap | Adds speaking time between A/B repeats |
+| Bookmark button | Saves the current A/B range |
+| List button | Opens saved bookmarks and My Recordings |
+| Back/forward 5s | Rewinds or skips briefly |
+| Play button | Plays or pauses |
+| Sleep timer | Stops automatically after 5, 15, 30, or 60 minutes |
+| Subtitle button | Starts or manages speech-to-text conversion |
 
-### 4-4. Bottom Controls — Bottom Row
-
-![Bottom controls, bottom row](images/09-controls-bottom-row.jpg)
-*▲ `images/09-controls-bottom-row.jpg` — Just the bottom row of the bottom controls (left: star & list / center: back 5s ▶ forward 5s / right: the transcript mic button)*
-
-| Button | Function |
-|---|---|
-| ⭐ **Star** | Save the current A-B range as a bookmark (Premium) |
-| 📋 **List** | Open the saved bookmark list (Premium) |
-| ⏪ **Back 5s** | Rewind 5 seconds |
-| ⏯ **Large play button** | Play / pause |
-| ⏩ **Forward 5s** | Skip ahead 5 seconds |
-| 💬 **Transcript / mic** | Speech-to-text (Premium) |
+When the sleep timer is on, the remaining time appears on the button. Free users can use it while the app is open; playback while locked depends on Premium background playback.
 
 ---
 
-## 5. A-B Loop
+## 5. A/B Loop
 
-The core feature: endlessly loop any section so you can listen and repeat after it.
+A/B looping is the core feature for repeating one sentence or short expression until it becomes clear.
 
-### 5-1. Set with the A-B Button (the easiest way)
-Tap the **"A-B"** capsule at the far left of the bottom controls once and the current playback position becomes A. Tap again and that moment becomes B, and the loop starts immediately.
+![A/B loop](images/iphone/02-abloop.png)
+*▲ Fine-tuning an A/B range by touch*
 
-The capsule's appearance changes with its state.
+### 5-1. Set with the A-B Button
+1. At the start of the section, tap **A-B**. This becomes point A.
+2. At the end, tap **A-B** again. This becomes point B and looping starts.
+3. After a range is set, tapping **A-B** jumps back to point A.
 
-| State | Capsule shows |
+The button changes by state.
+
+| State | Meaning |
 |---|---|
-| Before A is set | Gray **"A-B"** |
-| Only A is set | Purple outline **"A→B"** (waiting for B) |
-| Both A and B set | Filled purple **"A-B"** (looping) |
+| A-B | No range yet |
+| A→B | A is set and waiting for B |
+| Filled A-B | A and B are both set and looping |
 
-![A-B capsule — not set](images/10a-ab-none.PNG)
-*▲ `images/10a-ab-none.PNG` — Gray "A-B" (before A is set)*
+When only A is set, the hint **Tap A-B again to set the end** appears. If you tapped A by mistake, use the close button on the hint to cancel.
 
-![A-B capsule — waiting for B](images/10b-ab-waiting.PNG)
-*▲ `images/10b-ab-waiting.PNG` — Purple outline "A→B" (waiting for B)*
+### 5-2. Set Precisely on the Waveform
+Long-press the desired point on the waveform to set an A/B point. Drag the A and B handles with your finger to fine-tune the range.
 
-![A-B capsule — looping](images/10c-ab-active.PNG)
-*▲ `images/10c-ab-active.PNG` — Filled purple "A-B" (both A and B set, looping)*
+### 5-3. A/B Info Bar
+When both A and B are set, a purple info bar appears below the waveform.
 
-When only A is set, a hint bubble reading **"👇 Tap A-B again to set the end"** briefly appears over the waveform and then fades.
+In the info bar you can:
 
-### 5-2. Set by Long-Pressing the Waveform (precise)
-**Long-press for 0.5 seconds** on the spot you want in the waveform to set point A. Long-press another spot to set point B and start the loop.
+- Check the range duration
+- Tap the bar to adjust A and B little by little
+- Open shadowing recording with the microphone button
+- Clear the A/B range with the close button
 
-An **A handle (purple)** and a **B handle (orange)** appear over the waveform, and you can drag them with your finger to fine-tune their positions.
+### 5-4. Shadowing Gap
+When an A/B range is set, a **person.wave.2** button appears. Turn it on to add a short silent gap between repeats, so you can say the sentence yourself after listening. This is a free practice mode and does not require recording.
 
-![Waveform A/B handles](images/11-ab-handles.PNG)
-*▲ `images/11-ab-handles.PNG` — The A and B handles shown on the waveform with the span between them highlighted in purple*
-
-### 5-3. The A-B Info Bar
-When an A-B range is set, the info appears in purple text just below the waveform.
-
-```
-🔁  A: 0:12 → B: 0:18 (6.0s loop)
-```
-
-### 5-4. Loop Behavior and Controls
-
-- **Loop-count button (🔁)**: Infinite loop (∞) is the default. Set a count and it repeats that many times, then stops automatically.
-- **Undo button (↶)**: Jumps to point A immediately.
-- **Eraser button (🧹)**: Clears the A-B range.
+During the silent gap, a **Speak** countdown is shown.
 
 ---
 
-## 6. Bookmarks
+## 6. Bookmarks and Loop Lists
 
-Save sections you want to practice often. This is a **Premium feature**; free users can save up to 3 per file.
+Bookmarks save A/B ranges you want to practice often.
 
-### 6-1. Saving
-1. Set an A-B range first.
-2. Tap the ⭐ **Star button** in the bottom controls.
+### 6-1. Save a Bookmark
+1. Set an A/B range first.
+2. Tap the bookmark button at the bottom.
 3. Enter a name and tap **Save**.
 
-![Bookmark save dialog](images/12-bookmark-save.PNG)
-*▲ `images/12-bookmark-save.PNG` — The bookmark naming dialog*
+If you leave the name empty, Phrabbit creates one from the file name and range length. The same range is not saved twice.
 
-If you tap the star without an A-B range set, a *"Set an A-B range first."* alert appears.
+### 6-2. Bookmark List
+Tap the list button to open the current file's bookmarks. Tap a bookmark to restore that range as A/B and practice it right away.
 
-### 6-2. Loading from the List
-Tap the 📋 **List button** next to the star to open this file's saved bookmarks in a sheet. Tap an item and its A-B range is set automatically and starts playing right away.
+![Bookmarks and My Recordings](images/iphone/14-bookmarks-recordings.png)
+*▲ List showing saved A/B ranges and My Recordings*
 
-![Bookmark list sheet](images/13-bookmark-list.PNG)
-*▲ `images/13-bookmark-list.PNG` — The bookmark list sheet*
+When there are at least two bookmarks, a **Play All** menu may appear. It can play several bookmarks in order and repeat each bookmark 1, 2, or 3 times.
 
-Swipe an item left in the list to delete it.
-
----
-
-## 7. Speech-to-Text (STT)
-
-Automatically turn audio into text so you can check the words as you listen. This is a **Premium feature**.
-
-### 7-1. Starting a Conversion
-1. Tap the **💬 transcript button** at the bottom right of the player.
-2. On first use, a **language selection** sheet appears. Choose the language you're studying — English, Korean, Japanese, etc.
-3. Tap **Done** to start the conversion.
-
-![STT language selection sheet](images/14-stt-language.PNG)
-*▲ `images/14-stt-language.PNG` — The STT language selection sheet*
-
-### 7-2. Conversion Progress
-When the conversion starts, a progress bar and a **"Converting…  N/total"** indicator appear above the transcript area.
-
-![Converting in progress](images/15-stt-converting.PNG)
-*▲ `images/15-stt-converting.PNG` — Converting — the progress bar and Cancel button visible*
-
-- Because it processes **in 45-second chunks**, longer audio takes more time (about a few minutes for an hour of audio).
-- You can **cancel** mid-conversion with the ❌ button. Cancelling discards this run's results and **keeps your existing transcript** unchanged.
-- The conversion keeps running in the background. It does not stop even if you close the player.
-
-### 7-3. Viewing the Converted Text
-When the conversion finishes, cards appear in chronological order in the transcript area at the bottom.
-
-Each card contains:
-- Start time (e.g., `0:32`)
-- A source indicator (no mark for auto-generated, ✅ for an official transcript, 🖊 for user-edited, 📝 for manual entry)
-- An ⚠️ orange warning if recognition confidence is low
-- A 🕒 orange **Approx. position** badge when the position is approximate — the text was recognized but its exact timing couldn't be determined. Tapping seeks nearby, and you can edit it with ✏️
-- The **body text**
-- Small buttons on the right: 🌐 translate / ➕ wordbook / ✏️ edit / 🗑 delete
-
-![Transcript card list](images/16-transcript-cards.PNG)
-*▲ `images/16-transcript-cards.PNG` — The transcript card list (several rows, with the currently playing card outlined in orange)*
-
-### 7-4. Card Actions
-
-- **Tap a card** → sets that section as the A-B range and immediately starts looping it.
-- **🌐 Translate**: The system translation popup appears.
-- **➕ Wordbook**: Pick a word from the card and save it to your wordbook (see [9. Wordbook](#9-wordbook)).
-- **✏️ Edit**: Edit the text.
-- **🗑 Delete**: Delete the card.
-
-The currently playing card is highlighted with an **orange border**. Cards that fall inside the A-B range are shown with a **light purple background**.
-
-### 7-5. Sections That Couldn't Be Recognized — Gap Cards
-A section with no recognized result for 30 seconds or more is shown as a gray card reading *"Could not recognize."* You can type the text yourself with the **📝 Enter Manually** button.
-
-![Gap card](images/17-gap-card.PNG)
-*▲ `images/17-gap-card.PNG` — A Gap card — "Could not recognize" + the Enter Manually button*
-
-### 7-6. Re-running or Changing the Language
-Tapping the 💬 button on an already-converted file brings up a menu.
-
-- **🔄 Re-run with current language** — convert again in the current language
-- **🌐 Change Language and Re-run** — convert again in a different language
-- **🗑 Clear Script** — delete only the auto-generated transcript (your manual edits are kept)
-
-![STT manage menu](images/18-stt-manage-menu.PNG)
-*▲ `images/18-stt-manage-menu.PNG` — The STT manage menu (3 options)*
-
-> 💡 **Tip**: If recognition accuracy is too low, a "Speech recognition accuracy may be low" alert appears. This often happens when the audio's actual language differs from the one you selected. Use the **Change Language** button to switch and try again.
+Free users can create up to 1 new bookmark per audio file. During Premium or the free trial, you can create unlimited bookmarks. Bookmarks saved during Premium or the free trial remain available after returning to free status, but you cannot add new bookmarks beyond the free limit. Saving bookmarks for YouTube streams is a Premium feature.
 
 ---
 
-## 8. Editing and Adding Segments
+## 7. Speech-to-Text (STT) Subtitles
 
-### 8-1. Add a Segment Manually
-Tap the **➕ Add Segment** button at the top of the transcript area to create a new segment based on the current playback position. Enter text in the sheet and tap **Add** to add the card.
+STT converts audio into sentence-level subtitles. It is available during Premium or the free trial.
 
-![Add Segment sheet](images/19-add-segment.PNG)
-*▲ `images/19-add-segment.PNG` — The Add Segment sheet (time range + text entry + ▶ preview button)*
+![Sentence subtitles](images/iphone/01-sentences.png)
+*▲ Audio converted into sentence-level subtitle cards*
 
-The **▶ preview button** in the sheet lets you briefly listen to just that section.
+### 7-1. Start Conversion
+1. Tap the subtitle button at the bottom right of the audio player.
+2. If this file has not been converted before, the language picker opens.
+3. Choose the actual language of the audio and tap **Done**.
 
-### 8-2. Edit a Segment
-Tap the ✏️ button on a card to open the edit sheet and **edit the segment's text**. With the ▶ **Loop button** at the top you can listen to the section on repeat while you transcribe, and if you've edited an STT-generated transcript, an **Original** and a **Reset** button appear below so you can revert to the original at any time. (The segment's time range cannot be changed here; it is shown at the top for reference only.)
+![STT language picker](images/iphone/12-stt-language-picker.png)
+*▲ Recommended and recently used languages based on file information and title*
 
-![Segment edit sheet](images/19-edit-segment.PNG)
-*▲ `images/19-edit-segment.PNG` — The segment edit sheet (text editing + Loop preview)*
+Language recommendations may use the language previously selected for this file, podcast RSS language metadata, language and script detected from the title, and your device language. Recently used languages appear separately under **Recently Used**. Recommendations can be wrong, so confirm that the language matches the audio.
+
+If a file already has subtitles, tapping the subtitle button shows these options.
+
+- **Re-run with current language** - Convert again with the current language
+- **Change Language and Re-run** - Change the language and convert again
+- **Clear Script** - Delete the automatically generated subtitles
+
+When there are no subtitles yet, long-pressing the subtitle button lets you choose the language before conversion.
+
+### 7-2. During Conversion
+
+During conversion, a **Converting...** or **Downloading language model...** progress bar appears. Some languages may need to download an on-device speech model the first time you use them.
+
+![STT converting](images/iphone/13-stt-converting.png)
+*▲ Progress and guidance are shown while conversion runs*
+
+Important:
+
+- Keep the app open during conversion. Leaving the app or locking the screen may interrupt it.
+- Long audio can take several minutes.
+- If you cancel, this conversion stops and existing subtitles are kept.
+- Model downloads and some recovery steps are affected by your Wi-Fi settings.
+
+### 7-3. View Results
+When conversion finishes, subtitle cards appear in chronological order.
+
+Each card may show:
+
+- Start time
+- Subtitle source indicator
+- Low-confidence warning
+- **Approx. position** badge when the text was recognized but timing is approximate
+- Subtitle text
+- Translate, add-to-wordbook, edit, and delete buttons
+
+Tap a subtitle card to set that card's section as A/B and start looping it. The currently playing card is highlighted, and cards inside the A/B range use a different background color.
+
+### 7-4. Unrecognized Sections
+Silent or hard-to-recognize sections may appear as **Could not recognize** cards. Use **Enter Manually** to type the subtitle yourself.
+
+### 7-5. Subtitle Information
+If the subtitle info button is visible, you can check the conversion date, recognition engine, and quality guidance. Automatic subtitles can be wrong with any model, so important expressions should be checked and corrected manually.
+
+---
+
+## 8. Editing, Translating, and Adding Subtitles
+
+### 8-1. Add a Subtitle Manually
+Tap **Add Segment** above the subtitle area to create a new subtitle segment based on the current playback position. Enter text and tap **Add** to add the card.
+
+Use the play button in the sheet to preview that section.
+
+### 8-2. Edit a Subtitle
+Tap the edit button on a subtitle card to modify the text. If you edited an STT-generated subtitle, the original text is shown as well, and you can use **Reset** if needed.
+
+### 8-3. Translate
+Tap the translate button on a subtitle card to open the iOS system translation sheet. Translation is a study aid and may be inaccurate depending on context.
+
+![Subtitle translation](images/iphone/09-translate.png)
+*▲ Translating a subtitle sentence in place*
+
+### 8-4. Add to Wordbook
+Tap the plus button on a subtitle card to choose a word or expression from that sentence and save it to the Wordbook. The Wordbook itself is a Premium feature, so if the free trial has ended, this opens the Premium screen.
 
 ---
 
 ## 9. Wordbook
 
-A space that collects the words you saved from transcript cards. This is a **Premium feature**.
+The Wordbook collects words and expressions saved from subtitle cards. It is available during Premium or the free trial.
 
-![Wordbook list mode](images/20-wordbook-list.PNG)
-*▲ `images/20-wordbook-list.PNG` — The Wordbook tab — list mode*
+![Wordbook](images/iphone/07-wordbook.png)
+*▲ Wordbook entries saved together with context*
 
-### 9-1. Saving Words
-From a transcript card in the player, tap the ➕ button → on the **word selection** screen:
+### 9-1. Save a Word
+Tap the plus button on a subtitle card to open **Add to Wordbook**.
 
-- Words automatically extracted from the card body are shown as capsules. Tap to pick them, or type your own under **Custom Input**.
-- You can add a memo (optional).
-- Tap **Save** to store them in your wordbook.
+You can save:
 
-![Word save screen](images/20-wordbook-save.PNG)
-*▲ `images/20-wordbook-save.PNG` — Picking and saving a word from a transcript card*
+- Word or expression
+- Meaning
+- Study context
+- Context translation
+- Memo
+- Apple Intelligence explanation
 
-### 9-2. Two Viewing Modes
-Switch modes with the segmented control at the top of the screen.
+Choose one of the automatically extracted word chips, or type directly into **Custom Input**. For languages with spaces, the app shows word-level chips. For Japanese and Chinese, it re-tokenizes the sentence to show more natural units.
 
-- **List** — see the word, its sentence context, the source file, the date added, and your memo at a glance. Swipe an item left to delete it.
-- **Flashcards** — tap a card to flip between front and back (front: the word, back: sentence + memo). Swipe left or right to move to the next card.
+![Add to Wordbook](images/iphone/15-wordbook-add.png)
+*▲ Choosing a word from a subtitle sentence and saving meaning and context*
 
-![Flashcard — front](images/21a-wordbook-flashcard.PNG)
-*▲ `images/21a-wordbook-flashcard.PNG` — Flashcard front (the word)*
+### 9-2. Fill with Translate
+**Meaning** and **Context Translation** include a **Translate** button. Tap it to fill meaning or context translation with the iOS translation feature. You can edit the result before saving.
 
-![Flashcard — back](images/21b-wordbook-flashcard.PNG)
-*▲ `images/21b-wordbook-flashcard.PNG` — Flashcard back (sentence + memo)*
+When the audio language and device language are the same, iOS translation may not create a separate translation. In that case, type or edit the meaning and context translation manually.
 
----
+### 9-3. Apple Intelligence Explanation
+If Apple Intelligence is available, an **AI Explanation** section may appear. Tap **Generate Explanation** to create an explanation of how the selected word is used in this context.
 
-## 10. Podcasts
+![AI Explanation](images/iphone/16-wordbook-ai-explanation.png)
+*▲ AI Explanation generated for the selected word in context*
 
-Bring podcasts you subscribe to in Apple Podcasts in as study material. This is a **Premium feature**.
+This section appears only when all of the following are true.
 
-### 10-1. Opening
-Home screen ➕ menu → **Subscribe to Podcast**.
+- iOS 26 or later
+- A device that supports Apple Intelligence
+- Apple Intelligence is turned on in device settings and the model is ready
+- The study language can be determined from the subtitle language, podcast language metadata, or sentence text
+- Both the study language and device language are supported by the Apple Intelligence model
 
-### 10-2. Importing from Apple Podcasts
-On first use you'll see a **"Load from Apple Podcasts"** button. Tapping it requests media library permission, and once allowed, your subscribed podcasts appear as horizontally scrolling cards.
+AI Explanation is not always hidden just because the languages are the same. However, if any condition above is not met, the section does not appear, and the **Translate** button follows the limitations of iOS translation. Generated content is a beta, on-device result and may be wrong. You can edit or remove it before saving.
 
-![Podcast screen](images/22-podcast.PNG)
-*▲ `images/22-podcast.PNG` — The podcast screen — Apple Podcasts subscription cards scrolling horizontally*
+### 9-4. List and Flashcards
+The Wordbook tab has two modes.
 
-Tap a channel card to open its episode list in a sheet.
+| Mode | Description |
+|---|---|
+| **List** | Review words, meanings, context, source file, and added date |
+| **Flashcards** | Memorize by flipping cards |
 
-![Episode list sheet](images/23a-podcast-episodes.PNG)
-*▲ `images/23a-podcast-episodes.PNG` — The episode list sheet (regular episodes with no official transcript)*
+![Flashcards](images/iphone/08-flashcard.png)
+*▲ Reviewing with cards during spare moments*
 
-For each episode:
-- Title, publish date, length
-- **Script** badge (purple) — an episode that provides an official, time-synced transcript
-- **Text only** badge (gray) — an episode with text only
-- No badge — an episode that provides no transcript
-- Status on the right:
-  - ⬇ download icon — not downloaded yet
-  - 🟣 progress ring — downloading
-  - ✅ green check — download complete
-
-Tap a checked episode to open the player right away.
-
-![Episode with a Script badge](images/23b-podcast-episodes-script.PNG)
-*▲ `images/23b-podcast-episodes-script.PNG` — An episode list with the purple **Script** badge*
-
-> 💡 **Why we recommend Script episodes**: Episodes with the **Script** badge do not use iOS speech recognition (STT) to build the transcript — they **pull in the official transcript the podcast provides directly**. Because it's an accurate, human-written transcript, it has far fewer typos and misrecognitions than STT, and there's no conversion to wait for. When choosing study material, we recommend picking Script episodes first.
-
-### 10-3. Importing Directly via an RSS URL
-Expand **"Add via RSS URL (advanced)"** near the bottom of the screen to enter an RSS address directly. Use this to import a podcast that isn't in Apple Podcasts.
-
-### 10-4. A Note on Cellular Data
-The default setting is **download over Wi-Fi only**. If you've allowed cellular downloads in Settings, a confirmation alert appears before downloading a large episode.
+In the word detail screen, you can listen to pronunciation, edit meaning or memo, open the original audio, search a dictionary, and regenerate the Apple Intelligence explanation. Words you know can be marked **Memorized**, and the list can hide memorized words.
 
 ---
 
-## 11. Settings
+## 10. YouTube Stream Practice
 
-Open it with the ⚙️ gear icon at the top left of the home screen.
+When you add a YouTube link, the Stream player opens. YouTube videos are not saved in the app; they play through the YouTube embedded player.
 
-![Settings screen](images/24-settings.jpg)
-*▲ `images/24-settings.jpg` — The Settings screen*
+![YouTube stream practice](images/iphone/03-youtube.png)
+*▲ Practicing a YouTube link like listening material*
 
-### 11-1. Podcast Downloads
-- **Download over Wi-Fi only** — when on, downloads happen only over Wi-Fi (default: on). This setting also applies to STT (speech-to-text) timestamp-recovery server recognition — on means Wi-Fi only, off allows it over cellular too.
-- **Ask before cellular download** — shown when Wi-Fi-only is off; decides whether to ask each time before downloading over cellular.
+### 10-1. Basic Layout
+The Stream player shows the YouTube player on top and Phrabbit's A/B loop controls below.
+
+Key features:
+
+- Use YouTube's original player and CC button
+- Use Phrabbit's A/B loop, loop count, and speed controls
+- Use a time ruler for precise navigation in long videos
+- Practice in full screen
+- Save bookmarks and shadowing recordings per YouTube link
+
+### 10-2. YouTube Captions and Wordbook Limits
+YouTube captions are shown only inside the YouTube player. Phrabbit does not bring YouTube caption text into the app.
+
+Therefore, these features are limited on YouTube streams.
+
+- STT subtitle generation
+- Adding YouTube captions directly to Wordbook
+- Showing the original YouTube audio waveform
+
+Instead, turn on captions with YouTube's **CC** button and use Phrabbit's A/B loop and shadowing features for section practice.
+
+### 10-3. Full-screen Practice
+Tap **Full-screen Practice** to make the video larger while keeping A/B controls available inside full-screen practice. On iPhone, the app stays in portrait while enlarging the player area. On iPad, the layout expands to fit the larger screen.
+
+Use Phrabbit's **Full-screen Practice** instead of YouTube's own full-screen button so YouTube captions and Phrabbit's A/B controls can stay together.
+
+### 10-4. Time Ruler
+Streams use a time ruler instead of an audio waveform.
+
+- **Drag** - Move through the video
+- **Long-press** - Set point A or B
+- **Pinch** - Zoom the ruler in or out
+- **Adjust A/B handles** - Fine-tune the range
+
+The YouTube embedded player does not provide raw audio samples to the app, so Phrabbit uses a time ruler instead of a fake waveform.
+
+### 10-5. YouTube Background Behavior
+YouTube streams do not continue playing on the lock screen or in the background. When the app enters the background, Phrabbit pauses the video and remembers the position, then restores it when you return. This is a limitation of the YouTube embedded player and iOS WebKit.
 
 ---
 
-## 12. Free vs Premium
+## 11. Shadowing Recording and Comparison
 
-### Free Forever
-- Waveform view + A-B loop
-- Playback speed control
-- Import local files (Files app)
-- Import from the Music library
-- Bookmarks (up to 3 per file)
+Shadowing lets you listen to an A/B range, say it yourself, and compare your recording with the original.
 
-### Premium
-- Speech-to-text (STT)
-- Real-time transcript ↔ waveform sync
+![Shadowing](images/iphone/10-shadowing.png)
+*▲ Listening, recording, and comparing your voice against the original*
+
+### 11-1. Shadowing Gap
+This practice mode does not require recording.
+
+1. Set an A/B range.
+2. Turn on the shadowing gap button.
+3. After the range plays, speak during the silent gap.
+4. When the countdown ends, the original plays again.
+
+This works with both audio files and YouTube streams.
+
+### 11-2. Recording and Comparison
+Recording and comparison are Premium features.
+
+1. Set an A/B range.
+2. Tap the microphone button in the A/B info bar or Stream controls.
+3. Use **Listen** to hear the original.
+4. Tap **Record** to record your voice.
+5. Use **My take** to hear only your recording.
+6. Use **Compare** to hear the original and your take back to back.
+
+The first time you use it, Phrabbit asks for microphone permission. Recordings are stored on your device.
+
+For audio files, you can see the original waveform and your recording waveform together. For YouTube streams, Phrabbit cannot access the original waveform, so only your recording waveform is shown.
+
+### 11-3. Practice with Subtitles
+If an audio file has subtitles and a subtitle card overlaps the A/B range, the practice sentence appears large in the shadowing screen. While listening to the original, the current sentence is highlighted so it is easier to read along.
+
+YouTube captions exist only inside the YouTube player and are not brought into the shadowing screen. Instead, use full-screen practice with YouTube CC captions visible.
+
+### 11-4. Saved Recordings
+Use the save button to keep a take you like. Saved recordings appear in the bookmark list or the **My Recordings** section of the Stream screen.
+
+Tap a saved recording to return to the A/B range where it was made and reopen the shadowing screen. Multiple takes for the same range are grouped as one practice point.
+
+---
+
+## 12. Podcasts
+
+Podcast downloads are a Premium feature. You can import episodes from Apple Podcasts subscriptions or RSS URLs and practice them in the audio player.
+
+### 12-1. Import from Apple Podcasts
+Tap **Add from Podcast** in the Home plus menu. The first time, Phrabbit may ask for media library permission. After you allow it, your subscribed Apple Podcasts channels appear.
+
+Tap a channel to open its episode list.
+
+### 12-2. Episode Badges
+
+| Badge | Meaning |
+|---|---|
+| **Script** | Official time-synced transcript is available |
+| **Text only** | Official text-only material is available |
+| No badge | No official transcript |
+
+![Podcast episode with Script badge](images/iphone/17-podcast-script.png)
+*▲ Episodes with a Script badge can import official transcripts*
+
+Episodes with the **Script** badge can import the podcast's official transcript without running STT again. This is usually more accurate than automatic recognition and requires less waiting, so Script episodes are recommended first for study material.
+
+### 12-3. Enter RSS URL Directly
+Expand **Add via RSS URL (advanced)** to enter an RSS URL manually. Use this for podcasts that do not appear in Apple Podcasts search or when you already know the RSS address.
+
+### 12-4. Downloads and Cellular Data
+The default setting is **Download over Wi-Fi only**. If you allow cellular downloads, a confirmation may appear before downloading a large episode.
+
+![Podcast download status](images/iphone/18-podcast-downloads.png)
+*▲ Episode list showing not-downloaded and downloaded states*
+
+Some podcast files may take a moment to prepare in a playable format the first time you open them.
+
+---
+
+## 13. Learning Stats and Settings
+
+### 13-1. Progress Tab
+In the **Progress** tab, you can check your recent practice activity.
+
+![Learning stats](images/iphone/06-learning-record.png)
+*▲ Recent 7-day activity and frequently repeated segments*
+
+Main items:
+
+- **Last 7 Days** - Practice time and active days in the last 7 days
+- Bar chart - Practice time by date
+- **Focused Segments** - Recently repeated practice sections
+- **Most Practiced** - Audio or YouTube items practiced most often
+- **All Time** - Total accumulated practice time
+
+Tap a Focused Segments or Most Practiced item to return to the original material and practice again. Stats are recorded only for practice after this feature was added.
+
+### 13-2. Settings
+Tap the gear at the top left of Home to open Settings.
+
+![Settings](images/iphone/19-settings.png)
+*▲ Settings for background playback, downloads, learning stats reset, and support*
+
+You can manage:
+
+- **Background playback** - Lock screen and background audio playback for Premium users
+- **Download over Wi-Fi only** - Applies Wi-Fi preference to podcast downloads, STT model downloads, and timing recovery
+- **Ask before cellular download** - Confirms before downloading over cellular
+- **Reset learning stats** - Deletes learning stats
+- **Rate Phrabbit** - Opens the App Store review screen
+
+Resetting learning stats cannot be undone.
+
+---
+
+## 14. Free vs Premium
+
+### Available for Free
+
+- Import local audio files
+- Import DRM-free Music library tracks
+- Add YouTube links and practice A/B loops
+- Waveform view, time ruler, and A/B looping
+- Loop count and playback speed controls
+- Shadowing gap
+- Sleep timer
+- Create 1 new audio bookmark per file
+- Open existing audio bookmarks saved during Premium or the free trial
+- Learning stats
+
+### Available During Premium or Free Trial
+
+- Speech-to-text (STT) subtitle conversion
+- Real-time subtitle and waveform sync
 - Wordbook
-- Unlimited bookmarks
+- Apple Intelligence explanations on supported devices
+- Unlimited audio bookmarks
+- YouTube stream bookmarks
 - Podcast downloads
+- Shadowing recording, comparison, and saved takes
+- Audio background playback and lock screen controls
 
-### How Payment Works
-**A 3-day free trial → a one-time purchase.** Pay once and use it for life — it is not a subscription. Even if you change devices, **"Restore Purchases"** with the same Apple ID carries it over.
+### Payment
+Phrabbit Premium is a **one-time purchase**. It is not a subscription. After purchase, you can keep using Premium with the same Apple ID. If you change devices, use **Restore Purchase** on the Premium screen.
 
 ---
 
-## 13. FAQ
+## 15. FAQ
 
-**Q. Why can't I import a track I listened to on Apple Music?**
-A. Tracks downloaded via an Apple Music subscription are locked by copyright protection (DRM) so they can't be used in other apps. Only tracks purchased from the iTunes Store or ripped from a CD will work.
+**Q. Can I import songs from my Apple Music subscription?**
 
-**Q. Speech recognition is too inaccurate.**
-A. Check two things: ① whether the audio's actual language matches the one you selected, and ② whether there's a lot of background music or noise. For sections that are too hard to recognize, just type them in yourself with ➕ Add Segment or Enter Manually.
+A. No. Songs downloaded through an Apple Music subscription are protected by DRM and cannot be used in other apps. Only DRM-free tracks purchased from the iTunes Store or imported from a CD can be used.
 
-**Q. What happens if I tap another file during a conversion?**
-A. A confirmation reading *"Switch to ...? Conversion will be interrupted. Partial results will be saved."* appears. The part completed so far is preserved.
+**Q. Speech recognition is inaccurate.**
+
+A. First check that the selected STT language matches the actual audio language. Background music, noise, and overlapping speakers can make recognition difficult. For important sections, edit the subtitle manually or use Add Segment.
+
+**Q. Does STT continue if I leave the app?**
+
+A. No. STT conversion currently needs the app to stay open. If you lock the screen or move to another app, conversion may stop. Audio background playback and STT conversion are separate features.
+
+**Q. Does audio continue on the lock screen?**
+
+A. During Premium or the free trial, if **Background playback** is on, audio can continue on the lock screen and in the background. You can use the lock screen, Control Center, or earphone buttons for play/pause and 5-second jumps. If the free trial has ended or the setting is off, audio pauses when the app enters the background.
+
+**Q. Does YouTube continue playing in the background?**
+
+A. No. YouTube streams do not support background playback. Phrabbit pauses the video when the app goes into the background, remembers the position, and restores it when you return.
+
+**Q. A YouTube video will not play inside the app.**
+
+A. Some video owners do not allow playback outside YouTube, so those videos cannot play in the embedded player. In that case, they cannot be used in Phrabbit.
 
 **Q. Is my data sent over the internet?**
-A. Speech recognition runs **on-device** by default. However, when on-device recognition can't determine exact timing for some parts, Phrabbit sends just those audio segments to **Apple's speech recognition servers — only while on Wi-Fi (or any connection, if you've allowed cellular in Settings)** — to recover their position. No third-party servers are used, and your wordbook, bookmarks, and transcripts are all stored on your device. When you're offline, all recognition stays fully on-device.
 
-**Q. What happens to my data if I change devices?**
-A. The current version (v1.0) stores data only on the device. Installing the app on a new device and doing **Restore Purchases** with the same Apple ID unlocks Premium, but your wordbook, bookmarks, and transcripts do not transfer.
+A. Wordbook entries, bookmarks, subtitles, and recordings are stored on your device. STT uses on-device models when possible. Depending on language, iOS version, and model installation state, Apple's speech recognition service or model downloads may be required. **Download over Wi-Fi only** also applies to model downloads and some network-based recovery. YouTube videos play through the YouTube embedded player.
+
+**Q. Is Apple Intelligence explanation always accurate?**
+
+A. No. It is a beta feature and can be wrong. Before saving to Wordbook, check the meaning, examples, and explanation yourself and edit anything necessary.
+
+**Q. I do not see AI Explanation.**
+
+A. This feature requires iOS 26 or later, a device that supports Apple Intelligence, Apple Intelligence enabled and ready, and supported study and device languages. If the study language cannot be determined, or if the language is not supported by the model, the section may not appear. When the languages are the same, iOS translation may also be unable to create a separate translation, so type it manually if needed.
+
+**Q. Where are saved recordings?**
+
+A. Saved recordings for audio files appear under **My Recordings** in the bookmark list. Saved recordings for YouTube streams appear under **My Recordings** in the Stream screen. If you delete the original audio or YouTube item, linked recordings are deleted too.
+
+**Q. Will my study data move to a new device?**
+
+A. Study data is currently stored on the device by default. **Restore Purchase** with the same Apple ID restores Premium, but Wordbook entries, bookmarks, subtitles, and recordings do not automatically move to another device.
 
 ---
 
-If you need support, please contact the developer via the contact details on the App Store page.
+If you need support, use the developer contact information on the App Store page, or check the App Store review/contact path in **Settings > Support**.
