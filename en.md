@@ -52,7 +52,7 @@ After onboarding, a **3-day free trial** begins. During the trial, you can try P
 
 The Home screen collects all study material you have added. Local audio, Music library tracks, podcast episodes, and YouTube links appear together in the same library list.
 
-![Home screen](images/iphone/05-home.png)
+![Home screen](images/iphone/en/05-home.png)
 *▲ Home screen showing files, podcasts, and YouTube items together*
 
 ### 2-1. Screen Layout
@@ -123,7 +123,7 @@ See [12. Podcasts](#12-podcasts) for details.
 
 Tap an audio item on Home to open the full-screen player.
 
-![Audio player and subtitles](images/iphone/04-subtitles.png)
+![Audio player and subtitles](images/iphone/en/04-subtitles.png)
 *▲ Audio player showing waveform and sentence cards on one screen*
 
 ### 4-1. Closing and Mini Player
@@ -167,7 +167,7 @@ When the sleep timer is on, the remaining time appears on the button. Free users
 
 A/B looping is the core feature for repeating one sentence or short expression until it becomes clear.
 
-![A/B loop](images/iphone/02-abloop.png)
+![A/B loop](images/iphone/en/02-abloop.png)
 *▲ Fine-tuning an A/B range by touch*
 
 ### 5-1. Set with the A-B Button
@@ -232,7 +232,7 @@ Free users can create up to 1 new bookmark per audio file. During Premium or the
 
 STT converts audio into sentence-level subtitles. It is available during Premium or the free trial.
 
-![Sentence subtitles](images/iphone/01-sentences.png)
+![Sentence subtitles](images/iphone/en/01-sentences.png)
 *▲ Audio converted into sentence-level subtitle cards*
 
 ### 7-1. Start Conversion
@@ -302,7 +302,7 @@ Tap the edit button on a subtitle card to modify the text. If you edited an STT-
 ### 8-3. Translate
 Tap the translate button on a subtitle card to open the iOS system translation sheet. Translation is a study aid and may be inaccurate depending on context.
 
-![Subtitle translation](images/iphone/09-translate.png)
+![Subtitle translation](images/iphone/en/09-translate.png)
 *▲ Translating a subtitle sentence in place*
 
 ### 8-4. Add to Wordbook
@@ -314,7 +314,7 @@ Tap the plus button on a subtitle card to choose a word or expression from that 
 
 The Wordbook collects words and expressions saved from subtitle cards. It is available during Premium or the free trial.
 
-![Wordbook](images/iphone/07-wordbook.png)
+![Wordbook](images/iphone/en/07-wordbook.png)
 *▲ Wordbook entries saved together with context*
 
 ### 9-1. Save a Word
@@ -363,7 +363,7 @@ The Wordbook tab has two modes.
 | **List** | Review words, meanings, context, source file, and added date |
 | **Flashcards** | Memorize by flipping cards |
 
-![Flashcards](images/iphone/08-flashcard.png)
+![Flashcards](images/iphone/en/08-flashcard.png)
 *▲ Reviewing with cards during spare moments*
 
 In the word detail screen, you can listen to pronunciation, edit meaning or memo, open the original audio, search a dictionary, and regenerate the Apple Intelligence explanation. Words you know can be marked **Memorized**, and the list can hide memorized words.
@@ -374,7 +374,7 @@ In the word detail screen, you can listen to pronunciation, edit meaning or memo
 
 When you add a YouTube link, the Stream player opens. YouTube videos are not saved in the app; they play through the YouTube embedded player.
 
-![YouTube stream practice](images/iphone/03-youtube.png)
+![YouTube stream practice](images/iphone/en/03-youtube.png)
 *▲ Practicing a YouTube link like listening material*
 
 ### 10-1. Basic Layout
@@ -423,7 +423,7 @@ YouTube streams do not continue playing on the lock screen or in the background.
 
 Shadowing lets you listen to an A/B range, say it yourself, and compare your recording with the original.
 
-![Shadowing](images/iphone/10-shadowing.png)
+![Shadowing](images/iphone/en/10-shadowing.png)
 *▲ Listening, recording, and comparing your voice against the original*
 
 ### 11-1. Shadowing Gap
@@ -502,7 +502,7 @@ Some podcast files may take a moment to prepare in a playable format the first t
 ### 13-1. Progress Tab
 In the **Progress** tab, you can check your recent practice activity.
 
-![Learning stats](images/iphone/06-learning-record.png)
+![Learning stats](images/iphone/en/06-learning-record.png)
 *▲ Recent 7-day activity and frequently repeated segments*
 
 Main items:
