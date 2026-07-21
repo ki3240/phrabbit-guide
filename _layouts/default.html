@@ -145,8 +145,8 @@
               <span class="icon-chevron" aria-hidden="true"></span>
             </summary>
             <div class="language-menu">
-              <a class="language-link{% if guide_lang == 'ko' %} is-active{% endif %}" href="{{ '/ko.html' | relative_url }}">한국어</a>
               <a class="language-link{% if guide_lang == 'en' %} is-active{% endif %}" href="{{ '/en.html' | relative_url }}">English</a>
+              <a class="language-link{% if guide_lang == 'ko' %} is-active{% endif %}" href="{{ '/ko.html' | relative_url }}">한국어</a>
               <a class="language-link{% if guide_lang == 'ja' %} is-active{% endif %}" href="{{ '/ja.html' | relative_url }}">日本語</a>
               <a class="language-link{% if guide_lang == 'zh-Hans' %} is-active{% endif %}" href="{{ '/zh-Hans.html' | relative_url }}">简体中文</a>
               <a class="language-link{% if guide_lang == 'zh-Hant' %} is-active{% endif %}" href="{{ '/zh-Hant.html' | relative_url }}">繁體中文</a>
@@ -200,7 +200,6 @@
             <source srcset="{{ '/assets/images/app-icon-dark.png' | relative_url }}" media="(prefers-color-scheme: dark)">
             <img src="{{ '/assets/images/app-icon-light.png' | relative_url }}" alt="">
           </picture>
-          <span class="hero-wave"><i></i><i></i><i></i><i></i><i></i></span>
         </div>
         <div class="hero-copy">
           <p class="eyebrow">{{ hero_eyebrow }}</p>
@@ -261,6 +260,11 @@
         const searchStatus = document.querySelector('#search-status');
         const searchTriggers = [document.querySelector('#header-search-trigger')];
         const searchClose = document.querySelector('#search-close');
+        const languageSwitcher = document.querySelector('.language-switcher');
+
+        const setLanguageMenuOpen = (isOpen) => {
+          languageSwitcher.open = isOpen;
+        };
 
         const setDrawerOpen = (isOpen) => {
           drawer.classList.toggle('is-open', isOpen);
@@ -269,6 +273,7 @@
           drawerBackdrop.hidden = !isOpen;
           document.body.classList.toggle('drawer-open', isOpen);
           if (isOpen) {
+            setLanguageMenuOpen(false);
             searchPanel.hidden = true;
             searchTriggers.forEach((trigger) => trigger.setAttribute('aria-expanded', 'false'));
           }
@@ -338,6 +343,7 @@
           searchPanel.hidden = !isOpen;
           searchTriggers.forEach((trigger) => trigger.setAttribute('aria-expanded', String(isOpen)));
           if (isOpen) {
+            setLanguageMenuOpen(false);
             setDrawerOpen(false);
             searchInput.focus();
           } else {
@@ -348,6 +354,10 @@
 
         searchTriggers.forEach((trigger) => trigger.addEventListener('click', () => setSearchOpen(searchPanel.hidden)));
         searchClose.addEventListener('click', () => setSearchOpen(false));
+        document.addEventListener('click', (event) => {
+          if (languageSwitcher.contains(event.target)) return;
+          setLanguageMenuOpen(false);
+        });
         searchInput.addEventListener('input', renderSearchResults);
         searchResults.addEventListener('click', (event) => {
           const link = event.target.closest('a');
@@ -362,6 +372,7 @@
           if (event.key !== 'Escape') return;
           setDrawerOpen(false);
           setSearchOpen(false);
+          setLanguageMenuOpen(false);
         });
       })();
     </script>
