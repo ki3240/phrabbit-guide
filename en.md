@@ -6,7 +6,7 @@ lang: en
 
 # Phrabbit User Guide
 
-Phrabbit is an A/B loop app for foreign-language listening practice. Add audio files, Music library tracks, podcasts, or YouTube links as study material, then repeat the exact section you want to hear or practice shadowing with your own voice. You can also use speech-to-text subtitles, Wordbook review, shadowing recordings, and learning stats.
+Phrabbit is an A/B loop app for foreign-language listening practice. Add audio files, video files, Music library tracks, podcasts, or YouTube links as study material, then repeat the exact section you want to hear or practice shadowing with your own voice. You can also use speech-to-text subtitles, Wordbook review, shadowing recordings, and learning stats.
 
 > Note: Button names in this guide follow the English UI used in the app. Some labels may appear localized depending on your device language.
 
@@ -23,11 +23,12 @@ Phrabbit is an A/B loop app for foreign-language listening practice. Add audio f
 8. [Editing, Translating, and Adding Subtitles](#8-editing-translating-and-adding-subtitles)
 9. [Wordbook](#9-wordbook)
 10. [YouTube Stream Practice](#10-youtube-stream-practice)
-11. [Shadowing Recording and Comparison](#11-shadowing-recording-and-comparison)
-12. [Podcasts](#12-podcasts)
-13. [Learning Stats and Settings](#13-learning-stats-and-settings)
-14. [Free vs Premium](#14-free-vs-premium)
-15. [FAQ](#15-faq)
+11. [Video Files](#11-video-files)
+12. [Shadowing Recording and Comparison](#12-shadowing-recording-and-comparison)
+13. [Podcasts](#13-podcasts)
+14. [Learning Stats and Settings](#14-learning-stats-and-settings)
+15. [Free vs Premium](#15-free-vs-premium)
+16. [FAQ](#16-faq)
 
 
 ## 1. Getting Started
@@ -51,7 +52,7 @@ After onboarding, a **3-day free trial** begins. During the trial, you can try P
 
 ## 2. Home and Library
 
-The Home screen collects all study material you have added. Local audio, Music library tracks, podcast episodes, and YouTube links appear together in the same library list.
+The Home screen collects all study material you have added. Local audio, video files, Music library tracks, podcast episodes, and YouTube links appear together in the same library list.
 
 ![Home screen](images/iphone/en/05-home.png)
 *▲ Home screen showing files, podcasts, and YouTube items together*
@@ -76,8 +77,9 @@ Icons and thumbnails help you identify each item type.
 - **Music note icon** - Track imported from the Music library
 - **Antenna icon** - Podcast episode
 - **YouTube thumbnail or play icon** - YouTube stream
+- **Film icon or video thumbnail** - Video file on your device
 
-Tap an item to open its player. Audio items open the audio player, and YouTube links open the Stream player.
+Tap an item to open its player. Audio items open the audio player, YouTube links open the Stream player, and videos open the video player.
 
 ### 2-3. Delete
 Swipe an item left to reveal **Delete**. Deleting an item also removes its waveform cache, bookmarks, subtitles, and saved shadowing recordings. If the item has saved recordings, a confirmation appears first.
@@ -90,10 +92,15 @@ Tap the plus button at the top right of Home to open the add menu.
 ![Add menu](images/iphone/11-add-menu.png)
 *▲ Menu for adding files, music, YouTube links, and podcasts*
 
-### 3-1. Add from Files
-Tap **Add from Files** to open the system file picker. You can import audio files such as mp3, m4a, wav, and aac, and you can select multiple files at once. Imported files are copied into Phrabbit's Documents area and added to the library.
+### 3-1. Add an Audio File
+Tap **Add Audio File** to open the system file picker. You can import audio files such as mp3, m4a, wav, and aac, and you can select multiple files at once. Imported files are copied into Phrabbit's Documents area and added to the library.
 
-### 3-2. Add from Music
+### 3-2. Add a Video File
+Tap **Add Video File** to choose a video stored on your device or in iCloud Drive. MP4, M4V, and MOV files can be used, and this is a free feature.
+
+The video file itself is not copied into the app. Phrabbit keeps only a link to the original file, so the video stops playing if that file is moved or deleted. See [11. Video Files](#11-video-files) for details.
+
+### 3-3. Add from Music
 Tap **Add from Music** to open the music stored on your device.
 
 - Tracks already added to Phrabbit are shown with a check mark.
@@ -102,7 +109,7 @@ Tap **Add from Music** to open the music stored on your device.
 
 When you tap a track, Phrabbit prepares it in a playable format, adds it to the library, and opens the player.
 
-### 3-3. Add a YouTube Link
+### 3-4. Add a YouTube Link
 Tap **Add YouTube Link** to open the YouTube link entry screen.
 
 1. In the YouTube app or a browser, tap **Share** on the video.
@@ -112,10 +119,10 @@ Tap **Add YouTube Link** to open the YouTube link entry screen.
 
 The video file is not stored inside the app. Phrabbit stores only the link, playback position, A/B bookmarks, and shadowing recording metadata. Playback happens through the YouTube embedded player.
 
-### 3-4. Add from Podcast
+### 3-5. Add from Podcast
 **Add from Podcast** is a Premium feature. During Premium or the free trial, you can import episodes from your Apple Podcasts subscriptions or by RSS URL. After the free trial ends, the menu shows a lock and opens the Premium screen when tapped.
 
-See [12. Podcasts](#12-podcasts) for details.
+See [13. Podcasts](#13-podcasts) for details.
 
 
 ## 4. Audio Player
@@ -411,14 +418,101 @@ The YouTube embedded player does not provide raw audio samples to the app, so Ph
 YouTube streams do not continue playing on the lock screen or in the background. When the app enters the background, Phrabbit pauses the video and remembers the position, then restores it when you return. This is a limitation of the YouTube embedded player and iOS WebKit.
 
 
-## 11. Shadowing Recording and Comparison
+## 11. Video Files
+
+Phrabbit can also use video files stored on your device or in iCloud Drive as study material. Videos use the same A/B loop, shadowing, and bookmark tools as audio, with subtitles supplied by a separate subtitle file.
+
+![Video player](images/iphone/20-video-player.png)
+*▲ Video player showing a subtitle cue, the time ruler with A/B, and a saved bookmark*
+
+### 11-1. Add a Video File
+Tap **Add Video File** in the Home plus menu and choose a video. This is a free feature.
+
+Phrabbit supports **MP4, M4V, and MOV** files. Other containers such as MKV, AVI, and WebM cannot be selected in the picker.
+
+Even inside a supported container, a file can use video or audio encoding this device cannot decode. In that case Phrabbit names the encoding it found and explains what to do. Converting the file to H.264 or HEVC video with AAC audio makes it playable.
+
+One case looks confusing: a file that already uses HEVC but is packaged as `hev1` instead of `hvc1`. iOS cannot play the `hev1` packaging. Repackaging it as `hvc1` is a fast, lossless remux and does not re-encode the video.
+
+### 11-2. Videos Are Referenced, Not Copied
+Unlike audio files, which Phrabbit copies into the app, a video file stays where it is. Phrabbit remembers only a link to the original file.
+
+What this means in practice:
+
+- Adding a video uses almost no app storage, no matter how large the file is.
+- If you move, rename, or delete the original file, Phrabbit can no longer play it. The same happens when a file in iCloud Drive is removed from that account or offloaded from the device.
+- When the file cannot be found, the library row shows a **File missing** warning, and opening the video shows a screen with **Re-link File** and **Remove**. Choose **Re-link File** and pick the file at its new location; bookmarks, subtitles, and playback position stay as they were.
+- If the file you re-link has a noticeably different length from the original, Phrabbit warns with **Different video length**, because loops and subtitles may no longer line up.
+
+The first time you play a video that is stored in iCloud Drive but not yet downloaded to this device, **Preparing video…** appears while the system downloads it, and a long video can take a while. Once the file is on the device it opens right away, regardless of size.
+
+### 11-3. Video Player
+Tap a video in the library to open the video player. Its layout follows the Stream player rather than the audio player.
+
+- The video appears at the top, with a seek bar and a full-screen button below it.
+- Under the seek bar is the time ruler, which shows the A and B markers.
+- Once A and B are both set, a purple info bar appears with the range, a fine-tune button, the scene transcription button, the microphone for shadowing, and a close button that clears the range.
+- Below that are the playback controls: **A-B**, loop count, playback speed, shadowing gap, back/forward 5 seconds, play/pause, and **Save** for a bookmark.
+- Saved **Bookmarks** and **My Recordings** are listed at the bottom.
+
+Video has no waveform. As with YouTube streams, you set and fine-tune A and B on the time ruler and the seek bar.
+
+Free users can create 1 new bookmark per video, and Premium or the free trial removes the limit. Bookmarks that are already saved stay open in every case.
+
+### 11-4. Subtitle Files
+Video subtitles come from a subtitle file you supply. Phrabbit reads **SRT, VTT, and SMI (SAMI)** files. Subtitle tracks embedded inside the video file itself are not read.
+
+Open the subtitle menu in the player toolbar to use:
+
+| Menu | Description |
+|---|---|
+| **Add Subtitles…** / **Replace Subtitles…** | Loads a subtitle file. Loading replaces the current subtitles |
+| **Show Subtitles** | Shows or hides subtitles |
+| **Edit Current Subtitle…** | Fixes the text of the line showing now |
+| **Subtitle Sync…** | Shifts subtitle timing by 0.5 seconds at a time when it runs early or late |
+| **Restore Original Subtitles…** | Discards generated and edited lines and returns to the imported file |
+| **Wordbook & Pronunciation Language…** | Sets the language used for Wordbook entries and pronunciation |
+| **Remove Subtitles** | Removes subtitles from this video |
+
+Subtitles appear at the bottom of the video. Tap them to hide them, and touch and hold to edit the current line. A subtitle file saved in an encoding other than UTF-8 may fail to load; save it as UTF-8 text and try again.
+
+Tap the plus button on a subtitle line to save a word to the Wordbook. The Wordbook is a Premium feature.
+
+### 11-5. Transcribe This Scene
+Whole-file speech-to-text is not available for video. Instead you can transcribe only the section you are practicing. This is available during Premium or the free trial.
+
+1. Set an A/B range over the part you want.
+2. Tap the speech-bubble button in the A/B info bar.
+3. Choose the language spoken in that scene.
+
+Notes:
+
+- A range longer than **10 minutes** cannot be transcribed. Shorten the A/B range first.
+- For a range longer than 3 minutes, or when the device is already warm, a **Transcribe This Scene?** heads-up appears first; tap **Continue** to go on. If the device is very hot, Phrabbit asks you to let it cool down and does not run.
+- If subtitle-file lines already exist in that range, **Replace Subtitles in Range?** asks first. Only the lines inside the range are replaced, the originals are kept, and **Restore Original Subtitles…** brings them back.
+
+### 11-6. Full Screen and Background
+![Full-screen practice](images/iphone/21-video-fullscreen.png)
+*▲ Full-screen practice keeps the A/B controls and subtitles on screen*
+
+Tap the full-screen button to enlarge the video. The screen fills sideways while the app itself stays in portrait, so you do not need to unlock device rotation. In full screen, tap the video to show or hide the controls, and use the bookmark list to jump between saved ranges.
+
+Video does not play in the background or on the lock screen. When the app goes to the background or the screen locks, playback stops. Background playback applies to audio files only.
+
+### 11-7. Rename and Delete
+A video title starts as the file name. Touch and hold a video in the library and choose **Rename Video** to change it.
+
+Swiping a video left and deleting it removes Phrabbit's record along with its subtitles, bookmarks, and saved shadowing recordings. **The original video file is never deleted.** If saved recordings exist, a confirmation appears first.
+
+
+## 12. Shadowing Recording and Comparison
 
 Shadowing lets you listen to an A/B range, say it yourself, and compare your recording with the original.
 
 ![Shadowing](images/iphone/en/10-shadowing.png)
 *▲ Listening, recording, and comparing your voice against the original*
 
-### 11-1. Shadowing Gap
+### 12-1. Shadowing Gap
 This practice mode does not require recording.
 
 1. Set an A/B range.
@@ -426,9 +520,9 @@ This practice mode does not require recording.
 3. After the range plays, speak during the silent gap.
 4. When the countdown ends, the original plays again.
 
-This works with both audio files and YouTube streams.
+This works with audio files, videos, and YouTube streams.
 
-### 11-2. Recording and Comparison
+### 12-2. Recording and Comparison
 Recording and comparison are Premium features.
 
 1. Set an A/B range.
@@ -440,29 +534,29 @@ Recording and comparison are Premium features.
 
 The first time you use it, Phrabbit asks for microphone permission. Recordings are stored on your device.
 
-For audio files, you can see the original waveform and your recording waveform together. For YouTube streams, Phrabbit cannot access the original waveform, so only your recording waveform is shown.
+For audio files, you can see the original waveform and your recording waveform together. For videos and YouTube streams, Phrabbit cannot access the original waveform, so only your recording waveform is shown.
 
-### 11-3. Practice with Subtitles
+### 12-3. Practice with Subtitles
 If an audio file has subtitles and a subtitle card overlaps the A/B range, the practice sentence appears large in the shadowing screen. While listening to the original, the current sentence is highlighted so it is easier to read along.
 
 YouTube captions exist only inside the YouTube player and are not brought into the shadowing screen. Instead, use full-screen practice with YouTube CC captions visible.
 
-### 11-4. Saved Recordings
+### 12-4. Saved Recordings
 Use the save button to keep a take you like. Saved recordings appear in the bookmark list or the **My Recordings** section of the Stream screen.
 
 Tap a saved recording to return to the A/B range where it was made and reopen the shadowing screen. Multiple takes for the same range are grouped as one practice point.
 
 
-## 12. Podcasts
+## 13. Podcasts
 
 Podcast downloads are a Premium feature. You can import episodes from Apple Podcasts subscriptions or RSS URLs and practice them in the audio player.
 
-### 12-1. Import from Apple Podcasts
+### 13-1. Import from Apple Podcasts
 Tap **Add from Podcast** in the Home plus menu. The first time, Phrabbit may ask for media library permission. After you allow it, your subscribed Apple Podcasts channels appear.
 
 Tap a channel to open its episode list.
 
-### 12-2. Episode Badges
+### 13-2. Episode Badges
 
 | Badge | Meaning |
 |---|---|
@@ -475,10 +569,10 @@ Tap a channel to open its episode list.
 
 Episodes with the **Script** badge can import the podcast's official transcript without running STT again. This is usually more accurate than automatic recognition and requires less waiting, so Script episodes are recommended first for study material.
 
-### 12-3. Enter RSS URL Directly
+### 13-3. Enter RSS URL Directly
 Expand **Add via RSS URL (advanced)** to enter an RSS URL manually. Use this for podcasts that do not appear in Apple Podcasts search or when you already know the RSS address.
 
-### 12-4. Downloads and Cellular Data
+### 13-4. Downloads and Cellular Data
 The default setting is **Download over Wi-Fi only**. If you allow cellular downloads, a confirmation may appear before downloading a large episode.
 
 ![Podcast download status](images/iphone/18-podcast-downloads.png)
@@ -487,9 +581,9 @@ The default setting is **Download over Wi-Fi only**. If you allow cellular downl
 Some podcast files may take a moment to prepare in a playable format the first time you open them.
 
 
-## 13. Learning Stats and Settings
+## 14. Learning Stats and Settings
 
-### 13-1. Progress Tab
+### 14-1. Progress Tab
 In the **Progress** tab, you can check your recent practice activity.
 
 ![Learning stats](images/iphone/en/06-learning-record.png)
@@ -500,12 +594,12 @@ Main items:
 - **Last 7 Days** - Practice time and active days in the last 7 days
 - Bar chart - Practice time by date
 - **Focused Segments** - Recently repeated practice sections
-- **Most Practiced** - Audio or YouTube items practiced most often
+- **Most Practiced** - Audio, video, or YouTube items practiced most often
 - **All Time** - Total accumulated practice time
 
 Tap a Focused Segments or Most Practiced item to return to the original material and practice again. Stats are recorded only for practice after this feature was added.
 
-### 13-2. Settings
+### 14-2. Settings
 Tap the gear at the top left of Home to open Settings.
 
 ![Settings](images/iphone/19-settings.png)
@@ -522,18 +616,21 @@ You can manage:
 Resetting learning stats cannot be undone.
 
 
-## 14. Free vs Premium
+## 15. Free vs Premium
 
 ### Available for Free
 
 - Import local audio files
 - Import DRM-free Music library tracks
 - Add YouTube links and practice A/B loops
+- Add video files and practice A/B loops
+- Load subtitle files (SRT, VTT, SMI) for videos
 - Waveform view, time ruler, and A/B looping
 - Loop count and playback speed controls
 - Shadowing gap
 - Sleep timer
 - Create 1 new audio bookmark per file
+- Create 1 new video bookmark per video
 - Open existing audio bookmarks saved during Premium or the free trial
 - Learning stats
 
@@ -544,6 +641,8 @@ Resetting learning stats cannot be undone.
 - Wordbook
 - Apple Intelligence explanations on supported devices
 - Unlimited audio bookmarks
+- Unlimited video bookmarks
+- Scene transcription for videos
 - YouTube stream bookmarks
 - Podcast downloads
 - Shadowing recording, comparison, and saved takes
@@ -553,7 +652,7 @@ Resetting learning stats cannot be undone.
 Phrabbit Premium is a **one-time purchase**. It is not a subscription. After purchase, you can keep using Premium with the same Apple ID. If you change devices, use **Restore Purchase** on the Premium screen.
 
 
-## 15. FAQ
+## 16. FAQ
 
 **Q. Can I import songs from my Apple Music subscription?**
 
@@ -570,6 +669,22 @@ A. No. STT conversion currently needs the app to stay open. If you lock the scre
 **Q. Does audio continue on the lock screen?**
 
 A. During Premium or the free trial, if **Background playback** is on, audio can continue on the lock screen and in the background. You can use the lock screen, Control Center, or earphone buttons for play/pause and 5-second jumps. If the free trial has ended or the setting is off, audio pauses when the app enters the background.
+
+**Q. Does adding a video use up storage?**
+
+A. No. Video files are not copied into the app; Phrabbit keeps only a link to the original file, so a large video uses almost no app storage. In exchange, playback stops working if the original is moved, renamed, or deleted, or if it is offloaded from iCloud Drive. Use **Re-link File** to point Phrabbit at the file again.
+
+**Q. A video shows "File missing".**
+
+A. The original file has been moved, renamed, or deleted, or it is no longer downloaded on this device. Open the video and tap **Re-link File**, then choose the file at its new location. Bookmarks, subtitles, and progress are kept. If the file is gone for good, use **Remove**.
+
+**Q. My MP4 will not play.**
+
+A. The container is supported, but the video or audio inside may use encoding this device cannot decode. Converting it to H.264 or HEVC video with AAC audio fixes it. If the message mentions `hev1`, the file is HEVC but packaged in a way iOS cannot play - repackaging (remuxing) it as `hvc1` is enough and does not re-encode the video.
+
+**Q. Does video continue playing in the background?**
+
+A. No. Video playback stops when the app goes to the background or the screen locks. Background playback applies to audio files only.
 
 **Q. Does YouTube continue playing in the background?**
 
@@ -593,11 +708,11 @@ A. This feature requires iOS 26 or later, a device that supports Apple Intellige
 
 **Q. Where are saved recordings?**
 
-A. Saved recordings for audio files appear under **My Recordings** in the bookmark list. Saved recordings for YouTube streams appear under **My Recordings** in the Stream screen. If you delete the original audio or YouTube item, linked recordings are deleted too.
+A. Saved recordings for audio files appear under **My Recordings** in the bookmark list. Saved recordings for videos and YouTube streams appear under **My Recordings** in the player screen. If you delete the original item, linked recordings are deleted too. Deleting a video item does not delete the original video file.
 
 **Q. Will my study data move to a new device?**
 
 A. Study data is currently stored on the device by default. **Restore Purchase** with the same Apple ID restores Premium, but Wordbook entries, bookmarks, subtitles, and recordings do not automatically move to another device.
 
 
-If you need support, use the developer contact information on the App Store page, or check the App Store review/contact path in **Settings > Support**.
+Questions or problems? Email **phrabbit.support@gmail.com**. If the app showed you an error code, please include it — it tells us exactly where the problem happened.
