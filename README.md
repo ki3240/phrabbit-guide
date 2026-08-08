@@ -1,8 +1,8 @@
 # Phrabbit User Guide
 
-An iOS app for practicing languages with A/B loop audio. Load an audio file, loop any section freely on the waveform, and turn speech into text to study while you listen.
+An iOS app for practicing languages with A/B loop audio and video. Load audio, video, podcast, Music library, or YouTube material, loop any section freely, and turn speech into text to study while you listen.
 
-A/B 구간 반복으로 외국어를 연습하는 iOS 앱입니다. 오디오를 불러와 파형 위에서 원하는 구간을 반복하고, 음성을 텍스트로 변환해 들으면서 학습하세요.
+A/B 구간 반복으로 외국어를 연습하는 iOS 앱입니다. 오디오, 동영상, 팟캐스트, 뮤직 라이브러리 또는 YouTube 자료를 불러와 원하는 구간을 반복하고, 음성을 텍스트로 변환해 들으면서 학습하세요.
 
 ---
 

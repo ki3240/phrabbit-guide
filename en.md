@@ -61,16 +61,23 @@ The Home screen collects all study material you have added. Local audio, video f
 
 | Location | Element | Description |
 |---|---|---|
-| Top left | Gear | Opens Settings |
+| Header | Phrabbit wordmark | Scrolls into a compact title as you move down the list |
 | Top right | Plus button | Opens the add menu |
-| Top | Search library | Searches the library by title |
+| Top right | Search button | Opens library search |
+| Top right | More button | Opens Settings and library organization commands |
+| Below the wordmark | All / Favorites | Filters the library after at least one item is marked as a favorite |
 | Upper middle | Recent | Appears when you have at least two recently practiced items |
 | Middle | Library | Shows all study material |
 | Bottom | Home / Wordbook / Progress | Switches between Home, Wordbook, and Progress tabs |
 
-If the library is empty, you can use the centered **Add** button to add material right away. After you add at least one item, a small hint may point to the plus button once.
+If the library is empty, you can use the centered **Add** button to add material right away. After you add at least one item, a small hint may point to the plus button once. Settings is now under the **More** button rather than a separate gear button.
 
-### 2-2. Item Types
+### 2-2. Favorites and Folders
+Long-press a library item to open its context menu. Choose **Add to Favorites** to star it, or **Move to Folder…** to organize it. Once at least one favorite exists, the **All / Favorites** chips appear below the wordmark; **Favorites** shows a flat list across the whole library, regardless of folder.
+
+Use **More > New Folder** to create folders. When folders exist, **More > Select** lets you select multiple items and move them together, and **All Items** opens the whole library in one list. Folders can contain other folders.
+
+### 2-3. Item Types
 Icons and thumbnails help you identify each item type.
 
 - **Waveform icon** - Audio imported from the Files app
@@ -81,8 +88,8 @@ Icons and thumbnails help you identify each item type.
 
 Tap an item to open its player. Audio items open the audio player, YouTube links open the Stream player, and videos open the video player.
 
-### 2-3. Delete
-Swipe an item left to reveal **Delete**. Deleting an item also removes its waveform cache, bookmarks, subtitles, and saved shadowing recordings. If the item has saved recordings, a confirmation appears first.
+### 2-4. Delete
+Swipe an item left and tap **Delete**. Full-swipe deletion is disabled so an accidental scroll cannot remove an item. Deleting an item also removes its waveform cache, bookmarks, subtitles, and saved shadowing recordings. If the item has saved recordings, a confirmation appears first.
 
 
 ## 3. Adding Study Material
@@ -158,14 +165,14 @@ The waveform shows the audio over time. The black vertical line is the current p
 | Loop count | Infinite loop, or 1, 2, 3, 5, or 10 repeats |
 | Playback speed | Changes speed from 0.5x to 2x |
 | Shadowing gap | Adds speaking time between A/B repeats |
-| Bookmark button | Saves the current A/B range |
+| Bookmark button | Saves the current A/B range immediately |
 | List button | Opens saved bookmarks and My Recordings |
 | Back/forward 5s | Rewinds or skips briefly |
 | Play button | Plays or pauses |
 | Sleep timer | Stops automatically after 5, 15, 30, or 60 minutes |
 | Subtitle button | Starts or manages speech-to-text conversion |
 
-When the sleep timer is on, the remaining time appears on the button. Free users can use it while the app is open; playback while locked depends on Premium background playback.
+When the sleep timer is on, the remaining time appears on the button. Free users can use it while the app is open; playback while locked depends on Premium background playback. A saved bookmark is given an automatic name first; use **Rename** from the save toast or from the bookmark list to change it.
 
 
 ## 5. A/B Loop
@@ -194,7 +201,7 @@ When only A is set, the hint **Tap A-B again to set the end** appears. If you ta
 Long-press the desired point on the waveform to set an A/B point. Drag the A and B handles with your finger to fine-tune the range.
 
 ### 5-3. A/B Info Bar
-When both A and B are set, a purple info bar appears below the waveform.
+When both A and B are set, a range info bar appears below the waveform.
 
 In the info bar you can:
 
@@ -216,17 +223,18 @@ Bookmarks save A/B ranges you want to practice often.
 ### 6-1. Save a Bookmark
 1. Set an A/B range first.
 2. Tap the bookmark button at the bottom.
-3. Enter a name and tap **Save**.
+3. The range is saved immediately with an automatic name, and a **Bookmark saved** toast appears.
+4. Tap **Rename** in the toast if you want to name it now. You can also rename it later from the bookmark list.
 
-If you leave the name empty, Phrabbit creates one from the file name and range length. The same range is not saved twice.
+Phrabbit creates the automatic name from the file title and range length. The same range is not saved twice.
 
 ### 6-2. Bookmark List
 Tap the list button to open the current file's bookmarks. Tap a bookmark to restore that range as A/B and practice it right away.
 
 ![Bookmarks and My Recordings](images/iphone/14-bookmarks-recordings.png)
-*▲ List showing saved A/B ranges and My Recordings*
+*▲ Bookmark list with the Bookmarks / My Recordings switch*
 
-When there are at least two bookmarks, a **Play All** menu may appear. It can play several bookmarks in order and repeat each bookmark 1, 2, or 3 times.
+When both bookmarks and recordings exist, the list uses a **Bookmarks / My Recordings** switch so each list stays easy to reach. When there are at least two bookmarks, a **Play All** menu may appear. It can play several bookmarks in order and repeat each bookmark 1, 2, or 3 times. Swipe a bookmark to reveal **Rename** or **Delete**, then tap the action you want.
 
 Free users can create up to 1 new bookmark per audio file. During Premium or the free trial, you can create unlimited bookmarks. Bookmarks saved during Premium or the free trial remain available after returning to free status, but you cannot add new bookmarks beyond the free limit. Saving bookmarks for YouTube streams is a Premium feature.
 
@@ -378,7 +386,7 @@ When you add a YouTube link, the Stream player opens. YouTube videos are not sav
 *▲ Practicing a YouTube link like listening material*
 
 ### 10-1. Basic Layout
-The Stream player shows the YouTube player on top and Phrabbit's A/B loop controls below.
+The Stream player shows the YouTube player on top and Phrabbit's A/B loop controls below. The player toolbar contains the information and full-screen buttons; the controls below the video are reserved for playback and A/B practice.
 
 Key features:
 
@@ -386,7 +394,7 @@ Key features:
 - Use Phrabbit's A/B loop, loop count, and speed controls
 - Use a time ruler for precise navigation in long videos
 - Practice in full screen
-- Save bookmarks and shadowing recordings per YouTube link
+- Save bookmarks and shadowing recordings per YouTube link. A bookmark is saved immediately with an automatic name; use **Rename** from the save toast or a saved row to change it.
 
 ### 10-2. YouTube Captions and Wordbook Limits
 YouTube captions are shown only inside the YouTube player. Phrabbit does not bring YouTube caption text into the app.
@@ -449,11 +457,11 @@ The first time you play a video that is stored in iCloud Drive but not yet downl
 ### 11-3. Video Player
 Tap a video in the library to open the video player. Its layout follows the Stream player rather than the audio player.
 
-- The video appears at the top, with a seek bar and a full-screen button below it.
+- The video appears at the top with a seek bar below it. The full-screen button is in the player toolbar.
 - Under the seek bar is the time ruler, which shows the A and B markers.
-- Once A and B are both set, a purple info bar appears with the range, a fine-tune button, the scene transcription button, the microphone for shadowing, and a close button that clears the range.
+- Once A and B are both set, a range info bar appears with the range, a fine-tune button, the scene transcription button, the microphone for shadowing, and a close button that clears the range.
 - Below that are the playback controls: **A-B**, loop count, playback speed, shadowing gap, back/forward 5 seconds, play/pause, and **Save** for a bookmark.
-- Saved **Bookmarks** and **My Recordings** are listed at the bottom.
+- Saved **Bookmarks** and **My Recordings** are listed at the bottom. When both exist, a switch keeps the two lists separate.
 
 Video has no waveform. As with YouTube streams, you set and fine-tune A and B on the time ruler and the seek bar.
 
@@ -600,7 +608,7 @@ Main items:
 Tap a Focused Segments or Most Practiced item to return to the original material and practice again. Stats are recorded only for practice after this feature was added.
 
 ### 14-2. Settings
-Tap the gear at the top left of Home to open Settings.
+Tap **More** at the top right of Home, then choose **Settings**.
 
 ![Settings](images/iphone/19-settings.png)
 *▲ Settings for background playback, downloads, learning stats reset, and support*
