@@ -73,7 +73,9 @@ The Home screen collects all study material you have added. Local audio, video f
 If the library is empty, you can use the centered **Add** button to add material right away. After you add at least one item, a small hint may point to the plus button once. Settings is now under the **More** button rather than a separate gear button.
 
 ### 2-2. Favorites and Folders
-Long-press a library item to open its context menu. Choose **Add to Favorites** to star it, or **Move to Folder…** to organize it. Once at least one favorite exists, the **All / Favorites** chips appear below the wordmark; **Favorites** shows a flat list across the whole library, regardless of folder.
+Tap **⋯** at the end of a library row, or touch and hold the row, to open the same management menu. Choose **Add to Favorites** to star it, or **Move to Folder…** to organize it. For a regular library item, **Info** shows the full title and details that may not fit in the row, such as its type, duration, play position, added date or segment count, and folder location. A folder's menu contains **Rename**, **Move to Folder…**, and **Delete**.
+
+Once at least one favorite exists, the **All / Favorites** chips appear below the wordmark; **Favorites** shows a flat list across the whole library, regardless of folder.
 
 Use **More > New Folder** to create folders. When folders exist, **More > Select** lets you select multiple items and move them together, and **All Items** opens the whole library in one list. Folders can contain other folders.
 
@@ -89,7 +91,9 @@ Icons and thumbnails help you identify each item type.
 Tap an item to open its player. Audio items open the audio player, YouTube links open the Stream player, and videos open the video player.
 
 ### 2-4. Delete
-Swipe an item left and tap **Delete**. Full-swipe deletion is disabled so an accidental scroll cannot remove an item. Deleting an item also removes its waveform cache, bookmarks, subtitles, and saved shadowing recordings. If the item has saved recordings, a confirmation appears first.
+Tap **⋯** at the end of a library row, or touch and hold the row, then choose **Delete**. Swiping a row does not reveal management actions. The visible **⋯** button and the touch-and-hold gesture always show the same menu.
+
+Deleting an item also removes its waveform cache, bookmarks, subtitles, and saved shadowing recordings. If the item has saved recordings, a confirmation appears first. When deleting a folder, you can choose whether to remove only the folder or the folder and everything inside it.
 
 
 ## 3. Adding Study Material
@@ -127,7 +131,7 @@ Tap **Add YouTube Link** to open the YouTube link entry screen.
 The video file is not stored inside the app. Phrabbit stores only the link, playback position, A/B bookmarks, and shadowing recording metadata. Playback happens through the YouTube embedded player.
 
 ### 3-5. Add from Podcast
-**Add from Podcast** is a Premium feature. During Premium or the free trial, you can import episodes from your Apple Podcasts subscriptions or by RSS URL. After the free trial ends, the menu shows a lock and opens the Premium screen when tapped.
+**Add from Podcast** is a Premium feature. During Premium or the free trial, you can search by podcast name, browse recommendations for your practice language, or import episodes from Apple Podcasts subscriptions and RSS URLs. After the free trial ends, the menu shows a lock and opens the Premium screen when tapped.
 
 See [13. Podcasts](#13-podcasts) for details.
 
@@ -234,7 +238,9 @@ Tap the list button to open the current file's bookmarks. Tap a bookmark to rest
 ![Bookmarks and My Recordings](images/iphone/14-bookmarks-recordings.png)
 *▲ Bookmark list with the Bookmarks / My Recordings switch*
 
-When both bookmarks and recordings exist, the list uses a **Bookmarks / My Recordings** switch so each list stays easy to reach. When there are at least two bookmarks, a **Play All** menu may appear. It can play several bookmarks in order and repeat each bookmark 1, 2, or 3 times. Swipe a bookmark to reveal **Rename** or **Delete**, then tap the action you want.
+When both bookmarks and recordings exist, the list uses a **Bookmarks / My Recordings** switch so each list stays easy to reach. When there are at least two bookmarks, a **Play All** menu may appear. It can play several bookmarks in order and repeat each bookmark 1, 2, or 3 times.
+
+Tap **⋯** at the end of a bookmark row, or touch and hold it, to show **Rename**, **Info**, and **Delete**. **Info** shows the exact A/B range, range length, and saved date. Saved recordings use the same gesture for **Info** or **Delete**; their information sheet shows the range, length, number of takes at that practice point, and recording dates. Swiping does not reveal management actions.
 
 Free users can create up to 1 new bookmark per audio file. During Premium or the free trial, you can create unlimited bookmarks. Bookmarks saved during Premium or the free trial remain available after returning to free status, but you cannot add new bookmarks beyond the free limit. Saving bookmarks for YouTube streams is a Premium feature.
 
@@ -302,20 +308,29 @@ If the subtitle info button is visible, you can check the conversion date, recog
 ## 8. Editing, Translating, and Adding Subtitles
 
 ### 8-1. Add a Subtitle Manually
-Tap **Add Segment** above the subtitle area to create a new subtitle segment based on the current playback position. Enter text and tap **Add** to add the card.
+Tap **Add Segment** above the subtitle area to create a new subtitle segment based on the current playback position. You can adjust the start and end in 0.5-second steps, preview the range, and enter the text yourself.
 
-Use the play button in the sheet to preview that section.
+To recognize the speech again, confirm the language under **Recognition language** and tap **Recognize again**. The result appears as a preview and never replaces your draft automatically. If it looks useful, tap **Put in editor**, make any corrections, and then tap **Add** at the top to save it.
 
 ### 8-2. Edit a Subtitle
-Tap the edit button on a subtitle card to modify the text. If you edited an STT-generated subtitle, the original text is shown as well, and you can use **Reset** if needed.
+Tap the edit button on a subtitle card to modify the text. If you edited an STT-generated subtitle, the original text is shown as well, and you can use **Reset** if needed. The editor also lets you use **Recognize again** for only that sentence range and bring the preview into the draft with **Put in editor**. Nothing is saved until you tap **Save** at the top.
 
-### 8-3. Translate
+### 8-3. Translate All Subtitles
+On iOS 26.4 or later and a device that supports Apple Intelligence, a **Translate** control may appear above the subtitle list. Choose a target language and tap **Start translation** to translate all subtitles on the device. Audio and subtitle text are not uploaded, and saved results are reused the next time you open the same material.
+
+Progress appears while translation runs. Closing the app or player pauses the job safely, and **Continue translation** resumes it later. Long material can take time and warm the device; Phrabbit automatically slows the work when needed. After the job starts, an option can keep the screen awake for that run.
+
+After a translation is saved, tap the speech-bubble control to show or hide it alongside the original. Use the adjacent **⋯** menu for **Original only**, **Original + translation**, **Translation only**, changing the language, retrying, or deleting the saved translation.
+
+If Apple Intelligence is off or its model is not ready, Phrabbit explains why. The control is hidden on unsupported devices and iOS versions. Machine translation can mishandle names, cultural expressions, and specialist terms, so compare important material with the original.
+
+### 8-4. Translate One Sentence
 Tap the translate button on a subtitle card to open the iOS system translation sheet. Translation is a study aid and may be inaccurate depending on context.
 
 ![Subtitle translation](images/iphone/en/09-translate.png)
 *▲ Translating a subtitle sentence in place*
 
-### 8-4. Add to Wordbook
+### 8-5. Add to Wordbook
 Tap the plus button on a subtitle card to choose a word or expression from that sentence and save it to the Wordbook. The Wordbook itself is a Premium feature, so if the free trial has ended, this opens the Premium screen.
 
 
@@ -369,13 +384,13 @@ The Wordbook tab has two modes.
 
 | Mode | Description |
 |---|---|
-| **List** | Review words, meanings, context, source file, and added date |
+| **List** | Review words, meanings, context, source file, and playback position |
 | **Flashcards** | Memorize by flipping cards |
 
 ![Flashcards](images/iphone/en/08-flashcard.png)
 *▲ Reviewing with cards during spare moments*
 
-In the word detail screen, you can listen to pronunciation, edit meaning or memo, open the original audio, search a dictionary, and regenerate the Apple Intelligence explanation. Words you know can be marked **Memorized**, and the list can hide memorized words.
+Use the play button in the list to hear the saved context. Tap **⋯** at the end of a row, or touch and hold it, to choose **Mark as Memorized** or **Resume Learning**, or **Delete**. The word detail screen shows the added date and lets you listen to pronunciation, edit meaning or memo, open the original audio, search a dictionary, and regenerate the Apple Intelligence explanation. The list can also hide memorized words.
 
 
 ## 10. YouTube Stream Practice
@@ -394,7 +409,7 @@ Key features:
 - Use Phrabbit's A/B loop, loop count, and speed controls
 - Use a time ruler for precise navigation in long videos
 - Practice in full screen
-- Save bookmarks and shadowing recordings per YouTube link. A bookmark is saved immediately with an automatic name; use **Rename** from the save toast or a saved row to change it.
+- Save bookmarks and shadowing recordings per YouTube link. A bookmark is saved immediately with an automatic name; use **Rename** from the save toast or the saved item's **⋯** or touch-and-hold menu. The same menu offers **Info** for the exact range, length, and saved date, or **Delete**. When space allows, the bookmark card also shows its saved date.
 
 ### 10-2. YouTube Captions and Wordbook Limits
 YouTube captions are shown only inside the YouTube player. Phrabbit does not bring YouTube caption text into the app.
@@ -507,10 +522,10 @@ Tap the full-screen button to enlarge the video. The screen fills sideways while
 
 Video does not play in the background or on the lock screen. When the app goes to the background or the screen locks, playback stops. Background playback applies to audio files only.
 
-### 11-7. Rename and Delete
-A video title starts as the file name. Touch and hold a video in the library and choose **Rename Video** to change it.
+### 11-7. Rename, Info, and Delete
+A video title starts as the file name. Tap **⋯** at the end of its library row, or touch and hold the row, then choose **Rename** to change it. **Info** shows the full title, item type, duration, added date, and folder location.
 
-Swiping a video left and deleting it removes Phrabbit's record along with its subtitles, bookmarks, and saved shadowing recordings. **The original video file is never deleted.** If saved recordings exist, a confirmation appears first.
+Choose **Delete** from the same menu to remove Phrabbit's record along with its subtitles, bookmarks, and saved shadowing recordings. **The original video file is never deleted.** If saved recordings exist, a confirmation appears first.
 
 
 ## 12. Shadowing Recording and Comparison
@@ -554,17 +569,29 @@ Use the save button to keep a take you like. Saved recordings appear in the book
 
 Tap a saved recording to return to the A/B range where it was made and reopen the shadowing screen. Multiple takes for the same range are grouped as one practice point.
 
+To manage a saved recording or bookmark, tap **⋯** at the end of its row or card, or touch and hold it. Both open the same menu; swiping does not delete saved practice. Choose **Info** to see a bookmark's range, length, and saved date, or a recording's range, length, take count, and recording dates.
+
 
 ## 13. Podcasts
 
-Podcast downloads are a Premium feature. You can import episodes from Apple Podcasts subscriptions or RSS URLs and practice them in the audio player.
+Podcast downloads are a Premium feature. You can search by show name, browse recommendations for your practice language, or import episodes from Apple Podcasts subscriptions and RSS URLs, then practice them in the audio player.
 
-### 13-1. Import from Apple Podcasts
-Tap **Add from Podcast** in the Home plus menu. The first time, Phrabbit may ask for media library permission. After you allow it, your subscribed Apple Podcasts channels appear.
+### 13-1. Browse by Practice Language
+Tap **Add from Podcast** in the Home plus menu. The first time, choose the language you want to practice. Phrabbit has hand-picked lists for Korean, English, Japanese, Chinese, Spanish, and French, and other practice languages are available too.
+
+After choosing a language, topic chips and show rails appear under **Browse in …**. Learner shows and current news are selected first. Turn chips on or off to add or hide lists such as beginner, slow speech, history, travel, or music. Each language shows only topics with useful search results. Use **Change language** at any time.
+
+**Chosen by Phrabbit** marks a hand-picked list; **Apple Podcasts search results** marks an Apple search. A badge such as “Explained in English” means the show teaches the practice language using another language.
+
+### 13-2. Search by Name or RSS URL
+Enter a show name in **Search podcasts or RSS URL** and search. Tap a show card to open the same episode list used by every other entry point. You can also paste an RSS URL directly into this field to open that feed.
+
+### 13-3. Apple Podcasts Subscriptions
+Phrabbit may ask for media library permission. Tap **Load from Apple Podcasts** and allow access to show your subscriptions under **My podcasts**. Phrabbit uses this permission only to display shows you are interested in; it downloads episode audio directly from each show's RSS feed.
 
 Tap a channel to open its episode list.
 
-### 13-2. Episode Badges
+### 13-4. Episode Badges
 
 | Badge | Meaning |
 |---|---|
@@ -577,16 +604,18 @@ Tap a channel to open its episode list.
 
 Episodes with the **Script** badge can import the podcast's official transcript without running STT again. This is usually more accurate than automatic recognition and requires less waiting, so Script episodes are recommended first for study material.
 
-### 13-3. Enter RSS URL Directly
-Expand **Add via RSS URL (advanced)** to enter an RSS URL manually. Use this for podcasts that do not appear in Apple Podcasts search or when you already know the RSS address.
+### 13-5. Enter an RSS URL Directly
+Besides pasting an RSS URL into the search field, you can expand **Add via RSS URL (advanced)** and enter it manually. Use this for podcasts that do not appear in Apple Podcasts search or when you already know the RSS address.
 
-### 13-4. Downloads and Cellular Data
+### 13-6. Downloads and Cellular Data
 The default setting is **Download over Wi-Fi only**. If you allow cellular downloads, a confirmation may appear before downloading a large episode.
 
 ![Podcast download status](images/iphone/18-podcast-downloads.png)
 *▲ Episode list showing not-downloaded and downloaded states*
 
-Some podcast files may take a moment to prepare in a playable format the first time you open them.
+Tap an episode to start downloading. While it downloads, tap the stop square inside the progress ring to cancel. If a clock indicates that the episode is waiting for Wi-Fi, tap the episode again to remove it from the queue. Tap an episode with a check mark to open the player.
+
+Some podcast files may take a moment to prepare in a playable format the first time you open them. When an episode has official or STT subtitles, supported devices can translate them using [8-3. Translate All Subtitles](#8-3-translate-all-subtitles).
 
 
 ## 14. Learning Stats and Settings
