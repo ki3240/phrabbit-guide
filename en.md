@@ -581,7 +581,7 @@ Tap **Add from Podcast** in the Home plus menu. The first time, choose the langu
 
 After choosing a language, topic chips and show rails appear under **Browse in …**. Learner shows and current news are selected first. Turn chips on or off to add or hide lists such as beginner, slow speech, history, travel, or music. Each language shows only topics with useful search results. Use **Change language** at any time.
 
-**Chosen by Phrabbit** marks a hand-picked list; **Apple Podcasts search results** marks an Apple search. A badge such as “Explained in English” means the show teaches the practice language using another language.
+**Chosen by Phrabbit** marks a hand-picked list; **Apple Podcasts search results** marks an Apple search. A badge such as “Taught in English” means the show teaches the practice language using another language.
 
 ### 13-2. Search by Name or RSS URL
 Enter a show name in **Search podcasts or RSS URL** and search. Tap a show card to open the same episode list used by every other entry point. You can also paste an RSS URL directly into this field to open that feed.

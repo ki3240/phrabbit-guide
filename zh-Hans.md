@@ -581,7 +581,7 @@ YouTube 流媒体的字幕只存在于 YouTube 播放器内部，不会带入跟
 
 选择语言后，**Browse in …** 下方会显示主题标签和节目列表。默认会选择学习者节目和最新新闻等主题。开启或关闭标签，可添加或隐藏初级、慢速、历史、旅行、音乐等列表。每种语言只显示有实用搜索结果的主题。可随时用 **Change language** 更换语言。
 
-**Chosen by Phrabbit** 表示 Phrabbit 精选列表；**Apple Podcasts search results** 表示 Apple 的搜索结果。“用英语讲解”等标记表示该节目使用练习语言以外的另一种语言进行说明。
+**Chosen by Phrabbit** 表示 Phrabbit 精选列表；**Apple Podcasts search results** 表示 Apple 的搜索结果。“英语讲解”等标记表示该节目使用练习语言以外的另一种语言进行说明。
 
 ### 13-2. 按名称或 RSS URL 搜索
 在顶部的 **Search podcasts or RSS URL** 中输入节目名称并搜索。点按节目卡片后，无论从哪个入口进入，都会打开同一个单集列表。也可以把 RSS URL 直接粘贴到此输入框中打开订阅源。

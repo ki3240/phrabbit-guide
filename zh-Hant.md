@@ -581,7 +581,7 @@ Podcast 下載是進階版功能。你可以依節目名稱搜尋、瀏覽適合
 
 選擇語言後，**Browse in …** 下方會顯示主題標籤和節目清單。預設會選擇學習者節目和最新新聞等主題。開啟或關閉標籤，可新增或隱藏初級、慢速、歷史、旅行、音樂等清單。每種語言只顯示有實用搜尋結果的主題。可隨時用 **Change language** 更換語言。
 
-**Chosen by Phrabbit** 表示 Phrabbit 精選清單；**Apple Podcasts search results** 表示 Apple 的搜尋結果。「以英語解說」等標記表示該節目使用練習語言以外的另一種語言進行說明。
+**Chosen by Phrabbit** 表示 Phrabbit 精選清單；**Apple Podcasts search results** 表示 Apple 的搜尋結果。「英語講解」等標記表示該節目使用練習語言以外的另一種語言進行說明。
 
 ### 13-2. 依名稱或 RSS URL 搜尋
 在頂部的 **Search podcasts or RSS URL** 中輸入節目名稱並搜尋。點一下節目卡片後，無論從哪個入口進入，都會開啟同一個單集清單。也可以把 RSS URL 直接貼到此欄位中開啟訂閱來源。
