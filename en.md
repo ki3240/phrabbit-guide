@@ -106,7 +106,7 @@ Deleting an item also removes its waveform cache, bookmarks, subtitles, and save
 
 Tap the plus button at the top right of Home to open the add menu.
 
-![Add menu](images/iphone/en/11-add-menu.png)
+![Add menu](images/iphone/11-add-menu.png)
 *▲ Menu for adding files, music, YouTube links, and podcasts*
 
 ### 3-1. Add an Audio File
@@ -241,7 +241,7 @@ Phrabbit creates the automatic name from the file title and range length. The sa
 ### 6-2. Bookmark List
 Tap the list button to open the current file's bookmarks. Tap a bookmark to restore that range as A/B and practice it right away.
 
-![Bookmarks and My Recordings](images/iphone/en/14-bookmarks-recordings.png)
+![Bookmarks and My Recordings](images/iphone/14-bookmarks-recordings.png)
 *▲ Bookmark list with the Bookmarks / My Recordings switch*
 
 When both bookmarks and recordings exist, the list uses a **Bookmarks / My Recordings** switch so each list stays easy to reach. When there are at least two bookmarks, a **Play All** menu may appear. It can play several bookmarks in order and repeat each bookmark 1, 2, or 3 times.
@@ -617,7 +617,7 @@ Tap a channel to open its episode list.
 | **Creator transcript** | Official text-only material is available |
 | No badge | No official transcript |
 
-![Podcast episode with a Creator captions badge](images/iphone/en/17-podcast-script.png)
+![Podcast episode with a Creator captions badge](images/iphone/17-podcast-script.png)
 *▲ Episodes with a Creator captions badge can import official captions*
 
 Episodes with the **Creator captions** badge can import the podcast's official captions without running STT again. This is usually more accurate than automatic recognition and requires less waiting, so those episodes are recommended first for study material.
@@ -628,7 +628,7 @@ Besides pasting an RSS URL into the search field, you can expand **Add via RSS U
 ### 13-6. Downloads and Cellular Data
 The default setting is **Download over Wi-Fi only**. If you allow cellular downloads, a confirmation may appear before downloading a large episode.
 
-![Podcast download status](images/iphone/en/18-podcast-downloads.png)
+![Podcast download status](images/iphone/18-podcast-downloads.png)
 *▲ Episode list showing not-downloaded and downloaded states*
 
 Tap an episode to start downloading. While it downloads, tap the stop square inside the progress ring to cancel. If a clock indicates that the episode is waiting for Wi-Fi, tap the episode again to remove it from the queue. Tap an episode with a check mark to open the player.
@@ -657,7 +657,7 @@ Tap a Focused Segments or Most Practiced item to return to the original material
 ### 14-2. Settings
 Tap **More** at the top right of Home, then choose **Settings**.
 
-![Settings](images/iphone/en/19-settings.png)
+![Settings](images/iphone/19-settings.png)
 *▲ Settings for background playback, downloads, learning stats reset, and support*
 
 You can manage:
