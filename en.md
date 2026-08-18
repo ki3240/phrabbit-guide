@@ -75,6 +75,12 @@ If the library is empty, you can use the centered **Add** button to add material
 ### 2-2. Favorites and Folders
 Tap **⋯** at the end of a library row, or touch and hold the row, to open the same management menu. Choose **Add to Favorites** to star it, or **Move to Folder…** to organize it. For a regular library item, **Info** shows the full title and details that may not fit in the row, such as its type, duration, play position, added date or segment count, and folder location. A folder's menu contains **Rename**, **Move to Folder…**, and **Delete**.
 
+![Row actions](images/iphone/22-row-actions.png)
+*▲ The same menu opens from the visible ⋯ or from touch and hold*
+
+![Row information](images/iphone/27-row-info.png)
+*▲ Info shows what the row itself has no space for*
+
 Once at least one favorite exists, the **All / Favorites** chips appear below the wordmark; **Favorites** shows a flat list across the whole library, regardless of folder.
 
 Use **More > New Folder** to create folders. When folders exist, **More > Select** lets you select multiple items and move them together, and **All Items** opens the whole library in one list. Folders can contain other folders.
@@ -100,7 +106,7 @@ Deleting an item also removes its waveform cache, bookmarks, subtitles, and save
 
 Tap the plus button at the top right of Home to open the add menu.
 
-![Add menu](images/iphone/11-add-menu.png)
+![Add menu](images/iphone/en/11-add-menu.png)
 *▲ Menu for adding files, music, YouTube links, and podcasts*
 
 ### 3-1. Add an Audio File
@@ -314,6 +320,9 @@ To recognize the speech again, confirm the language under **Recognition language
 
 ### 8-2. Edit a Subtitle
 Tap the edit button on a subtitle card to modify the text. If you edited an STT-generated subtitle, the original text is shown as well, and you can use **Reset** if needed. The editor also lets you use **Recognize again** for only that sentence range and bring the preview into the draft with **Put in editor**. Nothing is saved until you tap **Save** at the top.
+
+![Recognizing one segment again](images/iphone/26-segment-recognition.png)
+*▲ Recognition produces a preview; your draft is left alone until you insert it*
 
 ### 8-3. Translate All Subtitles
 On iOS 26.4 or later and a device that supports Apple Intelligence, a **Translate** control may appear above the subtitle list. Choose a target language and tap **Start translation** to translate all subtitles on the device. Audio and subtitle text are not uploaded, and saved results are reused the next time you open the same material.
@@ -581,6 +590,12 @@ Tap **Add from Podcast** in the Home plus menu. The first time, choose the langu
 
 After choosing a language, topic chips and show rails appear under **Browse in …**. Learner shows and current news are selected first. Turn chips on or off to add or hide lists such as beginner, slow speech, history, travel, or music. Each language shows only topics with useful search results. Use **Change language** at any time.
 
+![Choosing a practice language](images/iphone/23-podcast-language.png)
+*▲ The first visit asks which language you are practising*
+
+![Browsing shows by language](images/iphone/24-podcast-browse.png)
+*▲ Topic chips filter the rails; each rail scrolls sideways*
+
 **Chosen by Phrabbit** marks a hand-picked list; **Apple Podcasts search results** marks an Apple search. A badge such as “Taught in English” means the show teaches the practice language using another language.
 
 ### 13-2. Search by Name or RSS URL
@@ -595,14 +610,14 @@ Tap a channel to open its episode list.
 
 | Badge | Meaning |
 |---|---|
-| **Script** | Official time-synced transcript is available |
-| **Text only** | Official text-only material is available |
+| **Creator captions** | Official time-synced captions are available |
+| **Creator transcript** | Official text-only material is available |
 | No badge | No official transcript |
 
-![Podcast episode with Script badge](images/iphone/17-podcast-script.png)
-*▲ Episodes with a Script badge can import official transcripts*
+![Podcast episode with a Creator captions badge](images/iphone/en/17-podcast-script.png)
+*▲ Episodes with a Creator captions badge can import official captions*
 
-Episodes with the **Script** badge can import the podcast's official transcript without running STT again. This is usually more accurate than automatic recognition and requires less waiting, so Script episodes are recommended first for study material.
+Episodes with the **Creator captions** badge can import the podcast's official captions without running STT again. This is usually more accurate than automatic recognition and requires less waiting, so those episodes are recommended first for study material.
 
 ### 13-5. Enter an RSS URL Directly
 Besides pasting an RSS URL into the search field, you can expand **Add via RSS URL (advanced)** and enter it manually. Use this for podcasts that do not appear in Apple Podcasts search or when you already know the RSS address.
@@ -610,7 +625,7 @@ Besides pasting an RSS URL into the search field, you can expand **Add via RSS U
 ### 13-6. Downloads and Cellular Data
 The default setting is **Download over Wi-Fi only**. If you allow cellular downloads, a confirmation may appear before downloading a large episode.
 
-![Podcast download status](images/iphone/18-podcast-downloads.png)
+![Podcast download status](images/iphone/en/18-podcast-downloads.png)
 *▲ Episode list showing not-downloaded and downloaded states*
 
 Tap an episode to start downloading. While it downloads, tap the stop square inside the progress ring to cancel. If a clock indicates that the episode is waiting for Wi-Fi, tap the episode again to remove it from the queue. Tap an episode with a check mark to open the player.
@@ -639,7 +654,7 @@ Tap a Focused Segments or Most Practiced item to return to the original material
 ### 14-2. Settings
 Tap **More** at the top right of Home, then choose **Settings**.
 
-![Settings](images/iphone/19-settings.png)
+![Settings](images/iphone/en/19-settings.png)
 *▲ Settings for background playback, downloads, learning stats reset, and support*
 
 You can manage:
