@@ -241,7 +241,7 @@ Phrabbit creates the automatic name from the file title and range length. The sa
 ### 6-2. Bookmark List
 Tap the list button to open the current file's bookmarks. Tap a bookmark to restore that range as A/B and practice it right away.
 
-![Bookmarks and My Recordings](images/iphone/14-bookmarks-recordings.png)
+![Bookmarks and My Recordings](images/iphone/en/14-bookmarks-recordings.png)
 *▲ Bookmark list with the Bookmarks / My Recordings switch*
 
 When both bookmarks and recordings exist, the list uses a **Bookmarks / My Recordings** switch so each list stays easy to reach. When there are at least two bookmarks, a **Play All** menu may appear. It can play several bookmarks in order and repeat each bookmark 1, 2, or 3 times.
@@ -330,6 +330,9 @@ On iOS 26.4 or later and a device that supports Apple Intelligence, a **Translat
 Progress appears while translation runs. Closing the app or player pauses the job safely, and **Continue translation** resumes it later. Long material can take time and warm the device; Phrabbit automatically slows the work when needed. After the job starts, an option can keep the screen awake for that run.
 
 After a translation is saved, tap the speech-bubble control to show or hide it alongside the original. Use the adjacent **⋯** menu for **Original only**, **Original + translation**, **Translation only**, changing the language, retrying, or deleting the saved translation.
+
+![Subtitles with their translation](images/iphone/25-subtitle-translation.png)
+*▲ Original + translation, with the speech-bubble control above the list*
 
 If Apple Intelligence is off or its model is not ready, Phrabbit explains why. The control is hidden on unsupported devices and iOS versions. Machine translation can mishandle names, cultural expressions, and specialist terms, so compare important material with the original.
 
