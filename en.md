@@ -300,7 +300,7 @@ Each card may show:
 - Low-confidence warning
 - **Approx. position** badge when the text was recognized but timing is approximate
 - Subtitle text
-- Translate, add-to-wordbook, edit, and delete buttons
+- A **⋯** menu with **Translate**, **Add to Wordbook**, **Edit**, and **Delete** — touch and hold the card opens the same menu
 
 Tap a subtitle card to set that card's section as A/B and start looping it. The currently playing card is highlighted, and cards inside the A/B range use a different background color.
 
@@ -319,7 +319,7 @@ Tap **Add Segment** above the subtitle area to create a new subtitle segment bas
 To recognize the speech again, confirm the language under **Recognition language** and tap **Recognize again**. The result appears as a preview and never replaces your draft automatically. If it looks useful, tap **Put in editor**, make any corrections, and then tap **Add** at the top to save it.
 
 ### 8-2. Edit a Subtitle
-Tap the edit button on a subtitle card to modify the text. If you edited an STT-generated subtitle, the original text is shown as well, and you can use **Reset** if needed. The editor also lets you use **Recognize again** for only that sentence range and bring the preview into the draft with **Put in editor**. Nothing is saved until you tap **Save** at the top.
+Open a subtitle card's **⋯** menu, or touch and hold the card, and choose **Edit** to modify the text. If you edited an STT-generated subtitle, the original text is shown as well, and you can use **Reset** if needed. The editor also lets you use **Recognize again** for only that sentence range and bring the preview into the draft with **Put in editor**. Nothing is saved until you tap **Save** at the top.
 
 ![Recognizing one segment again](images/iphone/26-segment-recognition.png)
 *▲ Recognition produces a preview; your draft is left alone until you insert it*
@@ -337,13 +337,13 @@ After a translation is saved, tap the speech-bubble control to show or hide it a
 If Apple Intelligence is off or its model is not ready, Phrabbit explains why. The control is hidden on unsupported devices and iOS versions. Machine translation can mishandle names, cultural expressions, and specialist terms, so compare important material with the original.
 
 ### 8-4. Translate One Sentence
-Tap the translate button on a subtitle card to open the iOS system translation sheet. Translation is a study aid and may be inaccurate depending on context.
+Choose **Translate** from a subtitle card's **⋯** menu to open the iOS system translation sheet. Translation is a study aid and may be inaccurate depending on context.
 
 ![Subtitle translation](images/iphone/en/09-translate.png)
 *▲ Translating a subtitle sentence in place*
 
 ### 8-5. Add to Wordbook
-Tap the plus button on a subtitle card to choose a word or expression from that sentence and save it to the Wordbook. The Wordbook itself is a Premium feature, so if the free trial has ended, this opens the Premium screen.
+Choose **Add to Wordbook** from a subtitle card's **⋯** menu to pick a word or expression from that sentence and save it. The Wordbook itself is a Premium feature, so if the free trial has ended, this opens the Premium screen.
 
 
 ## 9. Wordbook
@@ -354,7 +354,7 @@ The Wordbook collects words and expressions saved from subtitle cards. It is ava
 *▲ Wordbook entries saved together with context*
 
 ### 9-1. Save a Word
-Tap the plus button on a subtitle card to open **Add to Wordbook**.
+Choose **Add to Wordbook** from a subtitle card's **⋯** menu.
 
 You can save:
 
