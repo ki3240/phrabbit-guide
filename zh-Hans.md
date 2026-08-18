@@ -54,7 +54,7 @@ Phrabbit 是一款用于外语听力练习的 A/B 区间循环应用。你可以
 
 主屏幕是所有学习材料汇集的地方。本地音频、视频文件、音乐库曲目、播客单集和 YouTube 链接会一起显示在同一个资料库列表中。
 
-![主屏幕](images/iphone/zh-Hans/05-home.png)
+![主屏幕](images/iphone/05-home.png)
 *▲ 同时显示文件、播客和 YouTube 项目的主屏幕*
 
 ### 2-1. 界面布局
@@ -146,7 +146,7 @@ Phrabbit 是一款用于外语听力练习的 A/B 区间循环应用。你可以
 
 在主屏幕点按音频项目，会打开全屏播放器。
 
-![音频播放器与字幕](images/iphone/zh-Hans/04-subtitles.png)
+![音频播放器与字幕](images/iphone/04-subtitles.png)
 *▲ 在同一屏幕显示波形和句子卡片的音频播放器*
 
 ### 4-1. 关闭与迷你播放器
@@ -189,7 +189,7 @@ Phrabbit 是一款用于外语听力练习的 A/B 区间循环应用。你可以
 
 A/B 区间循环是反复听一整句或短表达的核心功能。
 
-![A/B 区间循环](images/iphone/zh-Hans/02-abloop.png)
+![A/B 区间循环](images/iphone/02-abloop.png)
 *▲ 用手指微调 A/B 区间并循环播放*
 
 ### 5-1. 用 A-B 按钮设置
@@ -255,7 +255,7 @@ A 和 B 都设置好后，波形下方会显示区间信息栏。
 
 STT 会把音频转换成句子级字幕。高级版或免费试用期间可以使用。
 
-![句子级自动字幕](images/iphone/zh-Hans/01-sentences.png)
+![句子级自动字幕](images/iphone/01-sentences.png)
 *▲ 将音频转换成句子级字幕卡片的画面*
 
 ### 7-1. 开始转换
@@ -339,7 +339,7 @@ STT 会把音频转换成句子级字幕。高级版或免费试用期间可以�
 ### 8-4. 翻译单句
 在字幕卡片的 **⋯** 中选择 **Translate**，会打开 iOS 系统翻译页面。翻译仅作为学习辅助，可能会因上下文而不准确。
 
-![字幕翻译](images/iphone/zh-Hans/09-translate.png)
+![字幕翻译](images/iphone/09-translate.png)
 *▲ 直接翻译并确认字幕句子的画面*
 
 ### 8-5. 添加到单词本
@@ -350,7 +350,7 @@ STT 会把音频转换成句子级字幕。高级版或免费试用期间可以�
 
 单词本用于集中复习从字幕卡片中保存的单词和表达。高级版或免费试用期间可以使用。
 
-![单词本](images/iphone/zh-Hans/07-wordbook.png)
+![单词本](images/iphone/07-wordbook.png)
 *▲ 将表达连同上下文一起保存的单词本*
 
 ### 9-1. 保存单词
@@ -399,7 +399,7 @@ AI 说明并不会仅因为两种语言相同就一定隐藏。但只要以上�
 | **List** | 查看单词、含义、上下文、来源文件和播放位置 |
 | **Flashcards** | 翻卡进行记忆练习 |
 
-![抽认卡](images/iphone/zh-Hans/08-flashcard.png)
+![抽认卡](images/iphone/08-flashcard.png)
 *▲ 利用碎片时间用卡片复习*
 
 点按列表中的播放按钮可立即收听保存的上下文。点按行末尾的 **⋯**，或长按该行，可选择 **Mark as Memorized** 或 **Resume Learning**，也可选择 **Delete**。单词详情页面会显示添加日期，并可听发音、修改含义/备注、打开原始音频、搜索词典，以及重新生成 Apple Intelligence 说明。列表中也可隐藏已掌握单词。
@@ -409,7 +409,7 @@ AI 说明并不会仅因为两种语言相同就一定隐藏。但只要以上�
 
 添加 YouTube 链接后，会打开 Stream 播放器。YouTube 视频不会保存在应用内，而是通过 YouTube 嵌入播放器播放。
 
-![YouTube 流媒体练习](images/iphone/zh-Hans/03-youtube.png)
+![YouTube 流媒体练习](images/iphone/03-youtube.png)
 *▲ 像听力教材一样循环练习 YouTube 链接*
 
 ### 10-1. 基本结构
@@ -544,7 +544,7 @@ YouTube 流媒体不会在锁屏或后台继续播放。当应用进入后台时
 
 跟读功能让你听 A/B 区间、自己说出来，并把自己的录音与原音比较。
 
-![跟读](images/iphone/zh-Hans/10-shadowing.png)
+![跟读](images/iphone/10-shadowing.png)
 *▲ 听 A/B 区间、录音并与原音比较的跟读画面*
 
 ### 12-1. 跟读间隔
@@ -641,7 +641,7 @@ YouTube 流媒体的字幕只存在于 YouTube 播放器内部，不会带入跟
 ### 14-1. 学习记录标签页
 在 **学习记录（Progress）** 标签页中，可以查看最近的学习量。
 
-![学习记录](images/iphone/zh-Hans/06-learning-record.png)
+![学习记录](images/iphone/06-learning-record.png)
 *▲ 查看反复练习较多的区间和最近 7 天学习量*
 
 主要项目：

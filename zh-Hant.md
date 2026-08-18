@@ -54,7 +54,7 @@ Phrabbit 是一款用於外語聽力練習的 A/B 區間循環 App。你可以�
 
 主畫面是所有學習材料匯集的地方。本機音訊、影片檔案、音樂資料庫曲目、Podcast 單集和 YouTube 連結會一起顯示在同一個資料庫清單中。
 
-![主畫面](images/iphone/zh-Hant/05-home.png)
+![主畫面](images/iphone/05-home.png)
 *▲ 同時顯示檔案、Podcast 和 YouTube 項目的主畫面*
 
 ### 2-1. 畫面配置
@@ -146,7 +146,7 @@ Phrabbit 是一款用於外語聽力練習的 A/B 區間循環 App。你可以�
 
 在主畫面點一下音訊項目，會開啟全螢幕播放器。
 
-![音訊播放器與字幕](images/iphone/zh-Hant/04-subtitles.png)
+![音訊播放器與字幕](images/iphone/04-subtitles.png)
 *▲ 在同一畫面顯示波形和句子卡片的音訊播放器*
 
 ### 4-1. 關閉與迷你播放器
@@ -189,7 +189,7 @@ Phrabbit 是一款用於外語聽力練習的 A/B 區間循環 App。你可以�
 
 A/B 區間循環是反覆聽一句話或短表達的核心功能。
 
-![A/B 區間循環](images/iphone/zh-Hant/02-abloop.png)
+![A/B 區間循環](images/iphone/02-abloop.png)
 *▲ 用手指微調 A/B 區間並循環播放*
 
 ### 5-1. 用 A-B 按鈕設定
@@ -255,7 +255,7 @@ A 和 B 都設定好後，波形下方會顯示區間資訊列。
 
 STT 會把音訊轉換成句子級字幕。進階版或免費試用期間可以使用。
 
-![句子級自動字幕](images/iphone/zh-Hant/01-sentences.png)
+![句子級自動字幕](images/iphone/01-sentences.png)
 *▲ 將音訊轉換成句子級字幕卡片的畫面*
 
 ### 7-1. 開始轉換
@@ -339,7 +339,7 @@ STT 會把音訊轉換成句子級字幕。進階版或免費試用期間可以�
 ### 8-4. 翻譯單句
 在字幕卡片的 **⋯** 中選擇 **Translate**，會開啟 iOS 系統翻譯畫面。翻譯僅作為學習輔助，可能會因上下文而不準確。
 
-![字幕翻譯](images/iphone/zh-Hant/09-translate.png)
+![字幕翻譯](images/iphone/09-translate.png)
 *▲ 直接翻譯並確認字幕句子的畫面*
 
 ### 8-5. 加入單字本
@@ -350,7 +350,7 @@ STT 會把音訊轉換成句子級字幕。進階版或免費試用期間可以�
 
 單字本用於集中複習從字幕卡片中儲存的單字和表達。進階版或免費試用期間可以使用。
 
-![單字本](images/iphone/zh-Hant/07-wordbook.png)
+![單字本](images/iphone/07-wordbook.png)
 *▲ 將表達連同上下文一起儲存的單字本*
 
 ### 9-1. 儲存單字
@@ -399,7 +399,7 @@ AI 說明並不會僅因兩種語言相同就一定隱藏。但只要以上任�
 | **List** | 查看單字、含義、上下文、來源檔案和播放位置 |
 | **Flashcards** | 翻卡進行記憶練習 |
 
-![閃卡](images/iphone/zh-Hant/08-flashcard.png)
+![閃卡](images/iphone/08-flashcard.png)
 *▲ 利用零碎時間用卡片複習*
 
 點一下清單中的播放按鈕可立即收聽儲存的上下文。點一下列末尾的 **⋯**，或長按該列，可選擇 **Mark as Memorized** 或 **Resume Learning**，也可選擇 **Delete**。單字詳細畫面會顯示新增日期，並可聽發音、修改含義/備註、開啟原始音訊、搜尋字典，以及重新產生 Apple Intelligence 說明。清單中也可隱藏已掌握的單字。
@@ -409,7 +409,7 @@ AI 說明並不會僅因兩種語言相同就一定隱藏。但只要以上任�
 
 新增 YouTube 連結後，會開啟 Stream 播放器。YouTube 影片不會儲存在 App 內，而是透過 YouTube 嵌入播放器播放。
 
-![YouTube 串流練習](images/iphone/zh-Hant/03-youtube.png)
+![YouTube 串流練習](images/iphone/03-youtube.png)
 *▲ 像聽力教材一樣循環練習 YouTube 連結*
 
 ### 10-1. 基本結構
@@ -544,7 +544,7 @@ YouTube 串流不會在鎖定畫面或背景繼續播放。當 App 進入背景�
 
 跟讀功能讓你聽 A/B 區間、自己說出來，並把自己的錄音與原音比較。
 
-![跟讀](images/iphone/zh-Hant/10-shadowing.png)
+![跟讀](images/iphone/10-shadowing.png)
 *▲ 聽 A/B 區間、錄音並與原音比較的跟讀畫面*
 
 ### 12-1. 跟讀間隔
@@ -641,7 +641,7 @@ Podcast 下載是進階版功能。你可以依節目名稱搜尋、瀏覽適合
 ### 14-1. 學習記錄分頁
 在 **學習記錄（Progress）** 分頁中，可以查看最近的學習量。
 
-![學習記錄](images/iphone/zh-Hant/06-learning-record.png)
+![學習記錄](images/iphone/06-learning-record.png)
 *▲ 查看反覆練習較多的區間和最近 7 天學習量*
 
 主要項目：

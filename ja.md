@@ -54,7 +54,7 @@ Phrabbit は、外国語のリスニング練習のための A/B 区間リピー
 
 ホーム画面は、追加した学習素材が集まる場所です。ローカル音声、動画ファイル、ミュージックライブラリの曲、ポッドキャストエピソード、YouTube リンクが同じライブラリ一覧に表示されます。
 
-![ホーム画面](images/iphone/ja/05-home.png)
+![ホーム画面](images/iphone/05-home.png)
 *▲ ファイル、ポッドキャスト、YouTube をまとめて表示するホーム画面*
 
 ### 2-1. 画面構成
@@ -146,7 +146,7 @@ Phrabbit は、外国語のリスニング練習のための A/B 区間リピー
 
 ホーム画面で音声項目をタップすると、全画面プレーヤーが開きます。
 
-![オーディオプレーヤーと字幕](images/iphone/ja/04-subtitles.png)
+![オーディオプレーヤーと字幕](images/iphone/04-subtitles.png)
 *▲ 波形と文ごとのカードを同じ画面で表示するオーディオプレーヤー*
 
 ### 4-1. 閉じる操作とミニプレーヤー
@@ -189,7 +189,7 @@ Phrabbit は、外国語のリスニング練習のための A/B 区間リピー
 
 A/B 区間リピートは、聞きたい一文や短い表現を繰り返すための中心機能です。
 
-![A/B 区間リピート](images/iphone/ja/02-abloop.png)
+![A/B 区間リピート](images/iphone/02-abloop.png)
 *▲ 指先で A/B 区間を合わせて繰り返す画面*
 
 ### 5-1. A-B ボタンで設定
@@ -255,7 +255,7 @@ A/B 区間を設定すると、**person.wave.2** 形のボタンが表示され�
 
 STT は、音声を文単位の字幕に変換する機能です。プレミアムまたは無料トライアル中に利用できます。
 
-![文単位の自動字幕](images/iphone/ja/01-sentences.png)
+![文単位の自動字幕](images/iphone/01-sentences.png)
 *▲ 音声を文単位の字幕カードに変換した画面*
 
 ### 7-1. 変換を開始
@@ -339,7 +339,7 @@ Apple Intelligence がオフ、またはモデルの準備中の場合は理由�
 ### 8-4. 1 文を翻訳
 字幕カードの **⋯** から **Translate** を選ぶと、iOS のシステム翻訳画面が開きます。翻訳は学習補助用であり、文脈によって不正確な場合があります。
 
-![字幕翻訳](images/iphone/ja/09-translate.png)
+![字幕翻訳](images/iphone/09-translate.png)
 *▲ 字幕の文をその場で翻訳して確認する画面*
 
 ### 8-5. 単語帳に追加
@@ -350,7 +350,7 @@ Apple Intelligence がオフ、またはモデルの準備中の場合は理由�
 
 単語帳は、字幕カードから保存した単語や表現をまとめて復習する場所です。プレミアムまたは無料トライアル中に利用できます。
 
-![単語帳](images/iphone/ja/07-wordbook.png)
+![単語帳](images/iphone/07-wordbook.png)
 *▲ 文脈と一緒に表現を保存する単語帳*
 
 ### 9-1. 単語を保存
@@ -399,7 +399,7 @@ Apple Intelligence を利用できる場合、**AI Explanation** セクション
 | **List** | 単語、意味、文脈、出所ファイル、再生位置を一覧で確認 |
 | **Flashcards** | カードをめくりながら暗記練習 |
 
-![フラッシュカード](images/iphone/ja/08-flashcard.png)
+![フラッシュカード](images/iphone/08-flashcard.png)
 *▲ すき間時間にカードで復習する画面*
 
 一覧の再生ボタンで保存した文脈をすぐに聞けます。行末の **⋯** をタップするか行を長押しすると、**Mark as Memorized** または **Resume Learning**、**Delete** が表示されます。単語詳細画面では追加日の確認、発音の再生、意味/メモの編集、元の音声を開く、辞書検索、Apple Intelligence 説明の再生成ができます。一覧で覚えた単語を非表示にするフィルターも使えます。
@@ -409,7 +409,7 @@ Apple Intelligence を利用できる場合、**AI Explanation** セクション
 
 YouTube リンクを追加すると、Stream プレーヤーが開きます。YouTube 動画はアプリ内に保存されず、YouTube 埋め込みプレーヤーで再生されます。
 
-![YouTube ストリーム練習](images/iphone/ja/03-youtube.png)
+![YouTube ストリーム練習](images/iphone/03-youtube.png)
 *▲ YouTube リンクをリスニング教材のようにリピート練習する画面*
 
 ### 10-1. 基本構造
@@ -544,7 +544,7 @@ iCloud Drive にあり、まだ端末にダウンロードされていない動�
 
 シャドーイングは、A/B 区間を聞き、自分で発話し、自分の録音を元音声と比較する機能です。
 
-![シャドーイング](images/iphone/ja/10-shadowing.png)
+![シャドーイング](images/iphone/10-shadowing.png)
 *▲ A/B 区間を聞いて録音し、元音声と比較するシャドーイング画面*
 
 ### 12-1. シャドーイング間隔
@@ -641,7 +641,7 @@ YouTube ストリームの字幕は YouTube プレーヤー内にのみあるた
 ### 14-1. 学習記録タブ
 **学習記録（Progress）** タブでは、最近の学習量を確認できます。
 
-![学習記録](images/iphone/ja/06-learning-record.png)
+![学習記録](images/iphone/06-learning-record.png)
 *▲ よく繰り返した区間と直近 7 日間の学習量を確認する画面*
 
 主な項目:
