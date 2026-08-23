@@ -485,6 +485,7 @@ The first time you play a video that is stored in iCloud Drive but not yet downl
 Tap a video in the library to open the video player. Its layout follows the Stream player rather than the audio player.
 
 - The video appears at the top with a seek bar below it. The full-screen button is in the player toolbar.
+- Tap the picture to play or pause.
 - Under the seek bar is the time ruler, which shows the A and B markers.
 - Once A and B are both set, a range info bar appears with the range, a fine-tune button, the scene transcription button, the microphone for shadowing, and a close button that clears the range.
 - Below that are the playback controls: **A-B**, loop count, playback speed, shadowing gap, back/forward 5 seconds, play/pause, and **Save** for a bookmark.
@@ -509,11 +510,22 @@ Open the subtitle menu in the player toolbar to use:
 | **Wordbook & Pronunciation Language…** | Sets the language used for Wordbook entries and pronunciation |
 | **Remove Subtitles** | Removes subtitles from this video |
 
-Subtitles appear at the bottom of the video. Tap them to hide them, and touch and hold to edit the current line. A subtitle file saved in an encoding other than UTF-8 may fail to load; save it as UTF-8 text and try again.
+Subtitles appear at the bottom of the video. Tapping one repeats that sentence (see 11-5), and touch and hold edits the current line. To hide subtitles, use **Show Subtitles** in the subtitle menu. A subtitle file saved in an encoding other than UTF-8 may fail to load; save it as UTF-8 text and try again.
 
-Tap the plus button on a subtitle line to save a word to the Wordbook. The Wordbook is a Premium feature.
+Tap the plus button above the subtitle to save a word to the Wordbook. The Wordbook is a Premium feature.
 
-### 11-5. Transcribe This Scene
+### 11-5. Practice Sentence by Sentence
+Once a video has subtitles, you no longer have to mark an A/B range for every sentence. Tap the **cards** button in the player toolbar to open the sentence list.
+
+- Each card is one sentence, built from the timings in the subtitle file (or from Transcribe This Scene). Short cues that together make one sentence are joined into a single card.
+- Tap a card and that sentence becomes the A/B range: playback moves to its start and loops there. The list stays open, and it does not move on to the next sentence by itself.
+- The sentence playing now is highlighted. Scroll anywhere you like — **Current Subtitle** takes you back to it.
+- Tapping the subtitle shown over the video does the same thing. When one sentence is split across several short subtitle lines, the whole sentence is still what repeats.
+- On iPhone, opening the cards clears the screen down to the video, the seek bar, and the list. Close the cards to bring the full controls back.
+- On iPad and other wide screens, the video sits on the left with subtitles, bookmarks, and your recordings on the right, so the cards stay in view.
+- A subtitle sync offset is applied to the cards too, so the time on a card is where playback actually goes.
+
+### 11-6. Transcribe This Scene
 Whole-file speech-to-text is not available for video. Instead you can transcribe only the section you are practicing. This is available during Premium or the free trial.
 
 1. Set an A/B range over the part you want.
@@ -526,15 +538,17 @@ Notes:
 - For a range longer than 3 minutes, or when the device is already warm, a **Transcribe This Scene?** heads-up appears first; tap **Continue** to go on. If the device is very hot, Phrabbit asks you to let it cool down and does not run.
 - If subtitle-file lines already exist in that range, **Replace Subtitles in Range?** asks first. Only the lines inside the range are replaced, the originals are kept, and **Restore Original Subtitles…** brings them back.
 
-### 11-6. Full Screen and Background
+### 11-7. Full Screen and Background
 ![Full-screen practice](images/iphone/21-video-fullscreen.png)
 *▲ Full-screen practice keeps the A/B controls and subtitles on screen*
 
 Tap the full-screen button to enlarge the video. The screen fills sideways while the app itself stays in portrait, so you do not need to unlock device rotation. In full screen, tap the video to show or hide the controls, and use the bookmark list to jump between saved ranges.
 
+The cards button opens the same sentence list beside the video in full screen. It does not cover the picture: the video, the ruler, and the seek bar move over to make room, and go back to full width when you close the panel.
+
 Video does not play in the background or on the lock screen. When the app goes to the background or the screen locks, playback stops. Background playback applies to audio files only.
 
-### 11-7. Rename, Info, and Delete
+### 11-8. Rename, Info, and Delete
 A video title starts as the file name. Tap **⋯** at the end of its library row, or touch and hold the row, then choose **Rename** to change it. **Info** shows the full title, item type, duration, added date, and folder location.
 
 Choose **Delete** from the same menu to remove Phrabbit's record along with its subtitles, bookmarks, and saved shadowing recordings. **The original video file is never deleted.** If saved recordings exist, a confirmation appears first.
