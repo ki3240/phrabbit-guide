@@ -517,6 +517,9 @@ Tap the plus button above the subtitle to save a word to the Wordbook. The Wordb
 ### 11-5. Practice Sentence by Sentence
 Once a video has subtitles, you no longer have to mark an A/B range for every sentence. Tap the **cards** button in the player toolbar to open the sentence list.
 
+![Sentence cards](images/iphone/28-subtitle-practice.png)
+*▲ The sentence playing now is highlighted, and tapping any card loops that sentence*
+
 - Each card is one sentence, built from the timings in the subtitle file (or from Transcribe This Scene). Short cues that together make one sentence are joined into a single card.
 - Tap a card and that sentence becomes the A/B range: playback moves to its start and loops there. The list stays open, and it does not move on to the next sentence by itself.
 - The sentence playing now is highlighted. Scroll anywhere you like — **Current Subtitle** takes you back to it.
@@ -545,6 +548,9 @@ Notes:
 Tap the full-screen button to enlarge the video. The screen fills sideways while the app itself stays in portrait, so you do not need to unlock device rotation. In full screen, tap the video to show or hide the controls, and use the bookmark list to jump between saved ranges.
 
 The cards button opens the same sentence list beside the video in full screen. It does not cover the picture: the video, the ruler, and the seek bar move over to make room, and go back to full width when you close the panel.
+
+![Sentence cards in full screen](images/iphone/29-subtitle-practice-fullscreen.png)
+*▲ In full screen the cards sit beside the video instead of covering it*
 
 Video does not play in the background or on the lock screen. When the app goes to the background or the screen locks, playback stops. Background playback applies to audio files only.
 
