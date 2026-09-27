@@ -84,7 +84,9 @@ Tap **⋯** at the end of a library row, or touch and hold the row, to open the 
 
 Once at least one favorite exists, the **All / Favorites** chips appear below the wordmark; **Favorites** shows a flat list across the whole library, regardless of folder.
 
-Use **More > New Folder** to create folders. When folders exist, **More > Select** lets you select multiple items and move them together, and **All Items** opens the whole library in one list. Folders can contain other folders.
+Use **More > New Folder** to create folders. When folders exist, **More > Select** lets you select multiple items and move them together. While selecting, **Select All** at the top left picks every file and folder in the list you are viewing; tap it again (**Deselect All**) to clear the selection. Moving a folder moves everything inside it. **All Items** opens the whole library in one list. Folders can contain other folders.
+
+You can also select and move search results. After typing a search, tap **More > Select** (in **All Items**, the **Select** button at the top right) to pick results from different folders at once and move them into one folder. If you have no folders yet, you can create one on the screen where you choose the destination. Changing the search clears the selection.
 
 ### 2-3. Item Types
 Icons and thumbnails help you identify each item type.
@@ -274,7 +276,7 @@ If a file already has subtitles, tapping the subtitle button shows these options
 
 - **Re-run with current language** - Convert again with the current language
 - **Change Language and Re-run** - Change the language and convert again
-- **Clear Script** - Delete the automatically generated subtitles
+- **Clear Script** - Delete the automatically generated subtitles. Sentences whose timing you adjusted are deleted too; sentences you added or whose text you edited are kept
 
 When there are no subtitles yet, long-pressing the subtitle button lets you choose the language before conversion.
 
@@ -291,6 +293,7 @@ Important:
 - Long audio can take several minutes.
 - If you cancel, this conversion stops and existing subtitles are kept.
 - Model downloads and some recovery steps are affected by your Wi-Fi settings.
+- If recognition comes back empty, **Trying another recognition method…** appears and the app tries once more with a different method. If it still cannot create subtitles, a message asks you to check that the audio plays and that the selected language matches. If the file could not be read to the end, you are asked to download or import it again.
 
 ### 7-3. View Results
 When conversion finishes, subtitle cards appear in chronological order.
@@ -307,21 +310,51 @@ Each card may show:
 Tap a subtitle card to set that card's section as A/B and start looping it. The currently playing card is highlighted, and cards inside the A/B range use a different background color. Newly recognized subtitles that include word timing light up word by word as playback advances. Subtitles created earlier or imported from another source may not include word timing, so this effect may not appear.
 
 ### 7-4. Unrecognized Sections
-Silent or hard-to-recognize sections may appear as **Could not recognize** cards. Use **Enter Manually** to type the subtitle yourself.
+Silent or hard-to-recognize sections may appear as **Could not recognize** cards. These cards are informational. To add a subtitle for that section yourself, move the playback position there and tap **Add Segment** (see 8-1).
 
 ### 7-5. Subtitle Information
 If the subtitle info button is visible, you can check the conversion date, recognition engine, and quality guidance. Automatic subtitles can be wrong with any model, so important expressions should be checked and corrected manually.
+
+### 7-6. Hide Subtitles
+When you want to listen by ear without reading along, you can hide the subtitles. Tap the eye button in the capsule above the subtitle area to hide them, and tap it again to show them. A hidden card shows only its start time and **Subtitle hidden**.
+
+Choose what to hide from the **⋯** at the end of the capsule, under **Hide subtitles**.
+
+- **Entire file** - Hides every subtitle
+- **Selected sentences** - Lets you pick the sentences to hide. Tap cards to check them, then tap **Done** at the top
+- **A/B range** - Hides only the sentences that overlap the current A/B range. When the A/B range changes, the hidden sentences follow it
+
+![Hide subtitles menu](images/iphone/35-subtitle-hide-menu.png)
+*▲ Choose what to hide under Hide subtitles in the ⋯ menu*
+
+Tapping a hidden card still sets that sentence as the A/B range and loops it. With **A/B range**, every sentence you tap loops while hidden, so you can listen first and then check the text with the eye button.
+
+![Only the A/B range hidden](images/iphone/36-subtitle-hide-ab.png)
+*▲ A/B range — only the sentences being looped are hidden; the ones around them stay visible*
+
+- Hiding subtitles is available in the audio player's subtitle view. It is not available for video files or YouTube.
+- The hidden state is not saved. When you close the player and open it again, all subtitles are visible.
 
 
 ## 8. Editing, Translating, and Adding Subtitles
 
 ### 8-1. Add a Subtitle Manually
-Tap **Add Segment** above the subtitle area to create a new subtitle segment based on the current playback position. You can adjust the start and end in 0.5-second steps, preview the range, and enter the text yourself.
+Tap **Add Segment** above the subtitle area to open the editor with a new 5-second segment starting at the current playback position. In **Adjust timing** at the top, drag the start and end handles on the waveform or use the buttons next to **Start** and **End** to move them 0.1 seconds at a time, and use the play button to hear only that range (see 8-2). Then type the text yourself.
 
 To recognize the speech again, confirm the language under **Recognition language** and tap **Recognize again**. The result appears as a preview and never replaces your draft automatically. If it looks useful, tap **Put in editor**, make any corrections, and then tap **Add** at the top to save it.
 
 ### 8-2. Edit a Subtitle
-Open a subtitle card's **⋯** menu, or touch and hold the card, and choose **Edit** to modify the text. If you edited an STT-generated subtitle, the original text is shown as well, and you can use **Reset** if needed. The editor also lets you use **Recognize again** for only that sentence range and bring the preview into the draft with **Put in editor**. Nothing is saved until you tap **Save** at the top.
+Open a subtitle card's **⋯** menu, or touch and hold the card, and choose **Edit** to open the editor. You can change the sentence's start and end times as well as its text.
+
+- **Adjust timing** - Drag the start and end handles on the waveform, or use the −/+ buttons next to **Start** and **End** to move them 0.1 seconds at a time. The buttons under the waveform show earlier or later audio and zoom in or out, and the middle button fits the view to the sentence again. The play button plays only the adjusted range.
+- **Adjacent sentence timing changes** - If you extend a boundary into the sentence before or after, that neighbor is shortened by the overlap, and this area previews the change. If you shorten the boundary again later, the borrowed part goes back to the neighbor. A neighbor that already overlapped this sentence is left unchanged.
+- **Restore original range** - Once you change the timing, **Original range** shows the original range, and this button restores it at any time. If the current boundaries of the neighboring sentences make that impossible, a message asks you to adjust the range manually.
+- **Restore original text** - If you edit the text of an STT-generated subtitle, the original text is shown as well, and this button brings it back.
+
+![Adjusting a sentence's timing](images/iphone/37-segment-timing.png)
+*▲ Extending the end shows the original range and the next sentence that gets shorter*
+
+The editor also lets you use **Recognize again** for only the range you have set and bring the preview into the draft with **Put in editor**. Neither the timing nor the text is saved until you tap **Save** at the top.
 
 ![Recognizing one segment again](images/iphone/26-segment-recognition.png)
 *▲ Recognition produces a preview; your draft is left alone until you insert it*
@@ -757,6 +790,7 @@ Resetting learning stats cannot be undone.
 - Create 1 new audio bookmark per file
 - Create 1 new video bookmark per video
 - Open existing audio bookmarks saved during Premium or the free trial
+- Hiding subtitles and adjusting sentence timing (audio files with subtitles)
 - Learning stats
 
 ### Available During Premium or Free Trial
