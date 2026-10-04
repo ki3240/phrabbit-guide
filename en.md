@@ -105,6 +105,24 @@ Tap **⋯** at the end of a library row, or touch and hold the row, then choose 
 Deleting an item also removes its waveform cache, bookmarks, subtitles, saved shadowing recordings, and dictation attempts. If the item has saved recordings, a confirmation appears first. When deleting a folder, you can choose whether to remove only the folder or the folder and everything inside it.
 
 
+### 2-5. Sort Order
+
+On Home or inside a folder, open **More (⋯) > Sort By** at the top right to choose the library's sort order. Checkmarks show the selected criterion and direction.
+
+| Sort criterion | Description | Default direction when selected |
+|---|---|---|
+| **Recently Played** | Recent playback or activity; the default criterion | **Newest First** — most recent first |
+| **Date Added** | Date the material was added to the library | **Newest First** — newest first |
+| **Name** | Item name | **A to Z** — ascending |
+| **Duration** | Total length of the material | **Shortest First** — shortest first |
+
+Two directions appear below the criteria. For dates, choose **Newest First / Oldest First**; for names, **A to Z / Z to A**; for duration, **Shortest First / Longest First**. Tapping the checked criterion again also reverses the direction. Choosing a different criterion starts with its default direction in the table above.
+
+Your choice is saved and applies to **Home, every folder, search results, and All Items**. You do not need to set it separately for each folder. The **Recent** row keeps its recent-first order regardless of this setting.
+
+Folders always appear above the material. Under **Name**, they follow the selected name direction; under **Date Added**, they follow their creation date and the selected direction. Under **Recently Played** or **Duration**, folders appear in ascending name order. Items with an unknown duration, such as YouTube links you have never opened, appear at the end of the material list in either **Duration** direction.
+
+
 ## 3. Adding Study Material
 
 Tap the plus button at the top right of Home to open the add menu.
