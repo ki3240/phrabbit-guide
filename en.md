@@ -266,7 +266,7 @@ Tap the list button to open the current file's bookmarks. Tap a bookmark to rest
 ![Bookmarks and My Recordings](images/iphone/14-bookmarks-recordings.png)
 *▲ Bookmark list with the Bookmarks / My Recordings switch*
 
-When at least two kinds of saved practice exist—bookmarks, recordings, or dictation attempts—a switch keeps each list easy to reach. When all three exist, it uses bookmark, microphone, and pencil icons with counts. When there are at least two bookmarks, a **Play All** menu may appear. It can play several bookmarks in order and repeat each bookmark 1, 2, or 3 times.
+When at least two kinds of saved practice exist—bookmarks, recordings, or dictation attempts—a switch keeps each list easy to reach. When all three exist, it uses bookmark, microphone, and pencil icons with counts. When an **audio file** has at least two bookmarks, a **Play All** menu appears. It plays the bookmarks in order and can repeat each bookmark 1, 2, or 3 times. Play All is currently available for audio files only; video files and YouTube videos do not have it.
 
 Tap **⋯** at the end of a bookmark row, or touch and hold it, to show **Rename**, **Info**, and **Delete**. **Info** shows the exact A/B range, range length, and saved date. Saved recordings use the same gesture for **Info** or **Delete**; their information sheet shows the range, length, number of takes at that practice point, and recording dates. Swiping does not reveal management actions.
 
