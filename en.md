@@ -10,6 +10,8 @@ Phrabbit is an A/B loop app for foreign-language listening practice. Add audio f
 
 > Note: Button names in this guide follow the English UI used in the app. Some labels may appear localized depending on your device language.
 
+This guide describes **Phrabbit 4.0.0**. Player layouts adapt to the available iPhone or iPad window width.
+
 
 ## Contents
 
@@ -155,7 +157,7 @@ Tap **Add YouTube Link** to open the YouTube link entry screen.
 3. Return to Phrabbit and tap **Paste**.
 4. Confirm the thumbnail and tap **Add**.
 
-The video file is not stored inside the app. Phrabbit stores only the link, playback position, A/B bookmarks, shadowing recordings, and dictation attempts. Playback happens through the YouTube embedded player.
+The video is streamed through YouTube’s embedded player and is not downloaded into the app. Phrabbit saves the link, playback position, bookmarks, recordings, dictation attempts, and any subtitle cards, edits, or translations you have loaded or saved.
 
 ### 3-5. Add from Podcast
 **Add from Podcast** is a Premium feature. During Premium or the free trial, you can search by podcast name, browse recommendations for your practice language, or import episodes from Apple Podcasts subscriptions and RSS URLs. After the free trial ends, the menu shows a lock and opens the Premium screen when tapped.
@@ -182,30 +184,39 @@ If audio is loaded when you close the player, the mini player appears at the bot
 If a Premium user turns on **Settings > Playback > Background playback**, audio may continue while the screen is locked or the app is in the background. For free users, or when this setting is off, audio pauses when the app goes into the background.
 
 ### 4-2. Waveform Area
-The waveform shows the audio over time. The black vertical line is the current playhead, and the screen follows the playhead during playback. When subtitles exist, short ticks on the waveform mark sentence starts and ends. They are guides only: A/B handles still move freely and do not snap to them.
+The waveform shows the audio over time. Its vertical playhead marks the current position, and short ticks mark subtitle sentence boundaries. Tap the waveform to seek, touch and hold to set A/B points, and drag the A/B handles to adjust them freely; they do not snap to sentence ticks.
 
-- **Tap the waveform** - Jump to that position
-- **Long-press the waveform** - Set point A or B
-- **Drag A/B handles** - Fine-tune the selected range
+- Tap the **zoom tile** beside the waveform to cycle through 3, 5, 8, and 10 seconds per row. Pinch the waveform for finer zoom from 2 to 15 seconds per row. A label such as **7.5s** means each row spans 7.5 seconds.
+- Scrolling by hand lets you inspect another part of the waveform. **Current Position (◎)** brings both the waveform and subtitle cards back to the playing position without seeking.
+- Without subtitles, the waveform expands into the available space. On larger screens, you can also see the next row below the playing row.
 
-### 4-3. Bottom Controls
+### 4-3. Tabs and Playback Tools
+The header switches between **Subtitles**, **Bookmarks**, **My Recordings**, and **Dictation**. On iPhone the tabs use icons; wider iPad layouts also show counts. In a very narrow window, use the tab menu. Tapping the audio title opens its information, and the sleep timer is beside the title.
 
-| Control | Function |
+The fixed tool row, from left to right, contains:
+
+| Control | Action |
 |---|---|
-| **A-B** | Sets the current position as A, then B on the next tap |
-| Loop count | Infinite loop, or 1, 2, 3, 5, or 10 repeats |
-| Playback speed | Opens a picker for 0.5×, 0.75×, 1×, 1.25×, 1.5×, or 2× |
-| Shadowing gap | Adds speaking time between A/B repeats |
-| Bookmark button | Saves the current A/B range immediately |
-| Practice button | Opens Shadowing or Dictation |
-| List button | Opens saved bookmarks, My Recordings, and Dictation attempts |
-| Back/forward 5s | Rewinds or skips briefly |
-| Play button | Plays or pauses |
-| Sleep timer | Stops automatically after 5, 15, 30, or 60 minutes |
-| Subtitle button | Starts or manages speech-to-text conversion |
+| Play / Pause | Start or pause playback |
+| **A-B** | Set A, set B, then return to A |
+| Repeat count | Choose unlimited, 1, 2, 3, 5, or 10 repeats |
+| Speed | Choose 0.5×, 0.75×, 1×, 1.25×, 1.5×, or 2× |
+| Shadowing gap | Leave a silent pause between repeats |
+| Save bookmark | Save the current A/B range immediately |
+| Practice | Open Shadowing or Dictation |
 
-When the sleep timer is on, the remaining time appears on the button. Free users can use it while the app is open; playback while locked depends on Premium background playback. A saved bookmark is given an automatic name first; use **Rename** from the save toast or from the bookmark list to change it.
+The seek bar above the tools moves through the whole file; **−5 / +5** skip five seconds. The waveform's **×** clears the range, and **±** opens fine adjustment. Range-dependent tools are dimmed until an A/B range exists.
 
+The sleep timer stops playback after 5, 15, 30, or 60 minutes and shows the remaining time while active. Background use depends on Premium and the Background playback setting. Subtitles are created from the empty **Subtitles** tab; once cards exist, their floating **···** opens subtitle settings (section 7).
+
+In a wide landscape iPad window, the waveform and tools occupy the left pane, with tabs and lists on the right. Portrait and narrow windows use one column.
+
+![Audio player in a portrait iPad window](images/ipad/44-ipad-audio-portrait.png)
+
+<details>
+<summary>Dark appearance</summary>
+<img src="images/iphone/46-audio-dark.png" alt="Dark appearance">
+</details>
 
 ## 5. A/B Loop
 
@@ -232,21 +243,15 @@ When only A is set, the hint **Tap A-B again to set the end** appears. If you ta
 ### 5-2. Set Precisely on the Waveform
 Long-press the desired point on the waveform to set an A/B point. Drag the A and B handles with your finger to fine-tune the range.
 
-### 5-3. A/B Info Bar
-When both A and B are set, a range info bar appears below the waveform.
+### 5-3. Fine Adjustment and Clearing a Range
+Use **±** beside the waveform to open start/end adjustment in **0.1-second steps**. Use **×** to clear A/B, including an unfinished A point. The same controls sit beside the time ruler on Stream and video; those players adjust in **0.5-second steps**.
 
-In the info bar you can:
-
-- Check the range duration
-- Tap the bar to adjust A and B little by little
-- Open Shadowing or Dictation with the combined microphone-and-pencil practice button
-- Clear the A/B range with the close button
+Open **Practice** from the fixed tool row to choose Shadowing or Dictation. The controls remain available while you scroll the sentence cards.
 
 ### 5-4. Shadowing Gap
-When an A/B range is set, a **person.wave.2** button appears. Turn it on to add a short silent gap between repeats, so you can say the sentence yourself after listening. This is a free practice mode and does not require recording.
+The **Shadowing gap** button stays in the fixed tool row and becomes available when A/B is set. Turn it on to add a short silent gap between repeats, so you can say the sentence yourself after listening. This is a free practice mode and does not require recording.
 
 During the silent gap, a **Speak** countdown is shown.
-
 
 ## 6. Bookmarks and Loop Lists
 
@@ -254,24 +259,23 @@ Bookmarks save A/B ranges you want to practice often.
 
 ### 6-1. Save a Bookmark
 1. Set an A/B range first.
-2. Tap the bookmark button at the bottom.
+2. Tap **Save** in the fixed tool row.
 3. The range is saved immediately with an automatic name, and a **Bookmark saved** toast appears.
 4. Tap **Rename** in the toast if you want to name it now. You can also rename it later from the bookmark list.
 
 Phrabbit creates the automatic name from the file title and range length. The same range is not saved twice.
 
 ### 6-2. Bookmark List
-Tap the list button to open the current file's bookmarks. Tap a bookmark to restore that range as A/B and practice it right away.
+Open the **Bookmarks** tab for the current file. Tap a bookmark to restore and play its A/B range. **My Recordings** and **Dictation** have their own tabs, including when a list is empty.
 
 ![Bookmarks and My Recordings](images/iphone/14-bookmarks-recordings.png)
-*▲ Bookmark list with the Bookmarks / My Recordings switch*
+*▲ Bookmarks, recordings, and dictation each have their own tab*
 
-When at least two kinds of saved practice exist—bookmarks, recordings, or dictation attempts—a switch keeps each list easy to reach. When all three exist, it uses bookmark, microphone, and pencil icons with counts. When an **audio file** has at least two bookmarks, a **Play All** menu appears. It plays the bookmarks in order and can repeat each bookmark 1, 2, or 3 times. Play All is currently available for audio files only; video files and YouTube videos do not have it.
+Use the header tabs to switch between saved bookmarks, recordings, and dictation attempts. Counts on wide iPad layouts refer to recording or attempt groups, rather than individual takes. For an audio file with at least two bookmarks, **Play All** plays the list in order with 1, 2, or 3 repeats per bookmark. Play All is audio-only; it is not available for video or YouTube.
 
 Tap **⋯** at the end of a bookmark row, or touch and hold it, to show **Rename**, **Info**, and **Delete**. **Info** shows the exact A/B range, range length, and saved date. Saved recordings use the same gesture for **Info** or **Delete**; their information sheet shows the range, length, number of takes at that practice point, and recording dates. Swiping does not reveal management actions.
 
 Free users can create up to 1 new bookmark per audio file. During Premium or the free trial, you can create unlimited bookmarks. Bookmarks saved during Premium or the free trial remain available after returning to free status, but you cannot add new bookmarks beyond the free limit. Saving bookmarks for YouTube streams is a Premium feature.
-
 
 ## 7. Speech-to-Text (STT) Subtitles
 
@@ -281,22 +285,30 @@ STT converts audio into sentence-level subtitles. It is available during Premium
 *▲ Audio converted into sentence-level subtitle cards*
 
 ### 7-1. Start Conversion
-1. Tap the subtitle button at the bottom right of the audio player.
-2. If this file has not been converted before, the language picker opens.
-3. Choose the actual language of the audio and tap **Done**.
+
+![Create subtitles or type them yourself](images/iphone/41-audio-empty.png)
+
+1. Open the **Subtitles** tab. If it has no subtitles, tap **Convert speech to subtitles**.
+2. Tap the actual language spoken in the audio. The picker closes and recognition starts.
 
 ![STT language picker](images/iphone/12-stt-language-picker.png)
-*▲ Recommended and recently used languages based on file information and title*
+*▲ Recommended and recently used recognition languages*
 
-Language recommendations may use the language previously selected for this file, podcast RSS language metadata, language and script detected from the title, and your device language. Recently used languages appear separately under **Recently Used**. Recommendations can be wrong, so confirm that the language matches the audio.
+Language suggestions use the file's previous selection, podcast RSS language, title, and device language. Check the suggestion against what you hear.
 
-If a file already has subtitles, tapping the subtitle button shows these options.
+When subtitles already exist, tap the floating **···** to open the **Subtitles** settings sheet:
 
-- **Re-run with current language** - Convert again with the current language
-- **Change Language and Re-run** - Change the language and convert again
-- **Clear Script** - Delete the automatically generated subtitles. Sentences whose timing you adjusted are deleted too; sentences you added or whose text you edited are kept
+- **Add Segment** — type a new subtitle yourself.
+- **Re-run with current language** — repeat speech recognition.
+- **Change Language and Re-run** — choose a different recognition language.
+- **Subtitle Info** — inspect recognition details.
+- **Delete Subtitles** — delete unedited, automatically recognized subtitles, including sentences with adjusted timing. Manually added or text-edited subtitles and podcast creator transcripts remain.
 
-When there are no subtitles yet, long-pressing the subtitle button lets you choose the language before conversion.
+Re-running preserves creator transcripts and manually edited phrases. Deletion asks for confirmation.
+
+Re-running speech recognition and deleting its subtitles require Premium; reading saved subtitles and typing a new segment do not.
+
+![Audio subtitle settings](images/iphone/38-audio-subtitle-settings.png)
 
 ### 7-2. During Conversion
 
@@ -331,33 +343,21 @@ Tap a subtitle card to set that card's section as A/B and start looping it. The 
 Silent or hard-to-recognize sections may appear as **Could not recognize** cards. These cards are informational. To add a subtitle for that section yourself, move the playback position there and tap **Add Segment** (see 8-1).
 
 ### 7-5. Subtitle Information
-If the subtitle info button is visible, you can check the conversion date, recognition engine, and quality guidance. Automatic subtitles can be wrong with any model, so important expressions should be checked and corrected manually.
+Open the floating **··· > Subtitle Info** to see the conversion date, recognition engine, quality notes, and word-timing availability. Automatic recognition can be wrong; check and edit important expressions.
 
 ### 7-6. Hide Subtitles
-When you want to listen by ear without reading along, you can hide the subtitles. Tap the eye button in the capsule above the subtitle area to hide them, and tap it again to show them. A hidden card shows only its start time and **Subtitle hidden**.
+Tap the floating eye at the bottom-right of the subtitle cards to hide or show their text. Hidden cards retain their start time and **Subtitle hidden**, and still loop when tapped. Open **··· > Hide subtitles** to choose **Entire file / Entire video**, **Selected sentences**, or **A/B range**. For selected sentences, tap cards to check them and press **Done**. A/B masking follows the range as it changes.
 
-Choose what to hide from the **⋯** at the end of the capsule, under **Hide subtitles**.
+![Hide subtitles](images/iphone/35-subtitle-hide-menu.png)
 
-- **Entire file** - Hides every subtitle
-- **Selected sentences** - Lets you pick the sentences to hide. Tap cards to check them, then tap **Done** at the top
-- **A/B range** - Hides only the sentences that overlap the current A/B range. When the A/B range changes, the hidden sentences follow it
+Hiding works on audio, local video, and YouTube subtitle cards. It is kept when switching tabs during the same player visit and resets when the player is closed. Use the eye to check the text after listening. Full-screen subtitle panels share the normal screen’s hiding state; choose scopes and sentences on the normal screen.
 
-![Hide subtitles menu](images/iphone/35-subtitle-hide-menu.png)
-*▲ Choose what to hide under Hide subtitles in the ⋯ menu*
-
-Tapping a hidden card still sets that sentence as the A/B range and loops it. With **A/B range**, every sentence you tap loops while hidden, so you can listen first and then check the text with the eye button.
-
-![Only the A/B range hidden](images/iphone/36-subtitle-hide-ab.png)
-*▲ A/B range — only the sentences being looped are hidden; the ones around them stay visible*
-
-- Hiding subtitles is available in the audio player's subtitle view. It is not available for video files or YouTube.
-- The hidden state is not saved. When you close the player and open it again, all subtitles are visible.
-
+![A/B range hidden](images/iphone/36-subtitle-hide-ab.png)
 
 ## 8. Editing, Translating, and Adding Subtitles
 
 ### 8-1. Add a Subtitle Manually
-Tap **Add Segment** above the subtitle area to open the editor with a new 5-second segment starting at the current playback position. In **Adjust timing** at the top, drag the start and end handles on the waveform or use the buttons next to **Start** and **End** to move them 0.1 seconds at a time, and use the play button to hear only that range (see 8-2). Then type the text yourself.
+Open **··· > Add Segment** in the audio Subtitles tab. Without subtitles, choose **Type subtitles yourself** instead. The editor starts with a 5-second segment at the current playback position. In **Adjust timing** at the top, drag the start and end handles on the waveform or use the buttons next to **Start** and **End** to move them 0.1 seconds at a time, and use the play button to hear only that range (see 8-2). Then type the text yourself.
 
 To recognize the speech again, confirm the language under **Recognition language** and tap **Recognize again**. The result appears as a preview and never replaces your draft automatically. If it looks useful, tap **Put in editor**, make any corrections, and then tap **Add** at the top to save it.
 
@@ -370,7 +370,7 @@ Open a subtitle card's **⋯** menu, or touch and hold the card, and choose **Ed
 - **Restore original text** - If you edit the text of an STT-generated subtitle, the original text is shown as well, and this button brings it back.
 
 ![Adjusting a sentence's timing](images/iphone/37-segment-timing.png)
-*▲ Extending the end shows the original range and the next sentence that gets shorter*
+*▲ Adjust sentence timing with waveform handles, 0.1-second steps, and Restore original range.*
 
 The editor also lets you use **Recognize again** for only the range you have set and bring the preview into the draft with **Put in editor**. Neither the timing nor the text is saved until you tap **Save** at the top.
 
@@ -378,13 +378,12 @@ The editor also lets you use **Recognize again** for only the range you have set
 *▲ Recognition produces a preview; your draft is left alone until you insert it*
 
 ### 8-3. Translate All Subtitles
-On iOS 26.4 or later and a device that supports Apple Intelligence, a **Translate** control may appear above the subtitle list. Choose a target language and tap **Start translation** to translate all subtitles on the device. Audio and subtitle text are not uploaded, and saved results are reused the next time you open the same material.
+On iOS 26.4 or later, on an Apple Intelligence-capable device, **AI Translation** is available from the floating translation control or **··· > Translation**. Premium or the free trial is required. Check the source and target languages, choose what to translate, then tap **Start translation**. Audio and subtitle text are not uploaded; saved results are reused when the material is reopened. The same flow supports audio, local video, and loaded YouTube captions.
 
 Progress appears while translation runs. Closing the app or player pauses the job safely, and **Continue translation** resumes it later. Long material can take time and warm the device; Phrabbit automatically slows the work when needed. After the job starts, an option can keep the screen awake for that run.
 
-After a translation is saved, tap the speech-bubble control to show or hide it alongside the original. Use the adjacent **⋯** menu for **Original only**, **Original + translation**, **Translation only**, changing the language, retrying, or deleting the saved translation.
+The speech-bubble button toggles **Original only** and **Original + translation**. In **··· > Translation**, explicitly choose **Translation only**, change language, continue or retry, or delete saved AI translation. For bilingual video files, file translation and AI translation are separate sources (11-4).
 
-![Subtitles with their translation](images/iphone/25-subtitle-translation.png)
 *▲ Original + translation, with the speech-bubble control above the list*
 
 If Apple Intelligence is off or its model is not ready, Phrabbit explains why. The control is hidden on unsupported devices and iOS versions. Machine translation can mishandle names, cultural expressions, and specialist terms, so compare important material with the original.
@@ -394,6 +393,8 @@ Choose **Translate** from a subtitle card's **⋯** menu to open the iOS system 
 
 ![Subtitle translation](images/iphone/09-translate.png)
 *▲ Translating a subtitle sentence in place*
+
+On video and YouTube cards, this action is named **Translate this sentence**. It translates one sentence in the system sheet; **AI Translation** saves a translation for the material.
 
 ### 8-5. Add to Wordbook
 Choose **Add to Wordbook** from a subtitle card's **⋯** menu to pick a word or expression from that sentence and save it. The Wordbook itself is a Premium feature, so if the free trial has ended, this opens the Premium screen.
@@ -463,34 +464,28 @@ Use the play button in the list to hear the saved context. Tap **⋯** at the en
 When you add a YouTube link, the Stream player opens. YouTube videos are not saved in the app; they play through the YouTube embedded player.
 
 ![YouTube stream practice](images/iphone/03-youtube.png)
-*▲ Practicing a YouTube link like listening material*
+*▲ The YouTube picture, fixed tools, and subtitle cards stay on screen together.*
 
 ### 10-1. Basic Layout
-The Stream player shows the YouTube player on top and Phrabbit's A/B loop controls below. The player toolbar contains the information and full-screen buttons; the controls below the video are reserved for playback and A/B practice.
+The YouTube picture stays above a fixed time ruler and a seven-control tool row: Play/Pause, A-B, repeat count, speed, shadowing gap, bookmark save, and Practice. The header switches between **Subtitles / Bookmarks / My Recordings / Dictation**. Only the list scrolls, so you can read cards and adjust a range together.
 
-Key features:
+Tap a subtitle card to loop that sentence. Scrolling by hand pauses following; **Current Subtitle (◎)** returns to the current sentence. Use the floating eye, translation, and **···** controls for hiding and subtitle settings.
 
-- Use YouTube's original player and CC button
-- Use Phrabbit's A/B loop, loop count, and six-step speed controls
-- Use a time ruler for precise navigation in long videos
-- Practice in full screen
-- Save bookmarks, shadowing recordings, and dictation attempts per YouTube link. A bookmark is saved immediately with an automatic name; use **Rename** from the save toast or the saved item's **⋯** or touch-and-hold menu. The same menu offers **Info** for the exact range, length, and saved date, or **Delete**. When space allows, the bookmark card also shows its saved date.
+### 10-2. YouTube Subtitle Cards
+For videos that provide subtitles, Premium or the free trial can load YouTube subtitles as Phrabbit cards. Start the video once: the available tracks are reported only after playback begins. **··· > Subtitle Track** changes tracks, and **Re-download from YouTube** fetches them again. Replacing edited subtitles asks for confirmation.
 
-### 10-2. YouTube Captions and Wordbook Limits
-YouTube captions are shown only inside the YouTube player. Phrabbit does not bring YouTube caption text into the app.
+The cards support sentence looping, hiding, one-sentence system translation, on-device AI translation on supported devices, **Add to Wordbook**, and subtitle editing. They can also supply text for Shadowing and the answer reference for Dictation. Auto-generated YouTube subtitles may contain mistakes.
 
-Therefore, these features are limited on YouTube streams.
+After the trial ends, stored cards remain readable and can be re-downloaded; fetching cards for a new video or choosing another track requires Premium. Without access, the Subtitles tab explains the lock and offers an upgrade. YouTube's own **CC** remains available. If cards fail to load, use **Try Again** or the player's CC subtitles. A video without subtitles cannot provide cards.
 
-- STT subtitle generation
-- Adding YouTube captions directly to Wordbook
-- Showing the original YouTube audio waveform
+Phrabbit does not generate STT subtitles from YouTube audio and cannot display its original waveform. These limits do not prevent using subtitles supplied by YouTube.
 
-Instead, turn on captions with YouTube's **CC** button and use Phrabbit's A/B loop, shadowing, and dictation for section practice. Phrabbit cannot read YouTube captions as a dictation answer key, so you either check the video yourself or type the actual words and keep them as the answer for the next attempt.
+![YouTube subtitle tracks and settings](images/iphone/39-youtube-subtitle-settings.png)
 
 ### 10-3. Full-screen Practice
-Tap **Full-screen Practice** to make the video larger while keeping A/B controls available inside full-screen practice. On iPhone, the app stays in portrait while enlarging the player area. On iPad, the layout expands to fit the larger screen.
+Use Phrabbit's expand button in the header to enter **Full-screen Practice** with A/B controls. A cards button opens a sentence panel beside the video. Tapping a card loops the sentence; the panel's eye and translation buttons reuse the normal screen's display state. Start translations, select hiding scopes, and edit cards from the normal screen.
 
-Use Phrabbit's **Full-screen Practice** instead of YouTube's own full-screen button so YouTube captions and Phrabbit's A/B controls can stay together.
+Use **Hide / Show** to collapse or reveal Phrabbit's full-screen controls. Taps on the YouTube picture belong to YouTube. The close button remains available. On iPhone, Phrabbit rotates its own presentation, so rotation lock need not be disabled.
 
 ### 10-4. Time Ruler
 Streams use a time ruler instead of an audio waveform.
@@ -535,57 +530,47 @@ What this means in practice:
 The first time you play a video that is stored in iCloud Drive but not yet downloaded to this device, **Preparing video…** appears while the system downloads it, and a long video can take a while. Once the file is on the device it opens right away, regardless of size.
 
 ### 11-3. Video Player
-Tap a video in the library to open the video player. Its layout follows the Stream player rather than the audio player.
+The normal video player uses the same four tabs and seven-control tool row as Stream: **Subtitles / Bookmarks / My Recordings / Dictation**, with the time ruler and A/B controls fixed above the scrolling list.
 
-- The video appears at the top with a seek bar below it. The full-screen button is in the player toolbar.
-- Tap the picture to play or pause.
-- Under the seek bar is the time ruler, which shows the A and B markers.
-- Once A and B are both set, a range info bar appears with the range, a fine-tune button, the scene transcription button, the practice button for Shadowing and Dictation, and a close button that clears the range.
-- Below that are the playback controls: **A-B**, loop count, six-step playback speed, shadowing gap, back/forward 5 seconds, play/pause, and **Save** for a bookmark.
-- Saved **Bookmarks**, **My Recordings**, and **Dictation** attempts are listed at the bottom. When at least two kinds exist, a switch keeps the lists separate.
+- Tap the picture to play or pause. Its seek bar appears over the bottom of the picture and fades during playback; tapping the picture or operating playback shows it again.
+- Use **±** beside the ruler for A/B fine adjustment and **×** to clear the range. **Practice** is in the tool row.
+- Subtitles appear as sentence cards below the tools. They stay visible while you adjust A/B.
+- With no subtitles, the Subtitles tab offers **Import subtitle file…** and range speech recognition. The header's expand button opens full-screen practice.
+- In a wide landscape iPad window, the picture and controls sit on the left and the tabbed list on the right. Portrait and narrow windows use one column.
 
-Video has no waveform. As with YouTube streams, you set and fine-tune A and B on the time ruler and the seek bar.
-
-Free users can create 1 new bookmark per video, and Premium or the free trial removes the limit. Bookmarks that are already saved stay open in every case.
+Videos have no waveform. Free users can create one bookmark per video; Premium or the trial removes that limit. Previously saved bookmarks remain accessible.
 
 ### 11-4. Subtitle Files
-Video subtitles come from a subtitle file you supply. Phrabbit reads **SRT, VTT, and SMI (SAMI)** files. Subtitle tracks embedded inside the video file itself are not read.
+Import **SRT, VTT, or SMI (SAMI)** sidecar files. Embedded subtitle tracks inside the video are not read. With no subtitles, use **Import subtitle file…** in the Subtitles tab; otherwise open the floating **··· > Replace subtitle file…**.
 
-Open the subtitle menu in the player toolbar to use:
+The attachment preview lets you check subtitle language and sample lines before saving. For supported bilingual files, choose the **original subtitle** and **file translation** tracks, swap them, import without a translation, or keep combined text. SMI language tracks and English/Korean lines on separate lines in SRT/VTT can be separated; mixed text on one line is not split automatically. **Change** corrects the language used for Wordbook, pronunciation, and AI translation. Saving applies the selection; cancelling keeps existing subtitles.
 
-| Menu | Description |
-|---|---|
-| **Add Subtitles…** / **Replace Subtitles…** | Loads a subtitle file. Loading replaces the current subtitles |
-| **Show Subtitles** | Shows or hides subtitles |
-| **Edit Current Subtitle…** | Fixes the text of the line showing now |
-| **Subtitle Sync…** | Shifts subtitle timing by 0.5 seconds at a time when it runs early or late |
-| **Restore Original Subtitles…** | Discards generated and edited lines and returns to the imported file |
-| **Wordbook & Pronunciation Language…** | Sets the language used for Wordbook entries and pronunciation |
-| **Remove Subtitles** | Removes subtitles from this video |
+File translations can be displayed without Apple Intelligence or Premium. In **··· > Translation**, choose Original only, Original + translation, or Translation only. When available, **Translation source** switches between **File subtitles** and **AI Translation**. Deleting AI translation does not delete the file translation. AI translation keeps its supported-device and Premium requirements.
 
-Subtitles appear at the bottom of the video. Tapping one repeats that sentence (see 11-5), and touch and hold edits the current line. To hide subtitles, use **Show Subtitles** in the subtitle menu. A subtitle file saved in an encoding other than UTF-8 may fail to load; save it as UTF-8 text and try again.
+The same settings sheet contains range subtitle generation, **Subtitle Sync…** (0.5-second steps), **Restore Original Subtitles…** when available, hiding scopes, and **Delete Subtitles**. Edit or add words from a card's **⋯** menu. The normal player uses cards; the full-screen picture can also show subtitle overlays when its card panel is closed.
 
-Tap the plus button above the subtitle to save a word to the Wordbook. The Wordbook is a Premium feature.
+UTF-8 is recommended. UTF-16 with a byte-order mark and common legacy SMI encodings are also supported; if a file cannot be read, save it as UTF-8 and try again.
+
+![Preview original and file-translation tracks](images/iphone/42-bilingual-subtitle-import.png)
+
+<details>
+<summary>Video subtitle settings</summary>
+<img src="images/iphone/40-video-subtitle-settings.png" alt="Video subtitle settings">
+</details>
 
 ### 11-5. Practice Sentence by Sentence
-Once a video has subtitles, you no longer have to mark an A/B range for every sentence. Tap the **cards** button in the player toolbar to open the sentence list.
+Each sentence card groups the subtitle lines belonging to one sentence. Tap it to set A/B and repeat that sentence; playback does not automatically advance to the next card. Subtitle sync adjustments also apply to the cards.
 
 ![Sentence cards](images/iphone/28-subtitle-practice.png)
-*▲ The sentence playing now is highlighted, and tapping any card loops that sentence*
+*▲ Sentence cards and the fixed practice tools stay on screen together*
 
-- Each card is one sentence, built from the timings in the subtitle file (or from Transcribe This Scene). Short cues that together make one sentence are joined into a single card.
-- Tap a card and that sentence becomes the A/B range: playback moves to its start and loops there. The list stays open, and it does not move on to the next sentence by itself.
-- The sentence playing now is highlighted. Scroll anywhere you like — **Current Subtitle** takes you back to it.
-- Tapping the subtitle shown over the video does the same thing. When one sentence is split across several short subtitle lines, the whole sentence is still what repeats.
-- On iPhone, opening the cards clears the screen down to the video, the seek bar, and the list. Close the cards to bring the full controls back.
-- On iPad and other wide screens, the video sits on the left with subtitles, bookmarks, and your recordings on the right, so the cards stay in view.
-- A subtitle sync offset is applied to the cards too, so the time on a card is where playback actually goes.
+The current sentence is highlighted. Scroll to inspect other cards, then use **Current Subtitle (◎)** to return. The floating eye hides text while preserving card timing and looping; **···** chooses the whole video, selected sentences, or the A/B range. The translation button toggles Original only and Original + translation; Translation only is an explicit choice in settings.
 
 ### 11-6. Transcribe This Scene
 Whole-file speech-to-text is not available for video. Instead you can transcribe only the section you are practicing. This is available during Premium or the free trial.
 
 1. Set an A/B range over the part you want.
-2. Tap the speech-bubble button in the A/B info bar.
+2. Open **···** in the Subtitles tab and choose range subtitle generation. With no subtitles, use the range-recognition action in the empty tab.
 3. Choose the language spoken in that scene.
 
 Notes:
@@ -634,7 +619,7 @@ This works with audio files, videos, and YouTube streams.
 Recording and comparison are Premium features.
 
 1. Set an A/B range.
-2. Tap the combined microphone-and-pencil practice button in the A/B info bar. On Stream, tap **Practice**.
+2. Tap **Practice** in the fixed tool row.
 3. Choose **Shadowing** at the top, then use **Listen** to hear the original.
 4. Tap **Record** to record your voice.
 5. Use **My take** to hear only your recording.
@@ -645,12 +630,10 @@ The first time you use it, Phrabbit asks for microphone permission. Recordings a
 For audio files, you can see the original waveform and your recording waveform together. For videos and YouTube streams, Phrabbit cannot access the original waveform, so only your recording waveform is shown.
 
 ### 12-3. Practice with Subtitles
-If an audio file has subtitles and a subtitle card overlaps the A/B range, the practice sentence appears large in the shadowing screen. While listening to the original, the current sentence is highlighted so it is easier to read along.
-
-YouTube captions exist only inside the YouTube player and are not brought into the shadowing screen. Instead, use full-screen practice with YouTube CC captions visible.
+When subtitle cards overlap the selected A/B range, their text is passed into the practice screen. This also works with loaded YouTube subtitles and local-video subtitles. Shadowing can display the reference while listening; Dictation keeps the answer hidden until checking. If no subtitle reference is available, you can still listen and record.
 
 ### 12-4. Saved Recordings
-Use the save button to keep a take you like. Saved recordings appear in the bookmark list or the **My Recordings** section of the Stream screen.
+Use the save button to keep a take. Open the original material’s **My Recordings** tab to find saved recordings. Takes of the same A/B range are grouped together.
 
 Tap a saved recording to return to the A/B range where it was made and reopen the shadowing screen. Multiple takes for the same range are grouped as one practice point.
 
@@ -663,13 +646,13 @@ Dictation is a Premium practice mode for listening to an A/B range one unit at a
 
 ### 13-1. Start Dictation
 1. Set the A/B range you want to practice.
-2. Tap the combined microphone-and-pencil practice button in the A/B info bar. On Stream, tap **Practice**.
+2. Tap **Practice** in the fixed tool row.
 3. Choose **Dictation** at the top. Phrabbit remembers the last practice mode you used the next time you open it.
 
 ![Dictation mode](images/iphone/30-dictation-mode.png)
 *▲ The practice sheet with Shadowing / Dictation at the top, Dictation selected*
 
-When audio has subtitles, Phrabbit steps through the sentences that overlap the range. A video with a subtitle file advances by subtitle units. A file without subtitles, or a YouTube link, uses the entire A/B range as one question. Dictation is not available in video or YouTube full-screen practice; return to the regular player first.
+When loaded subtitles are available, they provide the answer reference. Audio can offer sentence-by-sentence units; video and YouTube practice the selected A/B range using its subtitle reference. Without subtitles, enter an answer yourself or check the video. Dictation starts from the normal player, not from full-screen practice.
 
 ### 13-2. Listen and Write
 Use **Listen** to hear the current sentence once, then type what you heard. You can play or pause, move back or forward 2 seconds, and adjust speed. Tap the speed button to show all six choices from 0.5× to 2×. When you are ready, tap **Check answer**.
@@ -688,14 +671,14 @@ When subtitles or an answer you saved yourself are available, Phrabbit compares 
 ![Checking the answer](images/iphone/32-dictation-check.png)
 *▲ Differences marked against the original, with Try again and Next*
 
-Without subtitles, you grade the answer yourself. On YouTube, choose **Check in the video** to look at the video, or **Type the answer** to enter the actual words. That answer is kept for this A/B range and compared automatically next time. If a speech-recognized original is wrong, **Fix this answer** lets you correct the subtitle in place.
+Without subtitles, check the video or enter the spoken words as an answer for this A/B range. **Edit answer for this range** changes only your saved answer key; it leaves subtitles and previous writing intact. You can revert to the current subtitles, or remove the typed answer if there are none. A separate **Edit subtitle** action edits the subtitle itself. **Restore original text** fills the editor with the original; save to apply it. Recognition and auto-generated YouTube subtitles can be wrong, so check the reference before relying on the comparison.
 
 On iPhone or a narrow iPad window, **Check in the video** lowers the dictation sheet so you can use the video and its YouTube controls directly. A wide iPad opens a dedicated practice workspace instead: the video is hidden while you write and returns above the comparison when you check the answer.
 
 After checking, choose **Try again** to put the same question at the end of the session, or **Next** to move on. The last question shows **Finish**.
 
 ### 13-4. Review and Practice Again
-A session is saved automatically when you close it after writing or checking at least one answer. Open the list button or the **Dictation** section below a player to see attempts grouped by A/B range.
+A session is saved automatically when you close it after writing or checking at least one answer. Open the original material’s **Dictation** tab to review attempts grouped by A/B range.
 
 Open a record to review what you wrote, its original text, the automatic comparison, and any saved handwriting. If you practiced the range more than once, **Attempt** chips move between earlier tries. Use **Practice again** to reopen the same range, or delete an attempt you no longer need. Saved attempts remain readable after Premium ends, but starting a new dictation session requires Premium or the free trial.
 
@@ -808,11 +791,13 @@ Resetting learning stats cannot be undone.
 - Create 1 new audio bookmark per file
 - Create 1 new video bookmark per video
 - Open existing audio bookmarks saved during Premium or the free trial
-- Hiding subtitles and adjusting sentence timing (audio files with subtitles)
+- Hide subtitle cards on audio, local video, and YouTube when subtitles are available; edit audio sentence timing
+- Display translations imported from a bilingual video subtitle file
 - Learning stats
 
 ### Available During Premium or Free Trial
 
+- YouTube subtitle card practice for videos with subtitles (loading new subtitles and changing tracks)
 - Speech-to-text (STT) subtitle conversion
 - Real-time subtitle and waveform sync
 - Wordbook
@@ -847,11 +832,11 @@ A. No. STT conversion currently needs the app to stay open. If you lock the scre
 
 **Q. Why is there no automatic comparison in Dictation?**
 
-A. Automatic comparison needs subtitles or an answer you saved yourself. If there are no subtitles, or an A/B range cuts through a sentence without precise word timing, you may need to grade it yourself. On YouTube, check the video or type the actual words once so Phrabbit can compare them automatically next time. Handwriting is saved but never read by the app, so it is always self-graded.
+A. Automatic comparison needs a usable subtitle reference or an answer you saved. Loaded YouTube cards can supply that reference too. A range cutting a sentence without precise timings may require manual checking. Use **Whole sentence** when offered or save an answer for the range. Handwriting is saved as strokes and always checked manually.
 
 **Q. Does audio continue on the lock screen?**
 
-A. During Premium or the free trial, if **Background playback** is on, audio can continue on the lock screen and in the background. You can use the lock screen, Control Center, or earphone buttons for play/pause and 5-second jumps. If the free trial has ended or the setting is off, audio pauses when the app enters the background.
+A. Premium or the free trial and **Background playback** must be active. On the lock screen, Control Center, or compatible earphones, use play/pause and previous/next: they move between sentences, or bookmarks while Play All is active. Without subtitles, sentence movement falls back to five-second skips. Turning background playback off or ending the trial pauses audio when the app enters the background.
 
 **Q. Does adding a video use up storage?**
 
@@ -891,7 +876,7 @@ A. This feature requires iOS 26 or later, a device that supports Apple Intellige
 
 **Q. Where are saved recordings?**
 
-A. Saved recordings for audio files appear under **My Recordings** in the bookmark list. Saved recordings for videos and YouTube streams appear under **My Recordings** in the player screen. If you delete the original item, linked recordings are deleted too. Deleting a video item does not delete the original video file.
+A. Open the original material and select **My Recordings**. The **Dictation** tab holds saved dictation attempts. Deleting the original item also deletes its linked practice history; deleting a video item does not delete the original video file.
 
 **Q. Will my study data move to a new device?**
 

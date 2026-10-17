@@ -4,6 +4,8 @@ An iOS app for practicing languages with A/B loop audio and video. Load audio, v
 
 A/B 구간 반복으로 외국어를 연습하는 iOS 앱입니다. 오디오, 동영상, 팟캐스트, 뮤직 라이브러리 또는 YouTube 자료를 불러와 원하는 구간을 반복하고, 음성 인식 자막·쉐도잉·받아쓰기로 학습하세요.
 
+**Current guide: Phrabbit 4.0.0 · 현재 매뉴얼: Phrabbit 4.0.0**
+
 ---
 
 ## Choose your language · 언어 선택
