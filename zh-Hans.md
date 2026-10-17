@@ -384,7 +384,7 @@ STT 会把音频转换成句子级字幕。高级版或免费试用期间可以�
 
 气泡按钮切换 **Original only / Original + translation**。在 **··· > Translation** 中可明确选择 **Translation only**，更改语言、继续或重试，以及删除保存的 AI 翻译。双语视频字幕的文件翻译和 AI 翻译是独立来源（11-4）。
 
-*▲ 原文与译文对照，以及上方的气泡按钮*
+※ 示例：将英语字幕翻译成日语。在 **AI Translation** 中，可以从支持的语言中选择所需的目标语言。
 
 如果 Apple Intelligence 未开启或模型尚未准备好，Phrabbit 会说明原因。不支持的设备或 iOS 版本不会显示此功能。机器翻译可能误译专有名词、文化表达和专业术语，重要内容请与原文对照。
 
@@ -434,6 +434,8 @@ STT 会把音频转换成句子级字幕。高级版或免费试用期间可以�
 
 ![AI Explanation](images/iphone/16-wordbook-ai-explanation.png)
 *▲ 为所选单词生成上下文含义和例句的 AI Explanation*
+
+※ 此截图使用韩语界面和内容来演示功能。支持的语言及使用条件请参阅下文。
 
 此区块仅在同时满足以下条件时显示。
 
@@ -552,6 +554,8 @@ YouTube 流媒体不会在锁屏或后台继续播放。当应用进入后台时
 建议使用 UTF-8，也支持带 BOM 的 UTF-16 和常见旧式 SMI 编码。读取失败时请另存为 UTF-8 后重试。
 
 ![预览原文与文件翻译轨道](images/iphone/42-bilingual-subtitle-import.png)
+
+※ 此示例使用英语原文和韩语翻译。两条轨道均来自字幕文件，并非由 AI 生成。显示的语言取决于导入的字幕文件。
 
 <details>
 <summary>视频字幕设置</summary>
