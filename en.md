@@ -209,7 +209,7 @@ The seek bar above the tools moves through the whole file; **−5 / +5** skip fi
 
 The sleep timer stops playback after 5, 15, 30, or 60 minutes and shows the remaining time while active. Background use depends on Premium and the Background playback setting. Subtitles are created from the empty **Subtitles** tab; once cards exist, their floating **···** opens subtitle settings (section 7).
 
-In a wide landscape iPad window, the waveform and tools occupy the left pane, with tabs and lists on the right. Portrait and narrow windows use one column.
+In a wide landscape iPad window, a full-width title bar sits above both panes, with the audio title and sleep timer. The waveform and tools occupy the left pane; the tabs sit at the top of the right pane above its lists. Portrait and narrow windows use one column.
 
 ![Audio player in a portrait iPad window](images/ipad/44-ipad-audio-portrait.png)
 
@@ -286,6 +286,8 @@ STT converts audio into sentence-level subtitles. It is available during Premium
 
 ### 7-1. Start Conversion
 
+Speech recognition requires Premium or the free trial. When access is locked, **Convert speech to subtitles** shows a padlock and opens the Premium screen when tapped. You can still type subtitles manually.
+
 ![Create subtitles or type them yourself](images/iphone/41-audio-empty.png)
 
 1. Open the **Subtitles** tab. If it has no subtitles, tap **Convert speech to subtitles**.
@@ -307,6 +309,8 @@ When subtitles already exist, tap the floating **···** to open the **Subtitle
 Re-running preserves creator transcripts and manually edited phrases. Deletion asks for confirmation.
 
 Re-running speech recognition and deleting its subtitles require Premium; reading saved subtitles and typing a new segment do not.
+
+The **Subtitles** settings sheet opens at full height. Scroll to reach more options; you can drag it down to half height if you prefer.
 
 ![Audio subtitle settings](images/iphone/38-audio-subtitle-settings.png)
 
@@ -338,6 +342,8 @@ Each card may show:
 - A **⋯** menu with **Translate**, **Add to Wordbook**, **Edit**, and **Delete** — touch and hold the card opens the same menu
 
 Tap a subtitle card to set that card's section as A/B and start looping it. The currently playing card is highlighted, and cards inside the A/B range use a different background color. Newly recognized subtitles that include word timing light up word by word as playback advances. Subtitles created earlier or imported from another source may not include word timing, so this effect may not appear.
+
+After you finish scrolling by hand, automatic following resumes when playback reaches a subtitle card already visible on screen. **Current Position (◎)** returns the audio waveform and cards to the playing position immediately. Following stays paused while you select sentences to hide.
 
 ### 7-4. Unrecognized Sections
 Silent or hard-to-recognize sections may appear as **Could not recognize** cards. These cards are informational. To add a subtitle for that section yourself, move the playback position there and tap **Add Segment** (see 8-1).
@@ -378,7 +384,7 @@ The editor also lets you use **Recognize again** for only the range you have set
 *▲ Recognition produces a preview; your draft is left alone until you insert it*
 
 ### 8-3. Translate All Subtitles
-On iOS 26.4 or later, on an Apple Intelligence-capable device, **AI Translation** is available from the floating translation control or **··· > Translation**. Premium or the free trial is required. Check the source and target languages, choose what to translate, then tap **Start translation**. Audio and subtitle text are not uploaded; saved results are reused when the material is reopened. The same flow supports audio, local video, and loaded YouTube captions.
+On iOS 26.4 or later, on an Apple Intelligence-capable device, **AI Translation** is available from the floating translation control or **··· > Translation**. Premium or the free trial is required. The subtitle language is detected automatically and shown under **Subtitle language**. Choose a supported target under **Translation language**, choose what to translate, then tap **Start translation**. Audio and subtitle text are not uploaded; saved results are reused when the material is reopened. The same flow supports audio, local video, and loaded YouTube captions.
 
 Progress appears while translation runs. Closing the app or player pauses the job safely, and **Continue translation** resumes it later. Long material can take time and warm the device; Phrabbit automatically slows the work when needed. After the job starts, an option can keep the screen awake for that run.
 
@@ -386,7 +392,7 @@ The speech-bubble button toggles **Original only** and **Original + translation*
 
 ※ Example: translating English subtitles into Japanese. Choose your preferred target language in **AI Translation** from the supported languages.
 
-If Apple Intelligence is off or its model is not ready, Phrabbit explains why. The control is hidden on unsupported devices and iOS versions. Machine translation can mishandle names, cultural expressions, and specialist terms, so compare important material with the original.
+If translation cannot start, an **AI translation unavailable** alert explains the current reason instead of opening the configuration sheet—for example, Apple Intelligence is off, its model is not ready, or the subtitle language is unknown or unsupported. Resolve that reason and try again. Unsupported devices and iOS versions hide the AI entry point. Machine translation can mishandle names, cultural expressions, and specialist terms, so compare important material with the original.
 
 ### 8-4. Translate One Sentence
 Choose **Translate** from a subtitle card's **⋯** menu to open the iOS system translation sheet. Translation is a study aid and may be inaccurate depending on context.
@@ -473,6 +479,10 @@ The YouTube picture stays above a fixed time ruler and a seven-control tool row:
 
 Tap a subtitle card to loop that sentence. Scrolling by hand pauses following; **Current Subtitle (◎)** returns to the current sentence. Use the floating eye, translation, and **···** controls for hiding and subtitle settings.
 
+After you finish scrolling, following resumes when playback reaches a card visible on screen; you can also return immediately with ◎.
+
+In a wide landscape iPad window, the thumbnail, title, and full-screen button share a full-width top bar. Tabs sit above the right-hand list, beside the picture and tools on the left.
+
 ### 10-2. YouTube Subtitle Cards
 For videos that provide subtitles, Premium or the free trial can load YouTube subtitles as Phrabbit cards. Start the video once: the available tracks are reported only after playback begins. **··· > Subtitle Track** changes tracks, and **Re-download from YouTube** fetches them again. Replacing edited subtitles asks for confirmation.
 
@@ -487,7 +497,7 @@ Phrabbit does not generate STT subtitles from YouTube audio and cannot display i
 ### 10-3. Full-screen Practice
 Use Phrabbit's expand button in the header to enter **Full-screen Practice** with A/B controls. A cards button opens a sentence panel beside the video. Tapping a card loops the sentence; the panel's eye and translation buttons reuse the normal screen's display state. Start translations, select hiding scopes, and edit cards from the normal screen.
 
-Use **Hide / Show** to collapse or reveal Phrabbit's full-screen controls. Taps on the YouTube picture belong to YouTube. The close button remains available. On iPhone, Phrabbit rotates its own presentation, so rotation lock need not be disabled.
+Use **Hide / Show** to collapse or reveal Phrabbit's full-screen controls. Taps on the YouTube picture belong to YouTube. The **Exit full screen** button, shown as inward-pointing diagonal arrows, remains available and returns to the normal player without stopping playback. On iPhone, Phrabbit rotates its own presentation, so rotation lock need not be disabled.
 
 ### 10-4. Time Ruler
 Streams use a time ruler instead of an audio waveform.
@@ -538,7 +548,7 @@ The normal video player uses the same four tabs and seven-control tool row as St
 - Use **±** beside the ruler for A/B fine adjustment and **×** to clear the range. **Practice** is in the tool row.
 - Subtitles appear as sentence cards below the tools. They stay visible while you adjust A/B.
 - With no subtitles, the Subtitles tab offers **Import subtitle file…** and range speech recognition. The header's expand button opens full-screen practice.
-- In a wide landscape iPad window, the picture and controls sit on the left and the tabbed list on the right. Portrait and narrow windows use one column.
+- In a wide landscape iPad window, a full-width bar shows the thumbnail, title, and full-screen button. The picture and controls sit on the left; the tabs head the right-hand list. Portrait and narrow windows use one column.
 
 Videos have no waveform. Free users can create one bookmark per video; Premium or the trial removes that limit. Previously saved bookmarks remain accessible.
 
@@ -570,6 +580,8 @@ Each sentence card groups the subtitle lines belonging to one sentence. Tap it t
 
 The current sentence is highlighted. Scroll to inspect other cards, then use **Current Subtitle (◎)** to return. The floating eye hides text while preserving card timing and looping; **···** chooses the whole video, selected sentences, or the A/B range. The translation button toggles Original only and Original + translation; Translation only is an explicit choice in settings.
 
+After you finish scrolling, following resumes when playback reaches a card visible on screen; you can also return immediately with ◎.
+
 ### 11-6. Transcribe This Scene
 Whole-file speech-to-text is not available for video. Instead you can transcribe only the section you are practicing. This is available during Premium or the free trial.
 
@@ -588,6 +600,8 @@ Notes:
 *▲ Full-screen practice keeps the A/B controls and subtitles on screen*
 
 Tap the full-screen button to enlarge the video. The screen fills sideways while the app itself stays in portrait, so you do not need to unlock device rotation. In full screen, tap the video to show or hide the controls, and use the bookmark list to jump between saved ranges.
+
+Use the inward-pointing diagonal arrows (**Exit full screen**) to return to the normal player. This button remains visible when the other full-screen controls are hidden; playback continues.
 
 The cards button opens the same sentence list beside the video in full screen. It does not cover the picture: the video, the ruler, and the seek bar move over to make room, and go back to full width when you close the panel.
 
