@@ -209,6 +209,10 @@ Phrabbit은 외국어 듣기 연습을 위한 A/B 구간 반복 앱입니다. �
 
 넓은 iPad 가로 창에서는 화면 전체 폭의 제목 바가 두 칸 위에 놓이고, 오디오 제목과 슬립 타이머가 표시됩니다. 왼쪽은 파형과 도구, 오른쪽은 맨 위의 탭과 그 아래 목록으로 구성됩니다. 세로 또는 좁은 창은 한 열로 표시합니다.
 
+![iPad 가로 창의 오디오 플레이어](images/ipad/45-ipad-audio-landscape.png)
+
+※ 영어 원문과 한국어 번역을 함께 표시한 iPad 가로 화면 예시입니다.
+
 ![iPad 세로 창의 오디오 플레이어](images/ipad/44-ipad-audio-portrait.png)
 
 <details>
@@ -388,6 +392,8 @@ iOS 26.4 이상과 Apple Intelligence 지원 기기에서는 오른쪽 아래 �
 
 말풍선 버튼은 **Original only / Original + translation**을 전환합니다. **··· > Translation**에서는 **Translation only**를 직접 선택하고 언어 변경, 이어서·다시 번역, 저장한 AI 번역 삭제를 할 수 있습니다. 통합 동영상 자막의 파일 번역과 AI 번역은 별도 출처입니다(11-4).
 
+![영어 자막과 일본어 AI 번역](images/iphone/25-subtitle-translation.png)
+
 ※ 예시: 영어 자막을 일본어로 번역합니다. **AI Translation**에서 지원하는 언어 중 원하는 번역 언어를 선택할 수 있습니다.
 
 번역을 시작할 수 없으면 설정 창 대신 **AI translation unavailable** 알림에 현재 원인 하나가 표시됩니다. Apple Intelligence 꺼짐, 모델 준비 안 됨, 자막 언어를 판별할 수 없음 또는 언어 미지원 등이 해당합니다. 표시된 원인을 해결한 뒤 다시 시도하세요. 지원하지 않는 기기나 iOS 버전에서는 AI 번역 진입 버튼이 표시되지 않습니다. 기계 번역은 고유명사, 문화적 표현, 전문 용어를 잘못 옮길 수 있으므로 중요한 내용은 원문과 비교하세요.
@@ -562,6 +568,9 @@ iCloud Drive에 있고 아직 기기로 내려받지 않은 동영상을 처음 
 UTF-8을 권장합니다. BOM이 있는 UTF-16과 일반적인 옛 SMI 인코딩도 지원하지만, 파일을 읽지 못하면 UTF-8로 저장해 다시 시도하세요.
 
 ![원문과 파일 번역 트랙 미리보기](images/iphone/42-bilingual-subtitle-import.png)
+
+![영어 원문과 한국어 파일 번역](images/iphone/43-file-subtitle-translation.png)
+*▲ 자막 파일에서 가져온 원문과 번역을 함께 표시한 결과*
 
 ※ 이 예시는 영어 원문과 한국어 번역을 사용합니다. 두 트랙 모두 자막 파일에 들어 있는 내용이며, AI로 생성한 번역이 아닙니다. 표시되는 언어는 가져온 자막 파일에 따라 달라집니다.
 

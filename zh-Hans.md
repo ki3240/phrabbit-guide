@@ -211,6 +211,10 @@ Phrabbit 是一款用于外语听力练习的 A/B 区间循环应用。你可以
 
 在宽屏 iPad 横向窗口中，横跨两侧面板的顶部标题栏显示音频标题和睡眠定时器。左侧是波形和工具，右侧顶部是标签，下方是列表。纵向或窄窗口使用单列。
 
+![iPad 横向窗口的音频播放器](images/ipad/45-ipad-audio-landscape.png)
+
+※ 此 iPad 横向布局示例同时显示英语字幕和韩语翻译。
+
 ![iPad 纵向窗口的音频播放器](images/ipad/44-ipad-audio-portrait.png)
 
 <details>
@@ -390,6 +394,8 @@ STT 会把音频转换成句子级字幕。高级版或免费试用期间可以�
 
 气泡按钮切换 **Original only / Original + translation**。在 **··· > Translation** 中可明确选择 **Translation only**，更改语言、继续或重试，以及删除保存的 AI 翻译。双语视频字幕的文件翻译和 AI 翻译是独立来源（11-4）。
 
+![英语字幕与日语 AI 翻译](images/iphone/25-subtitle-translation.png)
+
 ※ 示例：将英语字幕翻译成日语。在 **AI Translation** 中，可以从支持的语言中选择所需的目标语言。
 
 如果无法开始翻译，会显示 **AI translation unavailable** 提示，说明当前的一项原因，而不会打开设置面板。例如 Apple Intelligence 未开启、模型尚未准备好、无法识别字幕语言或语言不受支持。解决提示中的原因后再试。不支持的设备或 iOS 版本不会显示 AI 翻译入口。机器翻译可能误译专有名词、文化表达和专业术语，重要内容请与原文对照。
@@ -564,6 +570,9 @@ YouTube 流媒体不会在锁屏或后台继续播放。当应用进入后台时
 建议使用 UTF-8，也支持带 BOM 的 UTF-16 和常见旧式 SMI 编码。读取失败时请另存为 UTF-8 后重试。
 
 ![预览原文与文件翻译轨道](images/iphone/42-bilingual-subtitle-import.png)
+
+![英语原文与韩语文件翻译](images/iphone/43-file-subtitle-translation.png)
+*▲ 同时显示从字幕文件导入的原文和翻译*
 
 ※ 此示例使用英语原文和韩语翻译。两条轨道均来自字幕文件，并非由 AI 生成。显示的语言取决于导入的字幕文件。
 
