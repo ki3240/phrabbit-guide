@@ -199,6 +199,8 @@ The fixed tool row, from left to right, contains:
 | Save bookmark | Save the current A/B range immediately |
 | Practice | Open Shadowing or Dictation |
 
+Playback speed, repeat count, and shadowing gap return to their defaults when you open a different file and stay unchanged when you reopen the same file.
+
 The seek bar above the tools moves through the whole file; **−5 / +5** skip five seconds. The waveform's **×** clears the range, and **±** opens fine adjustment. Range-dependent tools are dimmed until an A/B range exists.
 
 The sleep timer stops playback after 5, 15, 30, or 60 minutes and shows the remaining time while active. Background use depends on Premium and the Background playback setting. Subtitles are created from the empty **Subtitles** tab; once cards exist, their floating **···** opens subtitle settings (section 7).
@@ -385,6 +387,10 @@ The editor also lets you use **Recognize again** for only the range you have set
 
 ### 8-3. Translate All Subtitles
 On iOS 26.4 or later, on an Apple Intelligence-capable device, **AI Translation** is available from the floating translation control or **··· > Translation**. Premium or the free trial is required. The subtitle language is detected automatically and shown under **Subtitle language**. Choose a supported target under **Translation language**, choose what to translate, then tap **Start translation**. Audio and subtitle text are not uploaded; saved results are reused when the material is reopened. The same flow supports audio, local video, and loaded YouTube captions.
+
+Video subtitle files and YouTube captions are checked again for each sentence's language. Sentences clearly written in a language different from **Subtitle language** are translated from that language, and the number of sentences and their source languages appear below **Subtitle language**. If most subtitles appear to be in another language, a warning is also shown; for video files, **Change subtitle language to …** lets you change the subtitle language directly. For video files, the **Subtitle language** list shows only languages this device can translate. When translation finishes, the completion message shows how many sentences were recognized as another language.
+
+Sentences in a language this device cannot translate remain marked **Not translated · language unknown**, while the other sentences are translated as usual. If a translation comes back identical to the original, the sentence is tried once more; if it is still identical, only that sentence is skipped and translation finishes. If most sentences come back unchanged, translation stops and asks you to check the subtitles' source language. Sentences translated up to that point are saved, and **Retry translation** also retries skipped sentences.
 
 Progress appears while translation runs. Closing the app or player pauses the job safely, and **Continue translation** resumes it later. Long material can take time and warm the device; Phrabbit automatically slows the work when needed. After the job starts, an option can keep the screen awake for that run.
 
