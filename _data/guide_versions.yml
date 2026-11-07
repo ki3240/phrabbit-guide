@@ -1,5 +1,6 @@
 # Dev uses the final publication display; production changes only when deployed.
-current: "4.1.0"
+current: "4.2.0"
 versions:
+  - number: "4.2.0"
   - number: "4.1.0"
   - number: "4.0.0"
