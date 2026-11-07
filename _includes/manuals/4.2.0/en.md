@@ -280,11 +280,17 @@ Free users can create up to 1 new bookmark per audio file, video, or YouTube vid
 ### 6-3. Play All
 When an item has two or more bookmarks, a **Play All** card appears at the top of the **Bookmarks** tab. It works for audio, video, and YouTube.
 
+![Play All card]({{ '/versions/4.2.0/images/iphone/47-play-all.png' | relative_url }})
+*▲ With two or more bookmarks, the Play All card and its repeat chip appear at the top of the Bookmarks tab*
+
 1. Use the repeat chip on the right of the card (for example **2× ⌄**) to choose how many times each bookmark repeats: **1×, 2×, 3×, 5×, or 10×**. Your choice is remembered for next time.
 2. Tap the card once to start. Your saved bookmarks play in time order, each repeated the chosen number of times before moving on to the next.
 3. Play All ends after the last bookmark. It does not start the whole list over again.
 
 While it runs, the card title changes to **Playing all bookmarks** and shows which bookmark is playing (for example 2/5) and which repeat is in progress as dots (●●○). At 1× no dots are shown. The bookmark row that is playing is marked too. Tap **Stop** on the card to end Play All and pause playback.
+
+![Play All running]({{ '/versions/4.2.0/images/iphone/48-play-all-running.png' | relative_url }})
+*▲ While it runs, the card shows Stop and the repeat dots, and the progress bar appears below the toolbar*
 
 On other tabs, the progress bar below the toolbar shows where you are. Use **⏮ / ⏭** on the bar to skip to the previous or next bookmark; **✕** ends only Play All, and the current range keeps looping. In full screen on video and YouTube, a small indicator shows the bookmark and repeat as well.
 
