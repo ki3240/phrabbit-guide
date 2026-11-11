@@ -12,6 +12,14 @@
 - Dev shows the final publication display: the current guide is labeled
   “Published” and older guides “Previous version”. There is no preview status
   or preview notice; publication timing is controlled by which remote is used.
+- 4.2.0 has eight languages: the original five plus `es` (Latin America),
+  `vi` and `pt-BR` (added 2026-11-12, `79df2f7`). A version entry in
+  `_data/guide_versions.yml` lists its `languages`; an entry without the key
+  means the original five. The language menu shows only the version's
+  languages, and the version menu falls back to `en` for a version that lacks
+  the page's language. The new pages name buttons by the app's own strings
+  for that locale (`Localizable.xcstrings`) and reuse the shared English
+  screenshots, saying so in the note at the top.
 - 4.2.0 is published: `origin/main` and `dev/main` both serve it (released
   2026-11-12, `51bc624`). Prepare the next version on `dev/main` only and push
   origin only after that app version is approved; existing Support URLs stay
