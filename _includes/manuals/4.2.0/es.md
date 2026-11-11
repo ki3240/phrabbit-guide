@@ -44,7 +44,7 @@ En la última pantalla puedes elegir una de dos acciones.
 | **Omitir** | Va directamente a la pantalla de inicio |
 
 ### 1-2. Prueba gratuita
-Al terminar la introducción empieza una **prueba gratuita de 3 días**. Durante la prueba puedes usar libremente las funciones Premium. Mientras la prueba está activa, aparece un banner de la prueba cerca de la parte superior del reproductor; al tocarlo se abre la pantalla de compra de Premium.
+Al terminar la introducción empieza una **prueba gratuita de 3 días**. Durante la prueba puedes usar libremente las funciones Premium. Mientras la prueba está activa, aparece el banner **Prueba** cerca de la parte superior del reproductor; al tocarlo se abre la pantalla de compra de Premium.
 
 
 ## 2. Inicio y biblioteca

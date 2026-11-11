@@ -44,7 +44,7 @@ Na última tela, você pode escolher uma de duas ações.
 | **Pular** | Vai direto para a tela de início |
 
 ### 1-2. Teste grátis
-Ao terminar a introdução, começa um **teste grátis de 3 dias**. Durante o teste, você pode usar à vontade os recursos Premium. Enquanto o teste está ativo, um banner do teste aparece perto do topo do player; tocar nele abre a tela de compra do Premium.
+Ao terminar a introdução, começa um **teste grátis de 3 dias**. Durante o teste, você pode usar à vontade os recursos Premium. Enquanto o teste está ativo, o banner **Teste** aparece perto do topo do player; tocar nele abre a tela de compra do Premium.
 
 
 ## 2. Início e biblioteca
