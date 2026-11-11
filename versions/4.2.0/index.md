@@ -23,6 +23,7 @@ A/B 구간 반복으로 외국어를 연습하는 iOS 앱입니다. 오디오, �
 - 🇨🇳 **[简体中文 (Chinese, Simplified)](zh-Hans.md)**
 - 🇹🇼 **[繁體中文 (Chinese, Traditional)](zh-Hant.md)**
 - 🇲🇽 **[Español (Spanish)](es.md)**
+- 🇻🇳 **[Tiếng Việt (Vietnamese)](vi.md)**
 
 ---
 
