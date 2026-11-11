@@ -157,6 +157,28 @@
     {%- assign toc_heading = 'Mục lục' -%}
     {%- assign privacy_label = 'Chính sách quyền riêng tư' -%}
     {%- assign top_label = 'Lên đầu trang' -%}
+  {%- when 'pt-BR' -%}
+    {%- assign guide_locale = 'pt-BR' -%}
+    {%- assign current_language = 'Português (Brasil)' -%}
+    {%- assign guide_label = 'Guia de uso' -%}
+    {%- assign brand_home_label = 'Início do guia de uso do Phrabbit' -%}
+    {%- assign language_label = 'Escolher idioma' -%}
+    {%- assign toc_button_label = 'Conteúdo' -%}
+    {%- assign toc_panel_label = 'Nesta página' -%}
+    {%- assign search_button_label = 'Buscar' -%}
+    {%- assign search_panel_label = 'Buscar no guia' -%}
+    {%- assign close_label = 'Fechar' -%}
+    {%- assign search_field_label = 'Termos de busca' -%}
+    {%- assign search_placeholder = 'Ex.: marcadores, legendas, YouTube' -%}
+    {%- assign search_empty = 'Digite uma palavra para buscar.' -%}
+    {%- assign search_none = 'Nenhuma seção encontrada.' -%}
+    {%- assign search_count_suffix_one = ' seção encontrada.' -%}
+    {%- assign search_count_suffix_many = ' seções encontradas.' -%}
+    {%- assign hero_eyebrow = 'Phrabbit · Guia de uso' -%}
+    {%- assign hero_subtitle = 'Ouça, repita, faça shadowing e escreva o que você ouve.' -%}
+    {%- assign toc_heading = 'Conteúdo' -%}
+    {%- assign privacy_label = 'Política de privacidade' -%}
+    {%- assign top_label = 'Voltar ao topo' -%}
 {%- endcase -%}
 {%- assign guide_version = page.guide_version | default: site.data.guide_versions.current -%}
 {%- assign guide_ui = site.data.guide_ui[guide_lang] -%}
@@ -225,6 +247,7 @@
               <a class="language-link{% if guide_lang == 'zh-Hant' %} is-active{% endif %}" href="{{ version_prefix | append: '/zh-Hant.html' | relative_url }}">繁體中文</a>
               {% if version_languages contains 'es' %}<a class="language-link{% if guide_lang == 'es' %} is-active{% endif %}" href="{{ version_prefix | append: '/es.html' | relative_url }}">Español</a>{% endif %}
               {% if version_languages contains 'vi' %}<a class="language-link{% if guide_lang == 'vi' %} is-active{% endif %}" href="{{ version_prefix | append: '/vi.html' | relative_url }}">Tiếng Việt</a>{% endif %}
+              {% if version_languages contains 'pt-BR' %}<a class="language-link{% if guide_lang == 'pt-BR' %} is-active{% endif %}" href="{{ version_prefix | append: '/pt-BR.html' | relative_url }}">Português (Brasil)</a>{% endif %}
             </div>
           </details>
           <button class="header-tool mobile-header-toc" id="mobile-toc-trigger" type="button" aria-controls="mobile-toc-drawer" aria-expanded="false" title="{{ toc_button_label | escape }}">

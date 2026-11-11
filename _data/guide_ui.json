@@ -47,5 +47,12 @@
     "current": "Xem hướng dẫn hiện tại",
     "published": "Đang dùng",
     "previous": "Phiên bản trước"
+  },
+  "pt-BR": {
+    "version": "Escolher a versão do guia",
+    "archive": "Este é um guia arquivado. Versão:",
+    "current": "Ver o guia atual",
+    "published": "Publicado",
+    "previous": "Versão anterior"
   }
 }

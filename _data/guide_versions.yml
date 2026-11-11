@@ -2,6 +2,6 @@
 current: "4.2.0"
 versions:
   - number: "4.2.0"
-    languages: [en, ko, ja, zh-Hans, zh-Hant, es, vi]
+    languages: [en, ko, ja, zh-Hans, zh-Hant, es, vi, pt-BR]
   - number: "4.1.0"
   - number: "4.0.0"
