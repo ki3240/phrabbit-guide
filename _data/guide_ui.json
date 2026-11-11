@@ -33,5 +33,12 @@
     "current": "查看目前說明書",
     "published": "目前版本",
     "previous": "舊版本"
+  },
+  "es": {
+    "version": "Elegir versión de la guía",
+    "archive": "Esta es una guía archivada. Versión:",
+    "current": "Ver la guía actual",
+    "published": "Publicada",
+    "previous": "Versión anterior"
   }
 }

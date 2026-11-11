@@ -112,9 +112,36 @@
     {%- assign toc_heading = '目錄' -%}
     {%- assign privacy_label = '隱私權政策' -%}
     {%- assign top_label = '回到頂部' -%}
+  {%- when 'es' -%}
+    {%- assign guide_locale = 'es-419' -%}
+    {%- assign current_language = 'Español' -%}
+    {%- assign guide_label = 'Guía de uso' -%}
+    {%- assign brand_home_label = 'Inicio de la guía de uso de Phrabbit' -%}
+    {%- assign language_label = 'Elegir idioma' -%}
+    {%- assign toc_button_label = 'Contenido' -%}
+    {%- assign toc_panel_label = 'En esta página' -%}
+    {%- assign search_button_label = 'Buscar' -%}
+    {%- assign search_panel_label = 'Buscar en la guía' -%}
+    {%- assign close_label = 'Cerrar' -%}
+    {%- assign search_field_label = 'Términos de búsqueda' -%}
+    {%- assign search_placeholder = 'p. ej.: marcadores, subtítulos, YouTube' -%}
+    {%- assign search_empty = 'Escribe una palabra para buscar.' -%}
+    {%- assign search_none = 'No se encontraron secciones.' -%}
+    {%- assign search_count_suffix_one = ' sección encontrada.' -%}
+    {%- assign search_count_suffix_many = ' secciones encontradas.' -%}
+    {%- assign hero_eyebrow = 'Phrabbit · Guía de uso' -%}
+    {%- assign hero_subtitle = 'Escucha, repite, haz shadowing y escribe lo que oyes.' -%}
+    {%- assign toc_heading = 'Contenido' -%}
+    {%- assign privacy_label = 'Política de privacidad' -%}
+    {%- assign top_label = 'Volver arriba' -%}
 {%- endcase -%}
 {%- assign guide_version = page.guide_version | default: site.data.guide_versions.current -%}
 {%- assign guide_ui = site.data.guide_ui[guide_lang] -%}
+{%- assign default_languages = 'en,ko,ja,zh-Hans,zh-Hant' | split: ',' -%}
+{%- assign version_languages = default_languages -%}
+{%- for v in site.data.guide_versions.versions -%}
+  {%- if v.number == guide_version and v.languages -%}{%- assign version_languages = v.languages -%}{%- endif -%}
+{%- endfor -%}
 {%- assign version_prefix = '/versions/' | append: guide_version -%}
 {%- assign version_home = version_prefix | append: '/index.html' -%}
 {%- assign current_guide_path = '/' | append: guide_lang | append: '.html' -%}
@@ -151,7 +178,10 @@
             </summary>
             <div class="version-menu">
               {% for version in site.data.guide_versions.versions %}
-                {% assign version_path = '/versions/' | append: version.number | append: '/' | append: guide_lang | append: '.html' %}
+                {% assign version_lang = guide_lang %}
+                {% assign version_langs = version.languages | default: default_languages %}
+                {% unless version_langs contains guide_lang %}{% assign version_lang = 'en' %}{% endunless %}
+                {% assign version_path = '/versions/' | append: version.number | append: '/' | append: version_lang | append: '.html' %}
                 <a class="version-link{% if guide_version == version.number %} is-active{% endif %}" href="{{ version_path | relative_url }}"{% if guide_version == version.number %} aria-current="page"{% endif %}>
                   <span>{{ version.number }}</span>
                   <span class="version-status">{% if version.number == site.data.guide_versions.current %}{{ guide_ui.published }}{% else %}{{ guide_ui.previous }}{% endif %}</span>
@@ -170,6 +200,7 @@
               <a class="language-link{% if guide_lang == 'ja' %} is-active{% endif %}" href="{{ version_prefix | append: '/ja.html' | relative_url }}">日本語</a>
               <a class="language-link{% if guide_lang == 'zh-Hans' %} is-active{% endif %}" href="{{ version_prefix | append: '/zh-Hans.html' | relative_url }}">简体中文</a>
               <a class="language-link{% if guide_lang == 'zh-Hant' %} is-active{% endif %}" href="{{ version_prefix | append: '/zh-Hant.html' | relative_url }}">繁體中文</a>
+              {% if version_languages contains 'es' %}<a class="language-link{% if guide_lang == 'es' %} is-active{% endif %}" href="{{ version_prefix | append: '/es.html' | relative_url }}">Español</a>{% endif %}
             </div>
           </details>
           <button class="header-tool mobile-header-toc" id="mobile-toc-trigger" type="button" aria-controls="mobile-toc-drawer" aria-expanded="false" title="{{ toc_button_label | escape }}">
