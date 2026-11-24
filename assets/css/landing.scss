@@ -217,9 +217,10 @@ td { color: var(--muted); }
     gap: 1.2rem;
     padding-block: clamp(1.5rem, 5vw, 2.5rem);
   }
+  .hero-copy, .hero-purchase { text-align: center; }
   .hero h1 { font-size: clamp(2rem, 9vw, 3rem); }
   .hero .platform, .hero-intro-full, .hero .highlights li:not(:last-child) { display: none; }
-  .hero .hero-intro-short { display: block; margin-top: .65rem; }
+  .hero .hero-intro-short { display: block; margin-top: .65rem; margin-inline: auto; text-wrap: balance; }
   .hero .screenshot--hero {
     width: min(100%, 19rem);
     padding: 0;
@@ -227,8 +228,8 @@ td { color: var(--muted); }
     box-shadow: 0 .65rem 1.8rem #06122055;
   }
   .screenshot--hero img { border-radius: 1rem; }
-  .hero-actions { margin-top: 0; }
-  .highlights { margin-top: .75rem; }
+  .hero-actions { justify-content: center; margin-top: 0; }
+  .highlights { justify-content: center; margin-top: .75rem; }
   .highlights li { padding: 0; border: 0; color: var(--soft-on-navy); }
 }
 
