@@ -10,38 +10,38 @@ privacy_label: プライバシーポリシー
 support_label: サポート
 app_store: App Storeでダウンロード
 skip: メインコンテンツへ
-headline: 聞いて、くり返して、声に出す。
+headline: "聞いて、<wbr>くり返して、<wbr>声に出す。"
 intro: YouTubeやポッドキャスト、手持ちの音声や動画で練習。字幕をタップして、聞き取れない1〜2秒をくり返し、声に出してみましょう。
 mobile_intro: 自分の音声や動画で、一文ずつリピート。
 trademark: Apple、Appleロゴ、Apple Intelligence、Apple Pencil、iPad、iPadOS、iPhoneはApple Inc.の商標です。App Store、Apple Music、Apple PodcastsはApple Inc.のサービスマークです。IOSは米国およびその他の国におけるCiscoの商標または登録商標であり、ライセンスに基づき使用されています。
 highlights: [好きな教材で練習, 端末内で字幕生成, 3日間無料体験・サブスク不要の買い切り]
 hero_alt: 波形のA/B区間と、選択した英語の文の下に日本語訳が表示された画面
 features:
-  - title: いつも見たり聞いたりするものが教材に
+  - title: "いつも<wbr>見たり<wbr>聞いたり<wbr>するものが<wbr>教材に"
     summary: YouTubeは埋め込みプレーヤーで再生。ポッドキャストは検索やRSSから追加でき、手持ちの音声・動画、録音、DRM保護のない音楽も取り込めます。
     details: ローカル動画にはSRT・VTT・SMI字幕を追加できます。対応字幕があるYouTube動画では字幕カードで練習できます。
     images:
       - {id: add, alt: 音声・動画・ポッドキャスト・YouTubeを追加するメニュー}
       - {id: youtube, alt: カフェの動画で時間軸に設定したA/B区間と、その区間に対応する字幕カード}
-  - title: 聞き取れない箇所だけ、何度でも
+  - title: "聞き取れない<wbr>箇所だけ、<wbr>何度でも"
     summary: 字幕をタップしてA/Bハンドルを動かし、練習したい音に絞れます。音声の波形は1行2〜15秒の範囲で拡大できます。
     details: 速度、回数、リピート間隔を調整できます。自分の声を録音して原音と聞き比べたり、聞こえた言葉を書き取ったりできます。
     images:
       - {id: loop, alt: 音声プレーヤーの波形でフレーズに合わせて設定したA/B区間}
       - {id: shadow, alt: 原音と自分のシャドーイング録音を比較する画面}
-  - title: 端末で作った字幕で、聞いた音を確かめる
+  - title: "端末で作った<wbr>字幕で、<wbr>聞いた音を<wbr>確かめる"
     summary: 音声やダウンロードしたポッドキャストから、波形に同期した字幕カードを生成。ローカル動画は場面を指定して文字起こしできます。
     details: 練習中は字幕を隠したり修正したりできます。対応端末ではApple Intelligenceで字幕翻訳や単語の解説を利用し、単語帳とフラッシュカードで復習できます。
     images:
       - {id: translation, alt: 原文と翻訳が並ぶ字幕カード}
       - {id: word-detail, alt: 単語帳に元の例文と一緒に保存した英単語 traffic}
-ipad_title: iPadで聞いて、そのまま手書き
+ipad_title: "iPadで聞いて、<wbr>そのまま手書き"
 ipad_player: 横向きで動画と字幕カードを並べて練習
 ipad_handwriting: Apple Pencilで書き取り、原文と見比べて自分で添削できます。
-privacy_title: 録音は自分の端末に
+privacy_title: "録音は<wbr>自分の端末に"
 privacy_intro: 会議の録音、字幕、シャドーイングの録音がPhrabbitの開発者サーバーに送られることはありません。対応する言語モデルを取得すれば、手持ちの音声をオフラインで文字起こしして練習できます。
 privacy_note: 音声認識は利用可能な場合に端末内のモデルで行い、Apple Intelligenceの翻訳・解説も端末内で処理します。一部の旧OSや端末内モデル非対応の言語では、Appleの音声認識サービスに切り替わり、音声がAppleに送信される場合があります。モデル取得やYouTube・ポッドキャストのストリーミングには通信が必要です。
-pricing_title: 無料版とプレミアム
+pricing_title: "無料版と<wbr>プレミアム"
 pricing_intro: 全機能を3日間（72時間）無料で試せます。体験終了時の自動課金はなく、そのまま無料版を使えます。現在のプレミアム機能は買い切りです。
 pricing_note: 最新の価格はApp Storeでご確認ください。購入時と同じApple Accountで「購入を復元」すると、iPhoneやiPadで引き続き使えます。
 feature_label: 機能
@@ -61,7 +61,7 @@ comparison:
   - {label: シャドーイング録音・比較とディクテーション}
   - {label: 単語帳・Apple Intelligence字幕翻訳と解説}
   - {label: 音声のバックグラウンド再生とロック画面操作}
-cta_title: 聞き取れるようになりたい、その一文から
+cta_title: "聞き取れるように<wbr>なりたい、<wbr>その一文から"
 more_questions: よくある質問をすべて見る
 faq:
   - question: 無料体験が終わると自動で課金されますか？

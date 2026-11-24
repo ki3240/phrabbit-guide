@@ -10,38 +10,38 @@ privacy_label: 隐私政策
 support_label: 联系支持
 app_store: 在 App Store 下载
 skip: 跳到正文
-headline: 听一遍，再听一遍，开口跟读。
+headline: "听一遍，<wbr>再听一遍，<wbr>开口跟读。"
 intro: 用 YouTube、播客和自己的音视频练听力。轻点一句字幕，把没听清的一两秒挑出来反复听，再试着跟读。
 mobile_intro: 用自己的音视频，把没听清的那句话再听几遍。
 trademark: Apple、Apple 标志、Apple Intelligence、Apple Pencil、iPad、iPadOS 和 iPhone 是 Apple Inc. 的商标。App Store、Apple Music 和 Apple Podcasts 是 Apple Inc. 的服务商标。IOS 是 Cisco 在美国及其他国家和地区的商标或注册商标，经许可使用。
 highlights: [自选学习材料, 在设备上生成字幕, 3 天免费试用 · 一次买断，无需订阅]
 hero_alt: 音频波形上的 A/B 循环区间，以及所选英文句子和下方的简体中文翻译
 features:
-  - title: 把平时听的、看的都用来练习
+  - title: "把平时听的、<wbr>看的<wbr>都用来练习"
     summary: 用内嵌播放器看 YouTube，搜索播客或添加 RSS 订阅，也可以导入自己的音视频、会议录音和不受 DRM 保护的音乐。
     details: 本地视频可以配上 SRT、VTT 或 SMI 字幕。如果 YouTube 视频提供支持的字幕，也可以点字幕卡片逐句练习。
     images:
       - {id: add, alt: 添加音频、视频、播客和 YouTube 链接的菜单}
       - {id: youtube, alt: YouTube 播放器在时间标尺上标出 A/B 区间，下方显示对应的字幕卡片}
-  - title: 没听清哪里，就重复哪里
+  - title: "没听清哪里，<wbr>就重复哪里"
     summary: 轻点一句字幕，再拖动 A、B 两个端点，选出想听的片段。音频波形可以缩放，每行显示 2 至 15 秒。
     details: 调整播放速度、重复次数和每次重复之间的停顿。你可以录下自己的跟读，对照原声回听，也可以把听到的内容写下来。
     images:
       - {id: loop, alt: 音频波形上的 A、B 两个端点圈出一句话的范围}
       - {id: shadow, alt: 跟读练习中用于对比原声和自己录音的控件}
-  - title: 边听边看设备上生成的字幕
+  - title: "边听边看<wbr>设备上<wbr>生成的字幕"
     summary: 把音频或已下载的播客转成与波形同步的字幕卡片，也可以选取本地视频中的一段生成字幕。
     details: 练习时可以隐藏或编辑字幕。在支持的设备上，还可以借助 Apple Intelligence 翻译字幕、了解单词在句中的用法，并把生词存进单词本，用闪卡复习。
     images:
       - {id: translation, alt: 同时显示原文和中文译文的字幕卡片}
       - {id: word-detail, alt: 单词本里保存的英文单词和对应的原句}
-ipad_title: 在 iPad 上边听边写
+ipad_title: "在 iPad 上<wbr>边听边写"
 ipad_player: 横屏时，视频和字幕卡片并排显示。
 ipad_handwriting: 用 Apple Pencil 写下听到的内容，再对照原文自己订正。
-privacy_title: 你的录音留在你的设备上
+privacy_title: "你的录音<wbr>留在你的设备上"
 privacy_intro: 会议录音、字幕文本和跟读录音都不会发送到 Phrabbit 开发者的服务器。下载支持的语言模型后，即使离线，也可以为本地音频生成字幕并继续练习。
 privacy_note: 语音转文字会优先使用设备上的模型，Apple Intelligence 翻译和单词讲解也在设备上完成。在部分旧版系统上，或当某种语言没有可用的本地模型时，音频可能会发送到 Apple 的语音识别服务进行处理。下载模型、在线播放 YouTube 或播客都需要联网。
-pricing_title: 免费版与高级版
+pricing_title: "免费版与<wbr>高级版"
 pricing_intro: 免费试用全部功能 3 天（72 小时）。试用结束后不会自动扣费，你可以继续使用免费版。一次购买即可解锁当前全部高级功能。
 pricing_note: 当地价格以 App Store 为准。在 iPhone 或 iPad 上登录购买时使用的 Apple 账户，选择“恢复购买”即可恢复高级版。
 feature_label: 功能
@@ -61,7 +61,7 @@ comparison:
   - {label: 跟读录音对比和听写练习}
   - {label: 单词本、Apple Intelligence 字幕翻译和单词讲解}
   - {label: 音频后台播放和锁屏控制}
-cta_title: 从你想听懂的那句话开始
+cta_title: "从你想听懂的<wbr>那句话开始"
 more_questions: 查看全部常见问题
 faq:
   - question: 免费试用结束后会自动扣费吗？

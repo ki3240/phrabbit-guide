@@ -50,9 +50,10 @@ h1, h2 { line-height: 1.12; letter-spacing: -.035em; text-wrap: balance; }
 h1 { font-size: clamp(2.6rem, 7.4vw, 6.3rem); }
 h2 { font-size: clamp(1.85rem, 4vw, 3.25rem); }
 h1 + p, h2 + p, p + p { margin-top: 1rem; }
-:lang(ja), :lang(ko) { overflow-wrap: anywhere; }
-:lang(ja) h1, :lang(ko) h1 { font-size: clamp(2.35rem, 6.4vw, 5.3rem); }
+:lang(ja), :lang(ko), :lang(zh) { overflow-wrap: anywhere; }
+:lang(ja) h1, :lang(ko) h1, :lang(zh) h1 { font-size: clamp(2.35rem, 6.4vw, 5.3rem); }
 :lang(ko) :is(h1, h2, p, a, summary, th, td) { word-break: keep-all; }
+:lang(ja) :is(h1, h2), :lang(zh) :is(h1, h2) { word-break: keep-all; overflow-wrap: break-word; }
 .shell { width: min(100% - var(--gutter) * 2, 73rem); margin-inline: auto; }
 .narrow { width: min(100% - var(--gutter) * 2, 52rem); }
 .lede { font-size: clamp(1.08rem, 2vw, 1.3rem); color: var(--muted); }

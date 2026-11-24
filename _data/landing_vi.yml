@@ -10,7 +10,7 @@ privacy_label: Chính sách quyền riêng tư
 support_label: Hỗ trợ
 app_store: Tải về trên App Store
 skip: Chuyển đến nội dung
-headline: Lắng nghe. Nghe lại. Nói theo.
+headline: Lắng nghe. Nghe lại. Nói theo.
 intro: Luyện nghe với YouTube, podcast và tệp của bạn. Chạm vào một câu, nghe lại một hoặc hai giây chưa rõ rồi nói theo.
 mobile_intro: Nghe lại đúng câu bạn chưa nghe rõ trong bản thu hoặc video.
 trademark: Apple, logo Apple, Apple Intelligence, Apple Pencil, iPad, iPadOS và iPhone là nhãn hiệu của Apple Inc. App Store, Apple Music và Apple Podcasts là nhãn hiệu dịch vụ của Apple Inc. IOS là nhãn hiệu hoặc nhãn hiệu đã đăng ký của Cisco tại Hoa Kỳ và các quốc gia khác, được sử dụng theo giấy phép.
@@ -29,7 +29,7 @@ features:
     images:
       - {id: loop, alt: Hai mốc A và B trên dạng sóng giới hạn đoạn âm thanh của một câu}
       - {id: shadow, alt: Các nút nghe lại bản gốc và so sánh với giọng vừa thu}
-  - title: Nghe và đối chiếu với phụ đề tạo ngay trên thiết bị
+  - title: Nghe và đối chiếu với phụ đề tạo ngay trên thiết bị
     summary: Tạo thẻ phụ đề đồng bộ với dạng sóng từ tệp âm thanh hoặc podcast đã tải. Bạn cũng có thể chọn một đoạn trong video trên thiết bị để tạo phụ đề.
     details: Ẩn hoặc sửa phụ đề trong lúc luyện tập. Trên thiết bị tương thích, bạn có thể dùng Apple Intelligence để dịch phụ đề và xem giải thích từ, rồi lưu từ để ôn bằng thẻ ghi nhớ.
     images:
