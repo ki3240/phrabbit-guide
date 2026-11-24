@@ -1,0 +1,84 @@
+title: Phrabbit — Repetição A/B, shadowing e ditado no iPhone e no iPad
+description: Pratique idiomas com YouTube, podcasts e seus próprios áudios e vídeos. Repita o trecho que não entendeu e acompanhe as legendas geradas no seu aparelho.
+faq_title: Perguntas frequentes sobre o Phrabbit — Preço, prática e privacidade
+faq_description: Saiba quais materiais usar, como funciona o teste grátis e quando é possível gerar legendas sem internet.
+language: Idioma
+faq_label: Dúvidas
+guide_label: Guia de uso
+all_guides: Guias em 8 idiomas
+privacy_label: Política de privacidade
+support_label: Suporte
+app_store: Baixar na App Store
+skip: Ir para o conteúdo
+headline: Ouça. Repita. Fale em voz alta.
+intro: Pratique com YouTube, podcasts e seus próprios arquivos. Toque em uma frase, repita aquele segundo que escapou e fale em voz alta.
+mobile_intro: Repita a frase que você não entendeu nos seus áudios e vídeos.
+trademark: Apple, o logotipo da Apple, Apple Intelligence, Apple Pencil, iPad, iPadOS e iPhone são marcas comerciais da Apple Inc. App Store, Apple Music e Apple Podcasts são marcas de serviço da Apple Inc. IOS é uma marca comercial ou marca registrada da Cisco nos EUA e em outros países, usada sob licença.
+highlights: [Seus próprios materiais, Legendas no aparelho, "3 dias grátis · Compra única, sem assinatura"]
+hero_alt: Trecho A/B na forma de onda e frase selecionada em inglês com a tradução em português logo abaixo
+features:
+  - title: Estude com o que você já ouve
+    summary: Abra o YouTube no player integrado, busque podcasts ou adicione um feed RSS. Você também pode importar áudios, vídeos, gravações e músicas sem DRM.
+    details: Adicione legendas SRT, VTT ou SMI a um vídeo local. Quando o vídeo do YouTube tem legendas compatíveis, dá para praticar frase por frase com os cartões de legenda.
+    images:
+      - {id: add, alt: "Menu para adicionar áudio, vídeo, podcast ou link do YouTube"}
+      - {id: youtube, alt: Vídeo do YouTube com o trecho A/B e o cartão de legenda correspondente}
+  - title: Repita só o trecho que você não entendeu
+    summary: Toque em um cartão de legenda e arraste os pontos A e B para escolher o trecho. Nos arquivos de áudio, você pode ajustar o zoom da forma de onda para ver de 2 a 15 segundos por linha.
+    details: Escolha a velocidade, o número de repetições e a pausa entre elas. Grave sua voz e compare com o original, ou tente escrever o que ouviu.
+    images:
+      - {id: loop, alt: Pontos A e B delimitando uma frase na forma de onda}
+      - {id: shadow, alt: Controles para comparar a gravação de shadowing com o áudio original}
+  - title: Acompanhe as legendas geradas no aparelho
+    summary: Transforme seus áudios e podcasts baixados em cartões de legenda sincronizados com a forma de onda. Você também pode transcrever um trecho de um vídeo local.
+    details: Oculte ou edite as legendas enquanto pratica. Em aparelhos compatíveis, use a Apple Intelligence para traduzir legendas e consultar explicações de palavras. Salve as palavras e revise com cartões de estudo.
+    images:
+      - {id: translation, alt: Cartões de legenda com o texto original e a tradução em português}
+      - {id: word-detail, alt: Palavra salva no Vocabulário com a frase em que aparece}
+ipad_title: Ouça e escreva à mão no iPad
+ipad_player: Na horizontal, o vídeo e os cartões de legenda ficam lado a lado.
+ipad_handwriting: Escreva com o Apple Pencil e confira sua resposta com o original.
+privacy_title: Pratique com suas próprias gravações
+privacy_intro: Suas gravações de reuniões, transcrições e gravações de shadowing nunca são enviadas aos servidores do desenvolvedor do Phrabbit. Depois de baixar um modelo de idioma compatível, você pode transcrever áudios locais e praticar sem internet.
+privacy_note: O reconhecimento de fala usa modelos no aparelho sempre que disponíveis. A Apple Intelligence traduz e explica palavras no próprio aparelho. Em alguns sistemas mais antigos ou em idiomas sem modelo local compatível, o áudio pode ser enviado ao serviço de reconhecimento de fala da Apple. É preciso ter internet para baixar modelos ou reproduzir YouTube e podcasts por streaming.
+pricing_title: Grátis e Premium
+pricing_intro: Experimente todos os recursos por 3 dias (72 horas). Ao fim do teste, você pode continuar na versão grátis sem cobrança automática. Uma compra única libera todos os recursos Premium atuais.
+pricing_note: Consulte o preço da sua região na App Store. Você pode restaurar a compra no iPhone ou no iPad com a mesma Conta Apple usada para comprar o Premium.
+feature_label: Recurso
+free_label: Grátis
+premium_label: Premium
+included: Sim
+one_bookmark: Um novo marcador por item
+unlimited_bookmarks: Ilimitados
+currency: BRL
+comparison:
+  - {label: "Repetição A/B em arquivos locais, músicas sem DRM e vídeos do YouTube", free: true}
+  - {label: "Forma de onda ou régua de tempo, ajuste do trecho, velocidade e pausa de shadowing", free: true}
+  - {label: Importação de legendas de vídeo e estatísticas de estudo, free: true}
+  - {label: Marcadores, bookmarks: true}
+  - {label: Legendas automáticas sincronizadas com a forma de onda}
+  - {label: Prática com legendas do YouTube e download de podcasts}
+  - {label: Gravações de shadowing e ditado}
+  - {label: "Vocabulário, tradução e explicações com a Apple Intelligence"}
+  - {label: Áudio em segundo plano e controles na tela bloqueada}
+cta_title: Comece pela frase que você quer dominar
+more_questions: Ver todas as perguntas frequentes
+faq:
+  - question: Vou receber uma cobrança quando o teste grátis acabar?
+    answer: Não. O teste termina depois de 72 horas e os recursos grátis continuam disponíveis. Você só paga se escolher comprar o Premium. A compra é única e pode ser restaurada no iPhone ou no iPad com a mesma Conta Apple.
+  - question: Quais áudios, vídeos e outros materiais posso usar?
+    answer: Use arquivos locais como MP3, M4A e MP4, inclusive gravações de voz, ou importe faixas sem DRM da biblioteca do app Música. As faixas da assinatura do Apple Music têm proteção por DRM. Você pode buscar podcasts ou adicioná-los por RSS e baixar episódios com o Premium. O app reproduz vídeos do YouTube no player integrado e aceita legendas SRT, VTT e SMI em vídeos locais.
+  - question: Dá para repetir só um ou dois segundos?
+    answer: Sim. Toque em um cartão de legenda e arraste os pontos A e B para encurtar o trecho. Em áudios, use a forma de onda. Em vídeos locais e no YouTube, use a régua de tempo. Também dá para ajustar a velocidade, o número de repetições e a pausa entre elas.
+  - question: Posso transcrever uma gravação de voz ou de reunião no próprio aparelho?
+    answer: Sim, com um modelo de idioma local compatível instalado. O Phrabbit não envia o áudio aos servidores do desenvolvedor. Se o reconhecimento local não estiver disponível, o serviço de fala da Apple poderá processar o áudio nos servidores da Apple.
+  - question: Posso praticar ou gerar legendas sem internet?
+    answer: Com um modelo de idioma local compatível já instalado, você pode transcrever arquivos locais e podcasts baixados e praticar sem conexão. É preciso ter internet para assistir ao YouTube ou baixar novos episódios e modelos de idioma.
+  - question: Como funcionam a gravação de shadowing e o ditado?
+    answer: Com o Premium ou durante o teste, você pode gravar sua voz, comparar com o original e salvar a gravação. No ditado, o app compara automaticamente a resposta digitada com a legenda. No iPad, você mesmo confere a resposta escrita à mão com o original.
+  - question: Quais aparelhos oferecem tradução de legendas e explicações de palavras com IA?
+    answer: A tradução de legendas exige iOS ou iPadOS 26.4 ou posterior. As explicações de palavras exigem a versão 26 ou posterior. Os dois recursos precisam de um aparelho compatível com a Apple Intelligence, com o recurso ativado e pronto para uso, de um idioma compatível e do Premium ou de um teste ativo.
+  - question: Posso sair do app durante a transcrição ou ouvir com a tela bloqueada?
+    answer: Mantenha o app aberto enquanto gera legendas. Com o Premium ou durante o teste, ative a reprodução em segundo plano para ouvir áudios locais e podcasts baixados com a tela bloqueada. Os vídeos, inclusive os do YouTube, pausam quando o app vai para segundo plano.
+  - question: Quais idiomas posso praticar?
+    answer: Você pode repetir trechos e praticar shadowing com gravações em inglês, japonês, coreano, chinês, espanhol e outros idiomas. A disponibilidade das legendas automáticas e da tradução depende do idioma, do aparelho e dos modelos instalados. O app e os guias estão disponíveis em oito idiomas.

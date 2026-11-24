@@ -1,0 +1,84 @@
+title: Phrabbit — 在 iPhone 和 iPad 上練習 A/B 區間循環、跟讀與聽寫
+description: 用 YouTube、Podcast 和自己的影音檔練聽力。在波形上選出沒聽清楚的片段反覆聽，搭配裝置上產生的字幕練習跟讀與聽寫。
+faq_title: Phrabbit 常見問題 — 費用、練習方式與隱私權
+faq_description: 了解哪些教材可以拿來練習、3 天免費試用如何計時，以及離線產生字幕需要哪些條件。
+language: 語言
+faq_label: 常見問題
+guide_label: 使用指南
+all_guides: 8 種語言的使用指南
+privacy_label: 隱私權政策
+support_label: 聯絡支援
+app_store: 在 App Store 下載
+skip: 跳至主要內容
+headline: 聽一遍，再聽一遍，開口跟讀。
+intro: 用 YouTube、Podcast 和自己的影音檔練聽力。點一下字幕，挑出沒聽清楚的那一兩秒反覆聽，再跟著念一遍。
+mobile_intro: 用自己的影音檔，把沒聽清楚的那句話再聽幾遍。
+trademark: Apple、Apple 標誌、Apple Intelligence、Apple Pencil、iPad、iPadOS 和 iPhone 是 Apple Inc. 的商標。App Store、Apple Music 和 Apple Podcasts 是 Apple Inc. 的服務標章。IOS 是 Cisco 在美國及其他國家和地區的商標或註冊商標，經授權使用。
+highlights: [自選學習素材, 在裝置上產生字幕, 3 天免費試用 · 一次買斷，無須訂閱]
+hero_alt: 音訊波形上的 A/B 循環區間，以及所選英文句子和下方的繁體中文翻譯
+features:
+  - title: 用平常在聽、在看的內容練習
+    summary: 用內嵌播放器看 YouTube，搜尋 Podcast 或加入 RSS，也可以匯入自己的影音檔、會議錄音和不受 DRM 保護的音樂。
+    details: 本機影片可以搭配 SRT、VTT 或 SMI 字幕。如果 YouTube 影片提供支援的字幕，也能點字幕卡片逐句練習。
+    images:
+      - {id: add, alt: 新增音訊、影片、Podcast 和 YouTube 連結的選單}
+      - {id: youtube, alt: YouTube 播放器的時間尺標出 A/B 區間，下方顯示對應的字幕卡片}
+  - title: 哪一段沒聽清楚，就重聽那一段
+    summary: 點一下字幕卡片，再拖曳 A、B 兩個端點，選出想聽的片段。音訊波形可以縮放，每列顯示 2 到 15 秒。
+    details: 調整播放速度、重複次數和每次重播之間的停頓。你可以錄下跟讀的聲音，和原音對照著聽，也可以把聽到的內容寫下來。
+    images:
+      - {id: loop, alt: 音訊波形上的 A、B 兩個端點標出一句話的範圍}
+      - {id: shadow, alt: 跟讀畫面上用來比較原音與跟讀錄音的按鈕}
+  - title: 邊聽邊看裝置上產生的字幕
+    summary: 將音訊和已下載的 Podcast 轉成與波形同步的字幕卡片，也可以選取本機影片中的一段產生字幕。
+    details: 練習時可以隱藏或編輯字幕。在支援的裝置上，還能用 Apple Intelligence 翻譯字幕、查看單字在句子裡的用法，再把單字存進單字本，用字卡複習。
+    images:
+      - {id: translation, alt: 同時顯示原文和中文譯文的字幕卡片}
+      - {id: word-detail, alt: 單字本裡儲存的英文單字和對應的例句}
+ipad_title: 在 iPad 上邊聽邊寫
+ipad_player: 橫向使用時，影片與字幕卡片並排顯示。
+ipad_handwriting: 用 Apple Pencil 寫下聽到的內容，再對照原文自己訂正。
+privacy_title: 讓你的錄音留在裝置上
+privacy_intro: 會議錄音、字幕文字和跟讀錄音都不會傳到 Phrabbit 開發者的伺服器。先下載支援的語言模型，離線時也能為本機音訊產生字幕並繼續練習。
+privacy_note: 語音轉文字會優先使用裝置上的模型，Apple Intelligence 翻譯和單字解說也都在裝置上執行。在部分舊版系統上，或某種語言沒有適用的裝置端模型時，音訊可能會傳送至 Apple 的語音辨識服務處理。下載模型、串流 YouTube 或 Podcast 都需要網路連線。
+pricing_title: 免費版與進階版
+pricing_intro: 免費試用全部功能 3 天（72 小時）。試用期滿後不會自動扣款，你可以繼續使用免費版。目前所有進階功能只需購買一次。
+pricing_note: 當地售價請見 App Store。在 iPhone 或 iPad 上登入購買時使用的 Apple 帳號，選擇「還原購買」即可恢復進階版。
+feature_label: 功能
+free_label: 免費版
+premium_label: 進階版
+included: 包含
+one_bookmark: 每份素材可新增 1 個書籤
+unlimited_bookmarks: 不限數量
+currency: TWD
+comparison:
+  - {label: 本機影音、不受 DRM 保護的音樂及 YouTube 區間循環, free: true}
+  - {label: 波形或時間尺、區間調整、播放速度與跟讀間隔, free: true}
+  - {label: 匯入影片字幕與查看學習記錄, free: true}
+  - {label: 書籤, bookmarks: true}
+  - {label: 自動產生字幕並與波形同步}
+  - {label: YouTube 字幕卡片練習與 Podcast 下載}
+  - {label: 跟讀錄音比對與聽寫練習}
+  - {label: 單字本、Apple Intelligence 字幕翻譯與單字解說}
+  - {label: 音訊背景播放與鎖定畫面控制}
+cta_title: 從你想聽懂的那句話開始
+more_questions: 查看所有常見問題
+faq:
+  - question: 免費試用到期後會自動扣款嗎？
+    answer: 不會。72 小時試用期滿後，仍可繼續使用免費功能。只有你主動購買進階版時，才會收取一次費用。換用 iPhone 或 iPad 時，可以用同一個 Apple 帳號還原購買。
+  - question: 可以用哪些音訊、影片或其他素材練習？
+    answer: 可以匯入 MP3、M4A、MP4 等本機檔案、個人錄音，以及音樂資料庫中不受 DRM 保護的曲目。Apple Music 訂閱曲目受 DRM 保護。你也可以搜尋 Podcast、加入 RSS，或串流播放 YouTube。進階版可下載 Podcast。本機影片可匯入 SRT、VTT 和 SMI 字幕。
+  - question: 能只重播沒聽清楚的那一兩秒嗎？
+    answer: 可以。先點一句字幕，再拖曳 A/B 端點縮小循環範圍。音訊用波形選區間，本機影片和 YouTube 則用時間尺。也能調整播放速度、重複次數和每次重播之間的停頓。
+  - question: 個人錄音或會議錄音能直接在裝置上轉成文字嗎？
+    answer: 安裝支援的裝置端語言模型後，即可在裝置上將會議錄音轉成文字。Phrabbit 開發者不會收到你的錄音。若裝置端辨識無法使用，音訊可能會由 Apple 的語音辨識伺服器處理。
+  - question: 離線時也能練習和產生字幕嗎？
+    answer: 事先下載支援的語言模型後，你可以離線使用本機檔案和已下載的 Podcast 來練習、產生字幕。串流播放 YouTube、下載新的 Podcast 單集或語言模型時則需要網路連線。
+  - question: 跟讀錄音與聽寫要怎麼練習？
+    answer: 使用進階版或免費試用期間，可以錄下自己的跟讀，和原音比較並儲存錄音。用鍵盤輸入的聽寫答案會自動與字幕比對。在 iPad 上手寫的答案則由你自己對照原文訂正。
+  - question: 哪些裝置可以使用 AI 字幕翻譯和單字解說？
+    answer: 字幕翻譯需要 iOS 或 iPadOS 26.4 以上版本，單字解說需要 26 以上版本。兩者都需要支援並已啟用 Apple Intelligence 的裝置、就緒的模型、受支援的語言，以及進階版或有效的免費試用。
+  - question: 產生字幕時可以切換 App 嗎？鎖定螢幕後還能繼續聽嗎？
+    answer: 產生字幕時，請讓 Phrabbit 保持在前景。使用進階版或免費試用時，開啟背景播放即可在鎖定螢幕後繼續聽本機音訊和已下載的 Podcast。影片進入背景時會暫停播放，包括 YouTube 影片。
+  - question: 可以練習哪些語言？
+    answer: 你可以用英語、日語、韓語、中文、西班牙語等語言的錄音來反覆聽、跟讀。能否自動產生字幕或翻譯，會依語言、裝置及已安裝的模型而異。App 與使用指南提供 8 種語言。

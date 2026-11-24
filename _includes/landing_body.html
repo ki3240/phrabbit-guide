@@ -1,0 +1,102 @@
+{% assign screenshot_paths = site.static_files | map: 'path' %}
+<section class="hero">
+  <div class="shell hero-grid">
+    <div class="hero-copy">
+      <p class="platform">iOS · iPadOS</p>
+      <h1>{{ copy.headline }}</h1>
+      <p class="lede hero-intro-full">{{ copy.intro }}</p>
+      <p class="lede hero-intro-short">{{ copy.mobile_intro }}</p>
+    </div>
+    <div class="hero-media">
+      {% include landing_screenshot.html id='hero' alt=copy.hero_alt priority=true mobile_detail=true %}
+    </div>
+    <div class="hero-purchase">
+      <div class="hero-actions">
+        {% include app_store_badge.html %}
+        <a class="text-link" href="{{ locale.manual | relative_url }}">{{ copy.guide_label }}</a>
+      </div>
+      <ul class="highlights">
+        {% for highlight in copy.highlights %}
+          <li>{{ highlight }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="shell features">
+  {% for feature in copy.features %}
+    <section class="feature">
+      <div class="feature-copy">
+        <h2>{{ feature.title }}</h2>
+        <p>{{ feature.summary }}</p>
+        <p>{{ feature.details }}</p>
+      </div>
+      <div class="feature-media">
+        {% for image in feature.images %}
+          {% include landing_screenshot.html id=image.id alt=image.alt %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+</div>
+
+<section class="shell ipad-section">
+  <h2>{{ copy.ipad_title }}</h2>
+  <div class="ipad-pair">
+    <figure>
+      {% include landing_screenshot.html id='ipad-player' alt='' %}
+      <figcaption>{{ copy.ipad_player }}</figcaption>
+    </figure>
+    <figure>
+      {% include landing_screenshot.html id='dictation' alt='' %}
+      <figcaption>{{ copy.ipad_handwriting }}</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="privacy-section">
+  <div class="shell narrow">
+    <h2>{{ copy.privacy_title }}</h2>
+    <p>{{ copy.privacy_intro }}</p>
+    <p class="fine-print">{{ copy.privacy_note }}</p>
+    <a class="text-link" href="{{ '/privacy-policy.html' | relative_url }}">{{ copy.privacy_label }}</a>
+  </div>
+</section>
+
+<section class="shell narrow pricing-section">
+  <h2 id="plans-title">{{ copy.pricing_title }}</h2>
+  <p>{{ copy.pricing_intro }}</p>
+  <table aria-labelledby="plans-title">
+    <thead>
+      <tr>
+        <th scope="col">{{ copy.feature_label }}</th>
+        <th scope="col">{{ copy.free_label }}</th>
+        <th scope="col">{{ copy.premium_label }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in copy.comparison %}
+        <tr>
+          <th scope="row">{{ row.label }}</th>
+          <td>{% if row.bookmarks %}{{ copy.one_bookmark }}{% elsif row.free %}{{ copy.included }}{% else %}—{% endif %}</td>
+          <td>{% if row.bookmarks %}{{ copy.unlimited_bookmarks }}{% else %}{{ copy.included }}{% endif %}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <p class="fine-print">{{ copy.pricing_note }}</p>
+</section>
+
+<section class="shell narrow faq-section">
+  <h2>{{ copy.faq_label }}</h2>
+  {% include faq_list.html items=copy.faq limit=5 %}
+  <a class="text-link" href="{{ locale.faq | relative_url }}">{{ copy.more_questions }}</a>
+</section>
+
+<section class="end-cap">
+  <div class="shell narrow">
+    <h2>{{ copy.cta_title }}</h2>
+    <a class="download-link" href="{{ meta.app_store }}">{{ copy.app_store }}</a>
+  </div>
+</section>

@@ -1,0 +1,69 @@
+name: Deploy website to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      (github.repository == 'ki3240/phrabbit-guide-dev' ||
+       github.repository == 'ki3240/phrabbit-guide')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+        id: pages
+      - name: Configure the Jekyll build
+        env:
+          REPOSITORY: ${{ github.repository }}
+          PAGES_ORIGIN: ${{ steps.pages.outputs.origin }}
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          SUPPORT_EMAIL: ${{ vars.PAGES_SUPPORT_EMAIL }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+
+          preview = os.environ["REPOSITORY"] == "ki3240/phrabbit-guide-dev"
+          origin = os.environ["PAGES_ORIGIN"]
+          base_path = os.environ["PAGES_BASE_PATH"]
+          if not origin.startswith("https://"):
+              raise SystemExit(f"Expected an HTTPS Pages origin, got {origin!r}")
+          if preview and (origin, base_path) != ("https://ki3240.github.io", "/phrabbit-guide-dev"):
+              raise SystemExit("Preview Pages must use ki3240.github.io/phrabbit-guide-dev")
+
+          # The build action reads _config.yml from its source and has no override-file input.
+          config = {"url": origin, "baseurl": base_path, "preview": preview}
+          if os.environ["SUPPORT_EMAIL"]:
+              config["support_email"] = os.environ["SUPPORT_EMAIL"]
+          with open("_config.yml", "a", encoding="utf-8") as output:
+              for key, value in config.items():
+                  print(f"{key}: {json.dumps(value)}", file=output)
+          PY
+      - uses: actions/jekyll-build-pages@v1
+      - uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment

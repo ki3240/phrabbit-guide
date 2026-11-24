@@ -1,0 +1,36 @@
+---
+layout: null
+---
+{% if site.preview == false -%}
+{% assign meta = site.data.site_meta -%}
+{% assign copy = site.data.landing_en -%}
+# Phrabbit
+
+> {{ copy.description }}
+
+## Key Facts
+
+- Platform: {{ meta.operating_system }}
+- App Store: {{ meta.app_store }}
+- Pricing: {{ copy.pricing_intro }} {{ copy.pricing_note }}
+{% for feature in copy.features -%}
+- {{ feature.title }}: {{ feature.summary }} {{ feature.details }}
+{% endfor -%}
+- Privacy and offline use: {{ copy.privacy_intro }} {{ copy.privacy_note }}
+- App and manuals: English, Japanese, Korean, Simplified Chinese, Traditional Chinese, Spanish, Vietnamese, and Brazilian Portuguese.
+
+## Official Pages
+
+{% for entry in meta.locales -%}
+{% if entry[1].home -%}
+- [Home ({{ entry[0] }})]({{ entry[1].home | absolute_url }})
+- [FAQ ({{ entry[0] }})]({{ entry[1].faq | absolute_url }})
+{% endif -%}
+- [User manual ({{ entry[0] }})]({{ entry[1].manual | absolute_url }})
+{% endfor -%}
+- [Manuals in eight languages]({{ '/guide/' | absolute_url }})
+- [Privacy Policy]({{ '/privacy-policy.html' | absolute_url }})
+- Support: {{ site.support_email | default: meta.support_email }}
+{% else -%}
+# Phrabbit preview
+{% endif -%}

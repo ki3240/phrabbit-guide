@@ -1,0 +1,149 @@
+app_store: https://apps.apple.com/app/id6772523674
+support_email: phrabbit.support@gmail.com
+operating_system: iOS 18.0+, iPadOS 18.0+
+social_image: /assets/landing/og-image.png
+locales:
+  en:
+    name: English
+    home: /
+    faq: /faq/
+    manual: /en
+    badge_width: 144
+    og_locale: en_US
+    description: Learn to use Phrabbit for A/B looping, shadowing, subtitles, and dictation on iPhone and iPad.
+    site_link: Phrabbit home
+  ja:
+    name: 日本語
+    home: /jp/
+    faq: /jp/faq/
+    manual: /ja
+    badge_width: 131
+    og_locale: ja_JP
+    description: iPhone・iPadで使えるPhrabbitの区間リピート、字幕、シャドーイング、ディクテーションの使い方。
+    site_link: Phrabbit公式サイト
+  ko:
+    name: 한국어
+    home: /kr/
+    faq: /kr/faq/
+    manual: /ko
+    badge_width: 156
+    og_locale: ko_KR
+    description: iPhone과 iPad에서 Phrabbit의 구간 반복, 자막, 쉐도잉, 받아쓰기를 사용하는 방법을 알아보세요.
+    site_link: Phrabbit 홈
+  zh-Hans:
+    name: 简体中文
+    home: /learn/zh-hans/
+    faq: /learn/zh-hans/faq/
+    badge_width: 131
+    manual: /zh-Hans
+    og_locale: zh_CN
+    description: 了解如何在 iPhone 和 iPad 上使用 Phrabbit 的 A/B 循环、字幕、跟读和听写功能。
+    site_link: Phrabbit 官网
+  zh-Hant:
+    name: 繁體中文
+    home: /learn/zh-hant/
+    faq: /learn/zh-hant/faq/
+    badge_width: 131
+    manual: /zh-Hant
+    og_locale: zh_TW
+    description: 了解如何在 iPhone 和 iPad 上使用 Phrabbit 的 A/B 循環、字幕、跟讀和聽寫功能。
+    site_link: Phrabbit 官網
+  es:
+    name: Español
+    home: /learn/es/
+    faq: /learn/es/faq/
+    badge_width: 144
+    manual: /es
+    og_locale: es_MX
+    description: Aprende a usar los bucles A/B, los subtítulos, el shadowing y el dictado de Phrabbit en iPhone y iPad.
+    site_link: Sitio de Phrabbit
+  vi:
+    name: Tiếng Việt
+    home: /learn/vi/
+    faq: /learn/vi/faq/
+    badge_width: 144
+    manual: /vi
+    og_locale: vi_VN
+    description: Tìm hiểu cách lặp A/B, dùng phụ đề, luyện nói theo và nghe chép với Phrabbit trên iPhone và iPad.
+    site_link: Trang chủ Phrabbit
+  pt-BR:
+    name: Português do Brasil
+    home: /learn/pt-br/
+    faq: /learn/pt-br/faq/
+    badge_width: 144
+    manual: /pt-BR
+    og_locale: pt_BR
+    description: Saiba como usar a repetição A/B, as legendas, o shadowing e o ditado do Phrabbit no iPhone e iPad.
+    site_link: Site do Phrabbit
+screenshots:
+  hero-detail-pt-BR: [720, 1058]
+  hero-detail-vi: [720, 1086]
+  hero-detail-es: [720, 1001]
+  hero-detail-ko: [720, 913]
+  hero-detail: [720, 916]
+  add: [720, 933]
+  youtube: [720, 933]
+  shadow: [720, 1561]
+  ipad-player: [1080, 751]
+  word-detail: [720, 687]
+  hero: [720, 1561]
+  loop: [720, 1561]
+  translation: [720, 687]
+  add-ko: [720, 1198]
+  youtube-ko: [720, 1198]
+  shadow-ko: [720, 1561]
+  ipad-player-ko: [1080, 751]
+  word-detail-ko: [720, 565]
+  hero-ko: [720, 1561]
+  loop-ko: [720, 1561]
+  translation-ko: [720, 362]
+  add-ja: [720, 1239]
+  youtube-ja: [720, 1239]
+  shadow-ja: [720, 1561]
+  ipad-player-ja: [1080, 751]
+  word-detail-ja: [720, 687]
+  hero-ja: [720, 1561]
+  loop-ja: [720, 1561]
+  translation-ja: [720, 362]
+  dictation: [1080, 751]
+  youtube-zh-Hans: [720, 1198]
+  add-zh-Hans: [720, 1198]
+  shadow-zh-Hans: [720, 1561]
+  word-detail-zh-Hans: [720, 681]
+  translation-zh-Hans: [720, 360]
+  ipad-player-zh-Hans: [1080, 751]
+  youtube-zh-Hant: [720, 1198]
+  add-zh-Hant: [720, 1198]
+  shadow-zh-Hant: [720, 1561]
+  word-detail-zh-Hant: [720, 681]
+  translation-zh-Hant: [720, 353]
+  ipad-player-zh-Hant: [1080, 751]
+  youtube-es: [720, 1135]
+  add-es: [720, 1135]
+  shadow-es: [720, 1561]
+  word-detail-es: [720, 681]
+  translation-es: [720, 385]
+  ipad-player-es: [1080, 751]
+  loop-es: [720, 1561]
+  youtube-vi: [720, 1199]
+  add-vi: [720, 1199]
+  shadow-vi: [720, 1561]
+  word-detail-vi: [720, 681]
+  translation-vi: [720, 332]
+  ipad-player-vi: [1080, 751]
+  loop-vi: [720, 1561]
+  youtube-pt-BR: [720, 1135]
+  add-pt-BR: [720, 1135]
+  shadow-pt-BR: [720, 1561]
+  word-detail-pt-BR: [720, 681]
+  translation-pt-BR: [720, 311]
+  ipad-player-pt-BR: [1080, 751]
+  loop-pt-BR: [720, 1561]
+  hero-detail-ja: [720, 915]
+  hero-zh-Hans: [720, 1561]
+  hero-detail-zh-Hans: [720, 914]
+  hero-zh-Hant: [720, 1561]
+  hero-detail-zh-Hant: [720, 915]
+  hero-es: [720, 1561]
+  hero-vi: [720, 1561]
+  hero-pt-BR: [720, 1561]

@@ -1,0 +1,9 @@
+{% assign count = include.limit | default: include.items.size %}
+<div class="faq-list">
+  {% for item in include.items limit: count %}
+    <details>
+      <summary>{{ item.question | escape }}</summary>
+      <p>{{ item.answer | escape }}</p>
+    </details>
+  {% endfor %}
+</div>

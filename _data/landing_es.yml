@@ -1,0 +1,84 @@
+title: Phrabbit — Repetición A/B, shadowing y dictado en iPhone y iPad
+description: Practica idiomas con YouTube, podcasts y tus propios archivos de audio o video. Repite la frase que te cuesta y síguela con subtítulos creados en tu dispositivo.
+faq_title: Preguntas frecuentes sobre Phrabbit — Precio, práctica y privacidad
+faq_description: Descubre qué materiales puedes usar, cómo funciona la prueba gratuita y cuándo puedes generar subtítulos sin conexión.
+language: Idioma
+faq_label: Preguntas frecuentes
+guide_label: Guía de uso
+all_guides: Guías en 8 idiomas
+privacy_label: Política de privacidad
+support_label: Contacto
+app_store: Descargar en el App Store
+skip: Ir al contenido
+headline: Escucha. Repite. Habla.
+intro: Practica con YouTube, podcasts y tus propios archivos. Toca una frase, repite el segundo o dos que no entendiste y dila en voz alta.
+mobile_intro: Repite la frase que no entendiste en tu audio o video.
+trademark: Apple, el logotipo de Apple, Apple Intelligence, Apple Pencil, iPad, iPadOS y iPhone son marcas comerciales de Apple Inc. App Store, Apple Music y Apple Podcasts son marcas de servicio de Apple Inc. IOS es una marca comercial o marca registrada de Cisco en EE. UU. y otros países, y se usa bajo licencia.
+highlights: [Tus propios materiales, Subtítulos en el dispositivo, "3 días gratis · Pago único, sin suscripción"]
+hero_alt: Intervalo A/B en la forma de onda y frase seleccionada en inglés con su traducción al español
+features:
+  - title: Aprende con lo que ya escuchas
+    summary: Abre un video de YouTube en el reproductor integrado, busca podcasts o añádelos por RSS. También puedes importar tus audios, videos, grabaciones y música sin DRM.
+    details: Añade subtítulos SRT, VTT o SMI a un video local. Si un video de YouTube tiene subtítulos compatibles, puedes practicar frase por frase con sus tarjetas.
+    images:
+      - {id: add, alt: "Menú para añadir audio, video, podcasts o enlaces de YouTube"}
+      - {id: youtube, alt: Video de YouTube con el tramo A/B marcado y su tarjeta de subtítulos}
+  - title: Repite justo el tramo que te cuesta
+    summary: Toca una tarjeta de subtítulos y arrastra los puntos A y B para elegir el tramo. En un archivo de audio puedes ajustar el zoom de la forma de onda entre 2 y 15 segundos por fila.
+    details: Ajusta la velocidad, el número de repeticiones y la pausa entre ellas. Grábate y compara tu voz con el original, o escribe lo que oíste.
+    images:
+      - {id: loop, alt: Frase delimitada por los puntos A y B en la forma de onda}
+      - {id: shadow, alt: Controles para comparar la grabación de shadowing con el original}
+  - title: Sigue la frase con subtítulos generados en tu dispositivo
+    summary: Convierte tus audios y podcasts descargados en tarjetas de subtítulos sincronizadas con la forma de onda. También puedes transcribir un tramo de un video local.
+    details: Oculta o edita los subtítulos mientras practicas. En dispositivos compatibles, puedes traducirlos, consultar explicaciones de palabras con Apple Intelligence y guardar vocabulario para repasarlo con tarjetas.
+    images:
+      - {id: translation, alt: Tarjetas con el subtítulo original y su traducción al español}
+      - {id: word-detail, alt: Una palabra guardada con su frase de ejemplo en Vocabulario}
+ipad_title: Escucha y escribe a mano en el iPad
+ipad_player: En horizontal puedes ver el video y las tarjetas de subtítulos lado a lado.
+ipad_handwriting: Escribe con Apple Pencil y compara tu respuesta con el original.
+privacy_title: Practica con tus propias grabaciones
+privacy_intro: Las grabaciones de reuniones, las transcripciones y tus grabaciones de shadowing nunca se envían a los servidores del desarrollador de Phrabbit. Tras descargar un modelo de idioma compatible, puedes transcribir tus audios y practicar sin conexión.
+privacy_note: El reconocimiento de voz usa modelos del dispositivo cuando están disponibles. Apple Intelligence traduce y explica palabras en el propio dispositivo. En algunos sistemas antiguos o en idiomas sin un modelo local compatible, el audio puede enviarse al servicio de reconocimiento de voz de Apple. Descargar modelos y reproducir YouTube o podcasts en línea requiere conexión.
+pricing_title: Gratis y Premium
+pricing_intro: Prueba todas las funciones durante 3 días (72 horas). Al terminar la prueba, puedes seguir usando la versión gratuita sin ningún cargo automático. Un pago único desbloquea todas las funciones Premium actuales.
+pricing_note: Consulta el precio en el App Store de tu región. Puedes restaurar la compra en un iPhone o iPad con la misma cuenta de Apple que usaste para comprar Premium.
+feature_label: Función
+free_label: Gratis
+premium_label: Premium
+included: Sí
+one_bookmark: Un marcador nuevo por elemento
+unlimited_bookmarks: Sin límite
+currency: MXN
+comparison:
+  - {label: "Repetición A/B de archivos locales, música sin DRM y YouTube", free: true}
+  - {label: "Forma de onda o regla de tiempo, ajuste del tramo, velocidad y pausa de shadowing", free: true}
+  - {label: Importación de subtítulos de video y estadísticas de estudio, free: true}
+  - {label: Marcadores, bookmarks: true}
+  - {label: Subtítulos automáticos sincronizados con la forma de onda}
+  - {label: Práctica con subtítulos de YouTube y descarga de podcasts}
+  - {label: Grabaciones de shadowing y dictado}
+  - {label: "Vocabulario, traducción y explicaciones con Apple Intelligence"}
+  - {label: Audio en segundo plano y controles en la pantalla bloqueada}
+cta_title: Empieza por la frase que quieres dominar
+more_questions: Ver todas las preguntas frecuentes
+faq:
+  - question: ¿Me cobrarán cuando termine la prueba gratuita?
+    answer: No. La prueba termina al cabo de 72 horas y las funciones gratuitas siguen disponibles. Solo pagas si decides comprar Premium. Es un pago único y puedes restaurar la compra en un iPhone o iPad con la misma cuenta de Apple.
+  - question: ¿Qué archivos de audio, videos y otros materiales puedo usar?
+    answer: Puedes usar archivos locales como MP3, M4A y MP4, incluidas tus grabaciones, y pistas sin DRM de la biblioteca de Música. Las pistas de la suscripción a Apple Music están protegidas por DRM. Puedes buscar podcasts o añadirlos por RSS y descargarlos con Premium, ver YouTube en el reproductor integrado y añadir subtítulos SRT, VTT o SMI a tus videos locales.
+  - question: ¿Puedo repetir solo uno o dos segundos?
+    answer: Sí. Toca una tarjeta de subtítulos y arrastra los puntos A y B para acortar el tramo. En los audios se ajusta sobre la forma de onda y en los videos locales y YouTube, sobre la regla de tiempo. También puedes cambiar la velocidad, el número de repeticiones y la pausa entre ellas.
+  - question: ¿Puedo transcribir una grabación de voz o de una reunión en mi dispositivo?
+    answer: Sí, si tienes instalado un modelo de idioma local compatible. Phrabbit no envía tu audio a sus servidores. Si el reconocimiento local no está disponible, el servicio de voz de Apple puede procesar el audio en sus servidores.
+  - question: ¿Puedo practicar o generar subtítulos sin conexión?
+    answer: Con un modelo de idioma local compatible ya instalado, puedes transcribir archivos locales y podcasts descargados y practicar sin conexión. Necesitas internet para reproducir YouTube o descargar nuevos episodios o modelos de idioma.
+  - question: ¿Cómo funcionan las grabaciones de shadowing y el dictado?
+    answer: Con Premium o durante la prueba puedes grabar tu voz, compararla con el original y guardarla. En el dictado, lo que escribes con el teclado se compara automáticamente con los subtítulos. En el iPad puedes comparar tú mismo la respuesta escrita a mano con el original.
+  - question: ¿Qué dispositivos permiten traducir subtítulos y explicar palabras con IA?
+    answer: La traducción de subtítulos requiere iOS o iPadOS 26.4 o posterior. Las explicaciones de palabras requieren la versión 26 o posterior. Ambas funciones necesitan un dispositivo compatible con Apple Intelligence, la función activada y lista, un idioma compatible y Premium o una prueba activa.
+  - question: ¿Puedo salir de la app mientras transcribe o escuchar con la pantalla bloqueada?
+    answer: Mantén la app abierta mientras se generan los subtítulos. Con Premium o durante la prueba, activa la reproducción en segundo plano para escuchar audios locales y podcasts descargados con la pantalla bloqueada. Los videos, incluidos los de YouTube, se pausan en segundo plano.
+  - question: ¿Qué idiomas puedo practicar?
+    answer: Puedes escuchar y repetir grabaciones en inglés, japonés, coreano, chino, español y otros idiomas. Los subtítulos automáticos y la traducción dependen del idioma, del dispositivo y de los modelos instalados. La app y las guías están disponibles en ocho idiomas.

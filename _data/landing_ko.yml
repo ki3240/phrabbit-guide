@@ -1,0 +1,84 @@
+title: Phrabbit — iPhone·iPad 구간 반복, 쉐도잉, 받아쓰기
+description: YouTube, 팟캐스트, 내 음원과 영상으로 외국어를 연습하세요. 안 들리는 구간을 반복하고 기기에서 만든 자막으로 연습할 수 있어요.
+faq_title: Phrabbit 자주 묻는 질문 — 요금, 사용법, 개인정보
+faq_description: Phrabbit이 지원하는 학습 자료, 3일 무료 체험, 오프라인 자막 생성 조건을 알아보세요.
+language: 언어
+faq_label: 자주 묻는 질문
+guide_label: 사용 설명서
+all_guides: 8개 언어 사용 설명서
+privacy_label: 개인정보처리방침
+support_label: 문의
+app_store: App Store에서 다운로드
+skip: 본문 바로가기
+headline: 듣고, 반복하고, 내 목소리로.
+intro: YouTube·팟캐스트·내 영상과 음원으로 연습하세요. 자막 문장을 탭하고, 안 들리는 1~2초만 골라 반복하고 따라 말해 보세요.
+mobile_intro: 내 영상과 음원에서 안 들린 한 문장만 골라 반복하세요.
+trademark: Apple, Apple 로고, Apple Intelligence, Apple Pencil, iPad, iPadOS 및 iPhone은 Apple Inc.의 상표입니다. App Store, Apple Music 및 Apple Podcasts는 Apple Inc.의 서비스 마크입니다. IOS는 미국과 기타 국가에서 Cisco의 상표 또는 등록 상표이며 라이선스에 따라 사용됩니다.
+highlights: [내가 고른 자료, 기기 내 자막 생성, 3일 무료 체험 · 구독 없이 1회 구매]
+hero_alt: 파형에서 선택한 A/B 구간과 그 구간의 영어 문장 아래에 한국어 번역이 표시된 화면
+features:
+  - title: 평소 보고 듣는 자료로 공부하세요
+    summary: YouTube 임베드 플레이어, 검색·RSS로 가져온 팟캐스트, 내 음원·영상·회의 녹음, DRM 없는 음악을 한 앱에서 연습할 수 있어요.
+    details: 로컬 영상에 SRT·VTT·SMI 자막을 추가하세요. 지원되는 자막이 있는 YouTube 영상은 자막 카드로도 연습할 수 있어요.
+    images:
+      - {id: add, alt: 음원·영상·팟캐스트·YouTube를 추가하는 메뉴}
+      - {id: youtube, alt: 카페 영상의 시간 눈금자에 설정한 A/B 구간과 같은 문장의 자막 카드}
+  - title: 안 들리는 부분만 골라서 반복
+    summary: 자막 카드를 탭한 뒤 A/B 핸들을 끌어 듣고 싶은 구간에 집중하세요. 음원은 파형을 한 줄에 2~15초까지 확대할 수 있어요.
+    details: 배속, 반복 횟수, 반복 사이 간격을 조절하세요. 내 목소리를 녹음해 원음과 비교하거나, 들은 문장을 받아쓸 수 있어요.
+    images:
+      - {id: loop, alt: 오디오 플레이어의 파형에서 문장에 맞춰 지정한 A/B 구간}
+      - {id: shadow, alt: 원음과 쉐도잉 녹음을 비교하는 화면}
+  - title: 기기에서 만든 자막으로 들은 내용을 확인
+    summary: 내 음원과 다운로드한 팟캐스트에서 파형과 맞물리는 자막 카드를 만들고, 로컬 영상에서 연습할 부분을 골라 자막으로 변환하세요.
+    details: 연습 중 자막을 가리거나 편집하세요. 지원 기기에서는 Apple Intelligence로 자막을 번역하고 단어 해설을 본 뒤, 단어장과 플래시카드로 복습할 수 있어요.
+    images:
+      - {id: translation, alt: 원문과 번역을 함께 표시한 자막 카드}
+      - {id: word-detail, alt: 단어장에서 on time의 뜻과 정해진 시간에 도착한다는 AI 설명을 영어와 한국어로 보여 주는 화면}
+ipad_title: iPad에서 듣고, 바로 손으로 써 보세요
+ipad_player: 가로 화면에서 영상과 자막 카드를 나란히 보며 연습해요.
+ipad_handwriting: Apple Pencil로 받아쓰고 원문과 맞춰 보며 직접 고쳐요.
+privacy_title: 내 녹음은 내 기기에
+privacy_intro: 회의 녹음, 자막, 쉐도잉 녹음은 Phrabbit 개발자 서버에 전송되지 않아요. 지원하는 언어 모델을 받아 두면 내 음원을 오프라인에서도 자막으로 만들고 연습할 수 있어요.
+privacy_note: 음성 자막은 사용 가능한 경우 기기 내 모델로 생성하며, Apple Intelligence 번역과 해설도 기기에서 처리해요. 일부 구형 OS나 기기 내 모델을 지원하지 않는 언어에서는 Apple 음성인식 서비스로 전환되어 오디오가 Apple에 전송될 수 있어요. 언어 모델 다운로드와 YouTube·팟캐스트 스트리밍에는 네트워크가 필요해요.
+pricing_title: 무료와 프리미엄
+pricing_intro: 3일(72시간) 동안 모든 기능을 써보세요. 체험이 끝나면 자동 결제 없이 무료 버전으로 계속 쓸 수 있어요. 현재 프리미엄 기능은 한 번 구매해 이용할 수 있어요.
+pricing_note: 현재 가격은 App Store에서 확인하세요. 구매할 때 사용한 Apple 계정으로 로그인한 iPhone·iPad에서 구매를 복원할 수 있어요.
+feature_label: 기능
+free_label: 무료
+premium_label: 프리미엄
+included: 포함
+one_bookmark: 자료당 새 북마크 1개
+unlimited_bookmarks: 무제한
+currency: KRW
+comparison:
+  - {label: "로컬 음원·영상, DRM 없는 음악, YouTube 구간 반복", free: true}
+  - {label: "파형·시간 눈금자, 구간 조절, 배속, 쉐도잉 간격", free: true}
+  - {label: "영상 자막 불러오기와 학습 기록", free: true}
+  - {label: 북마크, bookmarks: true}
+  - {label: 자동 자막과 파형 동기화}
+  - {label: YouTube 자막 카드 연습과 팟캐스트 다운로드}
+  - {label: 쉐도잉 녹음·비교와 받아쓰기}
+  - {label: 단어장과 Apple Intelligence 자막 번역·해설}
+  - {label: 오디오 백그라운드 재생과 잠금 화면 제어}
+cta_title: 꼭 듣고 싶은 그 한 문장부터
+more_questions: 자주 묻는 질문 모두 보기
+faq:
+  - question: 무료 체험이 끝나면 자동으로 결제되나요?
+    answer: 아니요. 72시간 체험이 끝나면 무료 기능을 계속 쓸 수 있어요. 프리미엄을 직접 구매할 때만 한 번 결제해요. 같은 Apple 계정으로 로그인한 iPhone이나 iPad에서 구매를 복원할 수 있어요.
+  - question: YouTube나 팟캐스트, 내 MP3·MP4 파일과 회의 녹음도 쓸 수 있나요?
+    answer: 로컬 음원·영상과 개인 녹음, DRM 없는 뮤직 라이브러리 음원을 쓸 수 있어요. Apple Music 구독 음원은 DRM 보호를 받아요. 팟캐스트는 검색·RSS 추가·프리미엄 다운로드를 지원하고, YouTube는 임베드 재생을 이용해요. 로컬 영상에는 SRT·VTT·SMI 자막을 붙일 수 있어요.
+  - question: 안 들린 1~2초만 골라서 반복할 수 있나요?
+    answer: 네. 자막 카드를 탭하고 A/B 핸들을 끌어 범위를 좁히세요. 음원은 파형에서, 로컬 영상과 YouTube는 시간 눈금자에서 조절해요. 배속과 반복 횟수, 반복 사이 간격도 바꿀 수 있어요.
+  - question: 회의 녹음이나 개인 음성 파일을 기기 안에서 자막으로 만들 수 있나요?
+    answer: 지원되는 기기 내 언어 모델을 설치하면 회의 녹음도 기기 안에서 자막으로 만들 수 있어요. 녹음은 Phrabbit 개발자 서버에 전송되지 않아요. 기기에서 음성을 인식할 수 없으면 Apple 음성인식 서비스가 오디오를 받아 처리할 수 있어요.
+  - question: 오프라인에서 연습하거나 자막을 만들 수 있나요?
+    answer: 지원하는 기기 내 언어 모델을 설치한 상태라면 내 파일과 다운로드한 팟캐스트로 오프라인에서 자막을 생성하고 연습할 수 있어요. YouTube 스트리밍과 새 팟캐스트·언어 모델 다운로드에는 네트워크가 필요해요.
+  - question: 쉐도잉 녹음과 받아쓰기는 어떻게 하나요?
+    answer: 프리미엄 또는 체험 기간에는 내 목소리를 녹음해 원음과 비교하고 저장할 수 있어요. 키보드로 쓴 답은 자막과 자동으로 비교하고, iPad 손글씨는 원문을 보며 직접 확인해요.
+  - question: AI 자막 번역과 단어 해설은 어떤 기기에서 동작하나요?
+    answer: AI 자막 번역은 iOS·iPadOS 26.4 이상, 단어 해설은 26 이상에서 이용할 수 있어요. 두 기능 모두 Apple Intelligence 지원 기기에서 기능과 모델이 준비되어 있고 언어를 지원해야 하며, 프리미엄 또는 체험 기간이 필요해요.
+  - question: 자막을 만드는 동안 앱을 닫거나 화면을 잠근 채 들을 수 있나요?
+    answer: 자막을 만드는 동안 앱을 열어 두세요. 프리미엄 또는 체험 기간에는 백그라운드 재생을 켜고 로컬 음원과 다운로드한 팟캐스트를 들을 수 있어요. YouTube를 포함한 영상은 백그라운드에서 일시 정지돼요.
+  - question: 어떤 언어로 연습할 수 있나요?
+    answer: 영어·일본어·한국어·중국어·스페인어 등 원하는 언어의 자료로 반복하고 따라 말할 수 있어요. 자동 자막과 번역은 언어·기기·설치한 모델에 따라 지원 범위가 달라요. 앱과 사용 설명서는 8개 언어로 제공돼요.

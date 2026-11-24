@@ -2,7 +2,7 @@
 {%- assign guide_locale = 'ko-KR' -%}
 {%- assign current_language = '한국어' -%}
 {%- assign guide_label = '사용 설명서' -%}
-{%- assign brand_home_label = 'Phrabbit 사용 설명서 홈' -%}
+
 {%- assign language_label = '언어 선택' -%}
 {%- assign toc_button_label = '목차' -%}
 {%- assign toc_panel_label = '이 페이지에서' -%}
@@ -26,7 +26,7 @@
     {%- assign guide_locale = 'en-US' -%}
     {%- assign current_language = 'English' -%}
     {%- assign guide_label = 'User Guide' -%}
-    {%- assign brand_home_label = 'Phrabbit User Guide home' -%}
+
     {%- assign language_label = 'Choose language' -%}
     {%- assign toc_button_label = 'Contents' -%}
     {%- assign toc_panel_label = 'On this page' -%}
@@ -48,7 +48,7 @@
     {%- assign guide_locale = 'ja-JP' -%}
     {%- assign current_language = '日本語' -%}
     {%- assign guide_label = 'ユーザーガイド' -%}
-    {%- assign brand_home_label = 'Phrabbit ユーザーガイド ホーム' -%}
+
     {%- assign language_label = '言語を選択' -%}
     {%- assign toc_button_label = '目次' -%}
     {%- assign toc_panel_label = 'このページ' -%}
@@ -70,7 +70,7 @@
     {%- assign guide_locale = 'zh-CN' -%}
     {%- assign current_language = '简体中文' -%}
     {%- assign guide_label = '用户指南' -%}
-    {%- assign brand_home_label = 'Phrabbit 用户指南首页' -%}
+
     {%- assign language_label = '选择语言' -%}
     {%- assign toc_button_label = '目录' -%}
     {%- assign toc_panel_label = '本页内容' -%}
@@ -93,7 +93,7 @@
     {%- assign guide_locale = 'zh-TW' -%}
     {%- assign current_language = '繁體中文' -%}
     {%- assign guide_label = '使用指南' -%}
-    {%- assign brand_home_label = 'Phrabbit 使用指南首頁' -%}
+
     {%- assign language_label = '選擇語言' -%}
     {%- assign toc_button_label = '目錄' -%}
     {%- assign toc_panel_label = '本頁內容' -%}
@@ -116,7 +116,7 @@
     {%- assign guide_locale = 'es-419' -%}
     {%- assign current_language = 'Español' -%}
     {%- assign guide_label = 'Guía de uso' -%}
-    {%- assign brand_home_label = 'Inicio de la guía de uso de Phrabbit' -%}
+
     {%- assign language_label = 'Elegir idioma' -%}
     {%- assign toc_button_label = 'Contenido' -%}
     {%- assign toc_panel_label = 'En esta página' -%}
@@ -138,7 +138,7 @@
     {%- assign guide_locale = 'vi-VN' -%}
     {%- assign current_language = 'Tiếng Việt' -%}
     {%- assign guide_label = 'Hướng dẫn sử dụng' -%}
-    {%- assign brand_home_label = 'Trang chủ hướng dẫn sử dụng Phrabbit' -%}
+
     {%- assign language_label = 'Chọn ngôn ngữ' -%}
     {%- assign toc_button_label = 'Mục lục' -%}
     {%- assign toc_panel_label = 'Trên trang này' -%}
@@ -161,7 +161,7 @@
     {%- assign guide_locale = 'pt-BR' -%}
     {%- assign current_language = 'Português (Brasil)' -%}
     {%- assign guide_label = 'Guia de uso' -%}
-    {%- assign brand_home_label = 'Início do guia de uso do Phrabbit' -%}
+
     {%- assign language_label = 'Escolher idioma' -%}
     {%- assign toc_button_label = 'Conteúdo' -%}
     {%- assign toc_panel_label = 'Nesta página' -%}
@@ -188,23 +188,41 @@
   {%- if v.number == guide_version and v.languages -%}{%- assign version_languages = v.languages -%}{%- endif -%}
 {%- endfor -%}
 {%- assign version_prefix = '/versions/' | append: guide_version -%}
-{%- assign version_home = version_prefix | append: '/index.html' -%}
+
 {%- assign current_guide_path = '/' | append: guide_lang | append: '.html' -%}
 <!doctype html>
 <html lang="{{ guide_lang | escape }}">
   <head>
+    {%- assign manual_locale = site.data.site_meta.locales[guide_lang] -%}
+    {%- assign marketing_home = manual_locale.home | default: '/' -%}
+    {%- assign seo_path = page.url -%}
+    {%- assign seo_alternates = nil -%}
+    {%- assign seo_archive = false -%}
+    {%- assign url_parts = page.url | split: '/' -%}
+    {%- assign locale_wrapper = guide_lang | append: '.md' -%}
+    {%- if page.path == locale_wrapper -%}
+      {%- assign seo_path = manual_locale.manual -%}
+      {%- assign seo_alternates = 'manual' -%}
+    {%- elsif url_parts[1] == 'versions' -%}
+      {%- if guide_version != site.data.guide_versions.current -%}
+        {%- assign seo_archive = true -%}
+      {%- elsif page.name == locale_wrapper -%}
+        {%- assign seo_path = manual_locale.manual -%}
+      {%- elsif page.name == 'index.md' -%}
+        {%- assign seo_path = '/guide/' -%}
+      {%- endif -%}
+    {%- endif -%}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fbfbfa">
-    <meta name="description" content="{{ site.description | escape }}">
-    <title>{{ page.title | default: site.title | escape }}</title>
+    {% include seo_head.html canonical=seo_path alternates=seo_alternates archive=seo_archive %}
     <link rel="icon" href="{{ '/assets/images/app-icon-light.png' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   </head>
   <body class="guide-page">
     <div class="site-frame">
       <header class="site-header">
-        <a class="brand" href="{{ version_home | relative_url }}" aria-label="{{ brand_home_label | escape }}">
+        <a class="brand" href="{{ marketing_home | relative_url }}" aria-label="{{ manual_locale.site_link | escape }}">
           <picture class="brand-icon">
             <source srcset="{{ '/assets/images/app-icon-dark.png' | relative_url }}" media="(prefers-color-scheme: dark)">
             <img src="{{ '/assets/images/app-icon-light.png' | relative_url }}" alt="">
@@ -300,7 +318,7 @@
           </picture>
         </div>
         <div class="hero-copy">
-          <p class="eyebrow">{{ hero_eyebrow }}</p>
+          <a class="guide-home-link" href="{{ marketing_home | relative_url }}">{{ manual_locale.site_link }}</a>
           <h1 id="page-title">{{ page.title }}</h1>
           <p>{{ hero_subtitle }}</p>
         </div>
@@ -329,6 +347,7 @@
 
           <footer class="page-footer">
             <span>Phrabbit · A/B loop audio practice</span>
+            <a href="{{ marketing_home | relative_url }}">{{ manual_locale.site_link }}</a>
             <a href="#page-title">{{ top_label }} ↑</a>
           </footer>
         </main>

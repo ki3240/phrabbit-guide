@@ -1,0 +1,28 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Phrabbit",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": {{ meta.operating_system | jsonify }},
+  "url": {{ locale.home | absolute_url | jsonify }},
+  "downloadUrl": {{ meta.app_store | jsonify }},
+  "installUrl": {{ meta.app_store | jsonify }},
+  "inLanguage": [{% for entry in meta.locales %}{{ entry[0] | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}],
+  "description": {{ copy.intro | jsonify }},
+  "featureList": {{ copy.features | map: 'summary' | jsonify }},
+  "offers": {
+    "@type": "Offer",
+    "price": 0,
+    "priceCurrency": {{ copy.currency | jsonify }},
+    "description": {{ copy.pricing_intro | jsonify }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Phrabbit",
+    "url": {{ '/' | absolute_url | jsonify }},
+    "logo": {{ '/assets/landing/icon-512.png' | absolute_url | jsonify }},
+    "email": {{ support_email | jsonify }}
+  }
+}
+</script>

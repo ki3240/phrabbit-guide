@@ -130,7 +130,8 @@ button { cursor: pointer; }
 .hero-mark picture { display: block; width: 100%; height: 100%; border-radius: inherit; overflow: hidden; }
 .hero-copy { min-width: 0; }
 .eyebrow { margin: 0 0 7px; color: var(--brand-deep); font-size: .76rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
-.guide-hero .eyebrow { color: var(--hero-muted); }
+.guide-home-link { display: inline-flex; align-items: center; min-height: 28px; margin-bottom: 4px; color: var(--hero-muted); font-size: .85rem; text-decoration: underline; text-underline-offset: .2em; }
+.guide-home-link:hover, .guide-home-link:focus-visible { color: var(--hero-ink); }
 .hero-copy h1 { margin: 0; font-size: clamp(2rem, 4vw, 3.35rem); line-height: 1.12; letter-spacing: 0; overflow-wrap: anywhere; }
 .guide-hero .hero-copy h1 { color: var(--hero-ink); }
 .hero-copy p:last-child { max-width: 650px; margin: 13px 0 0; color: var(--muted); font-size: 1.02rem; }

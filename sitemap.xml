@@ -1,0 +1,19 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% if site.preview == false -%}
+  {% assign sitemap_kinds = 'home,faq,manual' | split: ',' -%}
+  {% for entry in site.data.site_meta.locales -%}
+    {% for kind in sitemap_kinds -%}
+      {% assign path = entry[1][kind] -%}
+      {% if path -%}
+  <url><loc>{{ path | absolute_url | xml_escape }}</loc></url>
+      {% endif -%}
+    {% endfor -%}
+  {% endfor -%}
+  <url><loc>{{ '/guide/' | absolute_url | xml_escape }}</loc></url>
+  <url><loc>{{ '/privacy-policy.html' | absolute_url | xml_escape }}</loc></url>
+{% endif -%}
+</urlset>

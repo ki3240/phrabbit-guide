@@ -1,36 +1,28 @@
----
-layout: default
-title: Phrabbit User Guide
-lang: en
-guide_version: 4.2.0
-permalink: /
----
+# Phrabbit
 
-# Phrabbit User Guide
+This repository contains the Phrabbit landing pages and versioned user guides for iPhone and iPad.
 
-An iOS app for practicing languages with A/B loop audio and video. Load audio, video, podcast, Music library, or YouTube material, loop any section freely, and practice with speech-to-text, shadowing, and dictation.
+- [Published user manual](https://ki3240.github.io/phrabbit-guide/en)
+- [Privacy policy](privacy-policy.html)
+- [Maintaining versioned manuals](MAINTAINING.md)
 
-A/B 구간 반복으로 외국어를 연습하는 iOS 앱입니다. 오디오, 동영상, 팟캐스트, 뮤직 라이브러리 또는 YouTube 자료를 불러와 원하는 구간을 반복하고, 음성 인식 자막·쉐도잉·받아쓰기로 학습하세요.
+## Pages deployment
 
-**Current guide: Phrabbit 4.2.0 · 현재 매뉴얼: Phrabbit 4.2.0**
+The workflow runs on `main` in `ki3240/phrabbit-guide-dev` and
+`ki3240/phrabbit-guide`. Set **Settings → Pages → Source** to **GitHub Actions**
+in the repository being deployed. The workflow reads that repository's current
+Pages URL at build time. The preview uses its project base path and sets
+`noindex, nofollow` on HTML pages. Its sitemap has no indexable URLs and its
+`llms.txt` omits the production directory. Production uses its GitHub project base
+path until a custom domain is connected. After changing the domain, run the
+workflow again on `main` to regenerate links and metadata. Configure a custom
+domain in the production repository's Pages settings before pointing web DNS
+at Pages. After connecting it, check redirects for the existing manual URLs
+and check the host-root `robots.txt` and sitemap.
 
----
+Set the repository variable `PAGES_SUPPORT_EMAIL` after the new address receives
+mail. The site uses the existing support address until then.
 
-## Choose your language · 언어 선택
-
-- 🇰🇷 **[한국어 (Korean)](ko.md)**
-- 🇺🇸 **[English](en.md)**
-- 🇯🇵 **[日本語 (Japanese)](ja.md)**
-- 🇨🇳 **[简体中文 (Chinese, Simplified)](zh-Hans.md)**
-- 🇹🇼 **[繁體中文 (Chinese, Traditional)](zh-Hant.md)**
-- 🇲🇽 **[Español (Spanish)](es.md)**
-- 🇻🇳 **[Tiếng Việt (Vietnamese)](vi.md)**
-- 🇧🇷 **[Português do Brasil (Portuguese, Brazil)](pt-BR.md)**
-
----
-
-📄 **[Privacy Policy · 개인정보처리방침](privacy-policy.html)**
-
----
-
-*Phrabbit — A/B loop audio practice for language learning.*
+To build locally, use Jekyll with the GitHub Pages gems. A normal Jekyll build
+defaults to preview indexing rules. GitHub Pages builds the workflow artifact
+with the environment values supplied by the workflow.

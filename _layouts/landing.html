@@ -1,0 +1,100 @@
+{% assign lang = page.lang | default: 'en' %}
+{% assign data_key = 'landing_' | append: lang %}
+{% assign copy = site.data[data_key] %}
+{% assign meta = site.data.site_meta %}
+{% assign locale = meta.locales[lang] %}
+{% assign support_email = site.support_email | default: meta.support_email %}
+{% assign section = page.section %}
+{% if section == 'faq' %}
+  {% assign title = copy.faq_title %}
+  {% assign description = copy.faq_description %}
+  {% assign alternates = 'faq' %}
+{% elsif section == 'home' %}
+  {% assign title = copy.title %}
+  {% assign description = copy.description %}
+  {% assign alternates = 'home' %}
+{% else %}
+  {% assign title = page.title %}
+  {% assign description = page.description %}
+  {% assign alternates = nil %}
+{% endif %}
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  {% include seo_head.html title=title description=description alternates=alternates %}
+  <link rel="icon" href="{{ '/assets/landing/icon-64.png' | relative_url }}" sizes="64x64">
+  <link rel="apple-touch-icon" href="{{ '/assets/landing/icon-192.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/landing.css' | relative_url }}">
+  {% if section == 'home' %}
+    {% include jsonld_app.html %}
+  {% elsif section == 'faq' %}
+    {% include jsonld_faq.html %}
+  {% endif %}
+</head>
+<body>
+  <a class="skip-link" href="#main">{{ copy.skip }}</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="{{ locale.home | relative_url }}">
+        <picture>
+          <source srcset="{{ '/assets/landing/icon-64-dark.png' | relative_url }}" media="(prefers-color-scheme: dark)">
+          <img src="{{ '/assets/landing/icon-64.png' | relative_url }}" width="32" height="32" alt="">
+        </picture>
+        Phrabbit
+      </a>
+      <nav class="main-nav">
+        <a href="{{ locale.faq | relative_url }}"{% if section == 'faq' %} aria-current="page"{% endif %}>{{ copy.faq_label }}</a>
+        <a href="{{ locale.manual | relative_url }}">{{ copy.guide_label }}</a>
+        <details class="language-menu">
+          <summary>{{ copy.language }}</summary>
+          <ul>
+            {% for entry in meta.locales %}
+              {% assign choice = entry[1][alternates] | default: entry[1].home %}
+              {% if choice %}
+                <li><a href="{{ choice | relative_url }}" lang="{{ entry[0] }}" hreflang="{{ entry[0] }}"{% if lang == entry[0] and alternates %} aria-current="page"{% endif %}>{{ entry[1].name }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </details>
+        <a class="nav-download" href="{{ meta.app_store }}">App Store</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {% if section == 'home' %}
+      {% include landing_body.html %}
+    {% elsif section == 'faq' %}
+      <div class="shell narrow subpage">
+        <h1>{{ copy.faq_label }}</h1>
+        <p class="lede">{{ copy.faq_description }}</p>
+        {% include faq_list.html items=copy.faq %}
+        <p class="faq-support"><a href="{{ locale.manual | relative_url }}">{{ copy.guide_label }}</a> · <a href="mailto:{{ support_email | escape }}">{{ copy.support_label }}</a></p>
+      </div>
+    {% else %}
+      <article class="shell narrow subpage guide-hub">
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+      </article>
+    {% endif %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <a class="footer-brand" href="{{ locale.home | relative_url }}">Phrabbit</a>
+      <nav>
+        <a href="{{ locale.faq | relative_url }}">{{ copy.faq_label }}</a>
+        <a href="{{ '/guide/' | relative_url }}">{{ copy.all_guides }}</a>
+        <a href="{{ '/privacy-policy.html' | relative_url }}">{{ copy.privacy_label }}</a>
+        <a href="mailto:{{ support_email | escape }}">{{ copy.support_label }}</a>
+      </nav>
+    </div>
+    {% if section == 'home' %}
+      <p class="shell trademark">{{ copy.trademark }}</p>
+    {% endif %}
+  </footer>
+</body>
+</html>

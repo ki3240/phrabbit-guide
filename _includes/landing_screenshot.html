@@ -1,0 +1,26 @@
+{% assign base_path = '/assets/landing/' | append: include.id %}
+{% assign localized_id = include.id | append: '-' | append: lang %}
+{% assign localized_path = '/assets/landing/' | append: localized_id %}
+{% assign localized_png = localized_path | append: '.png' %}
+{% assign localized_webp = localized_path | append: '.webp' %}
+{% assign png = base_path | append: '.png' %}
+{% assign webp = base_path | append: '.webp' %}
+{% assign shot = meta.screenshots[include.id] %}
+{% if screenshot_paths contains localized_png or screenshot_paths contains localized_webp %}
+  {% if screenshot_paths contains localized_png %}{% assign png = localized_png %}{% endif %}
+  {% assign webp = localized_webp %}
+  {% assign shot = meta.screenshots[localized_id] | default: shot %}
+{% endif %}
+<picture class="screenshot screenshot--{{ include.id }}">
+  {% if include.mobile_detail %}
+    {% assign mobile_id = 'hero-detail-' | append: lang %}
+    {% unless meta.screenshots[mobile_id] %}{% assign mobile_id = 'hero-detail' %}{% endunless %}
+    {% assign mobile_path = '/assets/landing/' | append: mobile_id %}
+    {% assign mobile_size = meta.screenshots[mobile_id] %}
+    <source media="(max-width: 47rem)" type="image/webp" srcset="{{ mobile_path | append: '.webp' | relative_url }}" width="{{ mobile_size[0] }}" height="{{ mobile_size[1] }}">
+    <source media="(max-width: 47rem)" type="image/png" srcset="{{ mobile_path | append: '.png' | relative_url }}" width="{{ mobile_size[0] }}" height="{{ mobile_size[1] }}">
+  {% endif %}
+  {% if screenshot_paths contains webp %}<source type="image/webp" srcset="{{ webp | relative_url }}">{% endif %}
+  <img src="{{ png | relative_url }}" width="{{ shot[0] }}" height="{{ shot[1] }}"
+       alt="{{ include.alt | escape }}"{% if include.priority %} fetchpriority="high"{% else %} loading="lazy" decoding="async"{% endif %}>
+</picture>

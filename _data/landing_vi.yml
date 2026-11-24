@@ -1,0 +1,84 @@
+title: Phrabbit — Lặp đoạn A/B, luyện nói theo và nghe chép trên iPhone, iPad
+description: Luyện ngoại ngữ với YouTube, podcast và tệp âm thanh hoặc video của bạn. Nghe lại câu chưa rõ, nói theo và đối chiếu với phụ đề tạo ngay trên thiết bị.
+faq_title: Câu hỏi thường gặp về Phrabbit — Chi phí, cách luyện tập và quyền riêng tư
+faq_description: Tìm hiểu những tài liệu bạn có thể dùng, cách dùng thử miễn phí và điều kiện tạo phụ đề khi ngoại tuyến.
+language: Ngôn ngữ
+faq_label: Hỏi đáp
+guide_label: Hướng dẫn
+all_guides: Hướng dẫn bằng 8 ngôn ngữ
+privacy_label: Chính sách quyền riêng tư
+support_label: Hỗ trợ
+app_store: Tải về trên App Store
+skip: Chuyển đến nội dung
+headline: Lắng nghe. Nghe lại. Nói theo.
+intro: Luyện nghe với YouTube, podcast và tệp của bạn. Chạm vào một câu, nghe lại một hoặc hai giây chưa rõ rồi nói theo.
+mobile_intro: Nghe lại đúng câu bạn chưa nghe rõ trong bản thu hoặc video.
+trademark: Apple, logo Apple, Apple Intelligence, Apple Pencil, iPad, iPadOS và iPhone là nhãn hiệu của Apple Inc. App Store, Apple Music và Apple Podcasts là nhãn hiệu dịch vụ của Apple Inc. IOS là nhãn hiệu hoặc nhãn hiệu đã đăng ký của Cisco tại Hoa Kỳ và các quốc gia khác, được sử dụng theo giấy phép.
+highlights: [Tài liệu bạn tự chọn, Tạo phụ đề trên thiết bị, "Dùng thử 3 ngày · Mua một lần, không cần thuê bao"]
+hero_alt: Đoạn lặp A/B trên dạng sóng và câu tiếng Anh được chọn cùng bản dịch tiếng Việt bên dưới
+features:
+  - title: Học với những gì bạn vẫn nghe mỗi ngày
+    summary: Xem YouTube trong trình phát tích hợp, tìm podcast hoặc thêm qua RSS. Bạn cũng có thể nhập tệp âm thanh, video, bản ghi âm và nhạc không có DRM.
+    details: Thêm phụ đề SRT, VTT hoặc SMI vào video trên thiết bị. Với video YouTube có phụ đề tương thích, bạn có thể luyện từng câu bằng thẻ phụ đề.
+    images:
+      - {id: add, alt: "Menu thêm tệp âm thanh, video, podcast và liên kết YouTube"}
+      - {id: youtube, alt: Trình phát YouTube với đoạn lặp A/B và thẻ phụ đề tương ứng}
+  - title: Nghe lại đúng đoạn còn vướng
+    summary: Chạm vào một thẻ phụ đề rồi kéo hai mốc A và B để chọn đoạn cần nghe. Với tệp âm thanh, bạn có thể thu phóng dạng sóng để mỗi hàng hiển thị từ 2 đến 15 giây.
+    details: Điều chỉnh tốc độ, số lần lặp và khoảng nghỉ giữa các lần nghe. Thu âm giọng mình để so sánh với bản gốc, hoặc thử viết lại câu vừa nghe.
+    images:
+      - {id: loop, alt: Hai mốc A và B trên dạng sóng giới hạn đoạn âm thanh của một câu}
+      - {id: shadow, alt: Các nút nghe lại bản gốc và so sánh với giọng vừa thu}
+  - title: Nghe và đối chiếu với phụ đề tạo ngay trên thiết bị
+    summary: Tạo thẻ phụ đề đồng bộ với dạng sóng từ tệp âm thanh hoặc podcast đã tải. Bạn cũng có thể chọn một đoạn trong video trên thiết bị để tạo phụ đề.
+    details: Ẩn hoặc sửa phụ đề trong lúc luyện tập. Trên thiết bị tương thích, bạn có thể dùng Apple Intelligence để dịch phụ đề và xem giải thích từ, rồi lưu từ để ôn bằng thẻ ghi nhớ.
+    images:
+      - {id: translation, alt: Thẻ phụ đề hiển thị câu gốc và bản dịch tiếng Việt}
+      - {id: word-detail, alt: Một từ được lưu trong sổ từ vựng cùng câu có chứa từ đó}
+ipad_title: Nghe và viết tay trên iPad
+ipad_player: Xoay ngang để xem video và các thẻ phụ đề cạnh nhau.
+ipad_handwriting: Viết bằng Apple Pencil rồi tự đối chiếu với câu gốc.
+privacy_title: Luyện tập với bản ghi âm riêng tư
+privacy_intro: Bản ghi âm cuộc họp, nội dung đã chép lời và bản thu giọng nói khi luyện tập không được gửi đến máy chủ của nhà phát triển Phrabbit. Sau khi tải mô hình ngôn ngữ tương thích, bạn có thể tạo phụ đề và luyện nghe với tệp trên thiết bị khi không có mạng.
+privacy_note: Tính năng nhận dạng giọng nói dùng mô hình trên thiết bị khi có thể. Apple Intelligence cũng dịch và giải thích từ ngay trên thiết bị. Với một số hệ điều hành cũ hoặc ngôn ngữ chưa có mô hình cục bộ tương thích, âm thanh có thể được gửi đến dịch vụ nhận dạng giọng nói của Apple. Bạn cần kết nối mạng để tải mô hình hoặc phát trực tuyến YouTube và podcast.
+pricing_title: Miễn phí và Premium
+pricing_intro: Dùng thử tất cả tính năng trong 3 ngày (72 giờ). Khi hết hạn, bạn vẫn có thể dùng bản miễn phí và sẽ không bị tự động tính phí. Mua một lần để mở khóa toàn bộ tính năng Premium hiện có.
+pricing_note: Xem giá tại khu vực của bạn trên App Store. Bạn có thể khôi phục giao dịch mua trên iPhone hoặc iPad bằng Tài khoản Apple đã dùng để mua Premium.
+feature_label: Tính năng
+free_label: Miễn phí
+premium_label: Premium
+included: Có
+one_bookmark: Một dấu trang mới cho mỗi mục
+unlimited_bookmarks: Không giới hạn
+currency: VND
+comparison:
+  - {label: "Lặp đoạn A/B với tệp trên thiết bị, nhạc không có DRM và video YouTube", free: true}
+  - {label: "Dạng sóng hoặc thước thời gian, chỉnh đoạn lặp, tốc độ và khoảng nghỉ để nói theo", free: true}
+  - {label: Nhập phụ đề video và xem thống kê học tập, free: true}
+  - {label: Dấu trang, bookmarks: true}
+  - {label: Phụ đề tự động đồng bộ với dạng sóng}
+  - {label: Luyện với phụ đề YouTube và tải podcast}
+  - {label: Thu âm để so sánh giọng và luyện nghe chép}
+  - {label: "Sổ từ vựng, dịch phụ đề và giải thích từ bằng Apple Intelligence"}
+  - {label: Phát âm thanh dưới nền và điều khiển từ màn hình khóa}
+cta_title: Bắt đầu với câu bạn muốn nói thật trôi chảy
+more_questions: Xem tất cả câu hỏi thường gặp
+faq:
+  - question: Tôi có bị tính phí khi hết thời gian dùng thử không?
+    answer: Không. Thời gian dùng thử tự kết thúc sau 72 giờ và bạn vẫn dùng được các tính năng miễn phí. Bạn chỉ thanh toán một lần nếu chủ động mua Premium. Có thể khôi phục giao dịch mua trên iPhone hoặc iPad bằng cùng Tài khoản Apple.
+  - question: Tôi có thể luyện với những loại tệp và tài liệu nào?
+    answer: Bạn có thể dùng tệp MP3, M4A, MP4 trên thiết bị, kể cả bản ghi âm cá nhân, hoặc nhập các bài hát không có DRM từ thư viện Nhạc. Nhạc từ gói đăng ký Apple Music có bảo vệ DRM. Bạn có thể tìm podcast hoặc thêm qua RSS và tải các tập với Premium, xem YouTube bằng trình phát tích hợp và thêm phụ đề SRT, VTT hoặc SMI cho video trên thiết bị.
+  - question: Tôi có thể chỉ lặp lại một hoặc hai giây chưa nghe rõ không?
+    answer: Được. Chạm vào thẻ phụ đề rồi kéo hai mốc A và B để thu hẹp đoạn lặp. Với tệp âm thanh, bạn chỉnh trên dạng sóng. Với video trên thiết bị và YouTube, bạn chỉnh trên thước thời gian. Bạn cũng có thể đổi tốc độ, số lần lặp và khoảng nghỉ.
+  - question: Có thể chép lời bản ghi âm cá nhân hoặc cuộc họp ngay trên thiết bị không?
+    answer: Được, nếu bạn đã cài mô hình ngôn ngữ tương thích trên thiết bị. Phrabbit không gửi âm thanh đến máy chủ của nhà phát triển. Khi không thể nhận dạng ngay trên thiết bị, âm thanh có thể được xử lý trên máy chủ của Apple qua dịch vụ nhận dạng giọng nói.
+  - question: Tôi có thể luyện tập hoặc tạo phụ đề khi không có mạng không?
+    answer: Nếu đã cài mô hình ngôn ngữ cục bộ tương thích, bạn có thể tạo phụ đề và luyện tập ngoại tuyến với tệp trên thiết bị hoặc podcast đã tải. Bạn cần mạng để xem YouTube, tải tập podcast mới hoặc tải mô hình ngôn ngữ.
+  - question: Làm sao để thu âm khi nói theo và luyện nghe chép?
+    answer: Với Premium hoặc trong thời gian dùng thử, bạn có thể thu âm giọng mình, so sánh với bản gốc và lưu bản thu. Khi nghe chép bằng bàn phím, ứng dụng tự động đối chiếu câu trả lời với phụ đề. Nếu viết tay trên iPad, bạn tự so sánh bài viết với câu gốc.
+  - question: Thiết bị nào hỗ trợ dịch phụ đề và giải thích từ bằng AI?
+    answer: Dịch phụ đề cần iOS hoặc iPadOS 26.4 trở lên. Giải thích từ cần phiên bản 26 trở lên. Cả hai tính năng đều cần thiết bị hỗ trợ Apple Intelligence, đã bật và sẵn sàng sử dụng tính năng này, ngôn ngữ tương thích và Premium hoặc thời gian dùng thử còn hiệu lực.
+  - question: Tôi có thể rời ứng dụng khi đang tạo phụ đề hoặc nghe tiếp khi khóa màn hình không?
+    answer: Hãy giữ ứng dụng mở trong khi tạo phụ đề. Với Premium hoặc trong thời gian dùng thử, bạn có thể bật tính năng phát ở chế độ nền để nghe tệp âm thanh và podcast đã tải khi khóa màn hình. Video, kể cả YouTube, sẽ tạm dừng khi ứng dụng chuyển sang chế độ nền.
+  - question: Tôi có thể luyện những ngôn ngữ nào?
+    answer: Bạn có thể nghe lặp lại và nói theo các bản thu tiếng Anh, Nhật, Hàn, Trung, Tây Ban Nha và nhiều ngôn ngữ khác. Khả năng tạo phụ đề tự động và dịch phụ thuộc vào ngôn ngữ, thiết bị và mô hình đã cài. Ứng dụng và hướng dẫn sử dụng có 8 ngôn ngữ.

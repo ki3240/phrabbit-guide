@@ -8,3 +8,8 @@ defaults:
       path: "versions/4.0.0"
     values:
       guide_version: "4.0.0"
+
+# Keep repository documentation out of the site, including readme-index discovery.
+exclude:
+  - README.md
+  - MAINTAINING.md

@@ -1,0 +1,84 @@
+title: Phrabbit — A/B Loops, Shadowing & Dictation for iPhone and iPad
+description: Practice languages with YouTube, podcasts, and your own audio or video. Loop the exact phrase, shadow it, and study with on-device subtitles.
+faq_title: Phrabbit FAQ — Pricing, Practice & Privacy
+faq_description: Find out what you can practice with Phrabbit, how the trial works, and when transcription can run offline.
+language: Language
+faq_label: FAQ
+guide_label: User guide
+all_guides: User guides in 8 languages
+privacy_label: Privacy policy
+support_label: Support
+app_store: Download on the App Store
+skip: Skip to content
+headline: Hear it. Loop it. Say it.
+intro: Practice with YouTube, podcasts, and your own files. Tap a sentence, loop the second or two you missed, and say it aloud.
+mobile_intro: Loop the phrase you missed in your own audio or video.
+trademark: Apple, the Apple logo, Apple Intelligence, Apple Pencil, iPad, iPadOS, and iPhone are trademarks of Apple Inc. App Store, Apple Music, and Apple Podcasts are service marks of Apple Inc. IOS is a trademark or registered trademark of Cisco in the U.S. and other countries and is used under license.
+highlights: [Your own study material, On-device subtitles, "3-day trial · One-time purchase, no subscription"]
+hero_alt: A/B loop on the waveform with the selected Japanese sentence and its English translation
+features:
+  - title: Study with what you already listen to
+    summary: Open YouTube in the embedded player, find podcasts by search or RSS, or import local audio, video, voice recordings, and DRM-free music.
+    details: Add SRT, VTT, or SMI subtitles to a local video. Practice with subtitle cards when a YouTube video has supported captions.
+    images:
+      - {id: add, alt: "Import menu with audio, video, podcast and YouTube options"}
+      - {id: youtube, alt: The café video with an A/B range on the time ruler and the matching subtitle card selected}
+  - title: Repeat the part that trips you up
+    summary: Tap a subtitle card, then drag the A/B handles to isolate the phrase. For audio files, zoom the waveform to 2–15 seconds per row.
+    details: Adjust the playback speed, repeat count, and pause between loops. Record a take and compare it with the original, or try writing down what you heard.
+    images:
+      - {id: loop, alt: An A/B loop around a phrase on the audio player waveform}
+      - {id: shadow, alt: Shadowing controls for comparing the original with a recording}
+  - title: Follow along with on-device subtitles
+    summary: Turn audio and downloaded podcasts into subtitle cards synced to the waveform, or transcribe a section of a local video.
+    details: Hide or edit subtitles as you practice. On supported devices, translate subtitles and get Apple Intelligence word explanations, then save words to review with flashcards.
+    images:
+      - {id: translation, alt: Original subtitle cards with translated lines}
+      - {id: word-detail, alt: The word traffic saved with its sentence in the Wordbook}
+ipad_title: Listen and write on iPad
+ipad_player: Landscape player with the video and subtitle cards side by side
+ipad_handwriting: Write with Apple Pencil, then check your answer against the original.
+privacy_title: Keep your recordings on your device
+privacy_intro: Meeting recordings, transcripts, and shadowing takes are never sent to Phrabbit’s developer servers. After downloading a supported language model, you can transcribe and practice with local audio offline.
+privacy_note: Speech-to-text uses on-device models when available. Apple Intelligence translation and explanations run on device. On some older systems or for languages without a supported local model, speech recognition can fall back to Apple’s service and send audio to Apple. Model downloads and YouTube or podcast streaming require a connection.
+pricing_title: Free and Premium
+pricing_intro: Try all features for 3 days (72 hours). When the trial ends, you can keep using the free version without being charged. A one-time purchase unlocks all current Premium features.
+pricing_note: Check the App Store for current local pricing. Use Restore Purchase on iPhone or iPad with the Apple Account you used to buy Premium.
+feature_label: Feature
+free_label: Free
+premium_label: Premium
+included: Included
+one_bookmark: One new bookmark per item
+unlimited_bookmarks: Unlimited
+currency: USD
+comparison:
+  - {label: "A/B loops for local media, DRM-free music, and YouTube", free: true}
+  - {label: "Waveform or time ruler, loop handles, speed, and shadowing gap", free: true}
+  - {label: "Video subtitle imports and learning stats", free: true}
+  - {label: Bookmarks, bookmarks: true}
+  - {label: Automatic subtitles with waveform sync}
+  - {label: YouTube subtitle practice and podcast downloads}
+  - {label: Shadowing recordings and dictation}
+  - {label: Wordbook and Apple Intelligence translation and explanations}
+  - {label: Background audio and Lock Screen controls}
+cta_title: Bring a phrase you want to master
+more_questions: See all frequently asked questions
+faq:
+  - question: Does the free trial charge me when it ends?
+    answer: No. The 72-hour trial ends automatically and the free features stay available. You only pay if you choose the one-time Premium purchase. You can restore it on iPhone or iPad with the same Apple Account.
+  - question: Which audio, video, and other study materials can I use?
+    answer: Use local files such as MP3, M4A and MP4, including voice recordings, or import DRM-free Music library tracks. Apple Music subscription tracks are DRM-protected. Phrabbit supports podcast search, RSS and Premium downloads, embedded YouTube streaming, and SRT, VTT or SMI subtitles for local videos.
+  - question: Can I repeat just the one or two seconds I missed?
+    answer: Yes. Start with a subtitle card and drag the A/B handles to narrow the loop. Audio uses a waveform. Local videos and YouTube use a time ruler. You can adjust speed, repeat count, and the gap between repetitions.
+  - question: Can I transcribe a private voice or meeting recording on device?
+    answer: With a supported on-device language model installed, you can transcribe meeting recordings locally. Phrabbit never receives your audio. If local recognition is unavailable, Apple’s speech service may process the audio on its servers.
+  - question: Can I practice or generate subtitles offline?
+    answer: With a supported on-device language model already installed, local files and downloaded podcasts can be used for offline transcription and practice. Streaming YouTube and downloading new podcast episodes or language models require a connection.
+  - question: How do shadowing recordings and dictation work?
+    answer: During Premium or the trial, compare your voice with the original and save your takes. Check a typed answer against the subtitle automatically, or compare your handwriting with the original yourself on iPad.
+  - question: Which devices support AI translation and word explanations?
+    answer: AI subtitle translation requires iOS or iPadOS 26.4 or later. Word explanations require version 26 or later. Both need a supported Apple Intelligence device, Apple Intelligence enabled and ready, supported languages, and Premium or an active trial.
+  - question: Can I leave the app during transcription or keep listening with the screen locked?
+    answer: Keep the app open while generating subtitles. Enable Background playback during Premium or the trial for audio files and downloaded podcasts. Video playback, including YouTube, pauses in the background.
+  - question: Which languages can I practice?
+    answer: Loop and shadow recordings in English, Japanese, Korean, Chinese, Spanish, and other languages. Automatic subtitle and translation support varies by language, device, and installed models. The app and manuals are available in eight languages.
